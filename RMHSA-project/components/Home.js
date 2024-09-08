@@ -30,7 +30,7 @@ function Home1() {
         <div id="Home" className="max-sm:overflow-hidden">
           <Topfile />
 
-          <div className="bg-[url('/students-image.jpg')] bg-fixed bg-cover bg-no-repeat bg-center ">
+          <div className="bg-[url('/images/R-bmain.jpg')] bg-fixed bg-cover bg-no-repeat bg-center ">
             <div
               id="Home_container-1"
               className="bg-gradient-to-b from-black/80 to-black/15 h-screen px-8 pt-8 max-sm:px-4 w-full text-white "
@@ -41,17 +41,16 @@ function Home1() {
               </div>
               <div className="mt-40">
                 <div className="flex flex-col items-start gap-5 max-sm:gap-3">
-                  {" "}
-                  {/*text-5xl*/}
                   <p className="font-Playfair italic text-5xl max-md:text-4xl max-sm:text-2xl max-sm:">
                     Welcome to{" "}
                   </p>
-                  <p className="font-Playfair text-8xl max-sm:text-6xl max-md:text-7xl ">
-                    {" "}
-                    {/**/}
-                    <span className="font-bold">Kingster</span> School
+                  <p className="font-Playfair text-8xl max-sm:text-5xl max-md:text-7xl ">
+                    <span className="font-bold">Rosa Mystica</span> High School,
+                    <br />
+                    Agulu.
                   </p>
-                  <button className="bg-primary text-white font-bold mt-2 px-8 py-4 max-sm:mt-6">
+                  <p>{"{ R.M.H.S }"}</p>
+                  <button className="bg-blue-600 text-white font-bold mt-2 px-8 py-4 max-sm:mt-6">
                     Take a Tour
                   </button>
                 </div>
@@ -65,29 +64,33 @@ function Home1() {
               className="flex w-full h-fit -mt-8 lg:px-4 max-md:px-4 max-md:flex-col max-md:items-center max-md:mb-8 max-lg:px-0 2xl:px-16 "
             >
               <div className=" w-1/3 h-fit max-md:w-4/6 max-sm:w-5/6 max-[500px]:w-11/12">
-                <div className="bg-red-600 max-w-full flex items-center p-8 gap-4 text-white">
+                <div className="bg-[#0099FF] max-w-full flex items-center p-8 gap-4 text-white">
                   {/* Done just now */}
-                    <Image
+                  <Image
                     src="svgs/school-svgrepo-com.svg"
                     alt=""
                     color="white"
+                    width={56}
+                    height={100}
                     // layout="fill"
                     // objectFit="contain"
                     className="w-14"
-                  />                  
+                  />
                   <span>
                     <h3 className="font-bold">School Life</h3>
                     <p>Learn More</p>
                   </span>
                 </div>
                 <div className="max-w-full ">
-                    <Image
+                  <Image
                     src="/brick-building-with-sign-reading-college-business-front_839169-3907.avif"
-                      alt=""
-                      // layout="fill"
-                      // objectFit="contain"
+                    alt=""
+                    width={500}
+                    height={288}
+                    // layout="fill"
+                    // objectFit="contain"
                     className="w-full h-72 max-sm:h-fit"
-                  />                  
+                  />
                   <p className="py-8 pr-2 leading-6 text-sm text-gray-600">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Eum, sunt rem. Voluptatem vero nostrum tenetur suscipit
@@ -98,11 +101,13 @@ function Home1() {
               </div>
 
               <div className="w-1/3 h-96 max-md:w-4/6 max-md:h-fit max-sm:w-5/6 max-[500px]:w-11/12">
-                <div className="bg-red-700 max-w-full flex items-center p-8 gap-4 text-white">
+                <div className="bg-[#0083DA] max-w-full flex items-center p-8 gap-4 text-white">
                   <Image
                     src="svgs/open-book-book-svgrepo-com.svg"
                     alt=""
                     color="white"
+                    width={600}
+                    height={800}
                     className="w-14"
                   />
                   <span>
@@ -111,11 +116,12 @@ function Home1() {
                   </span>
                 </div>
                 <div className="max-w-full">
-                  <Image
+                  <div className="bg-[url('/depositphotos_85888116-man-reading-a-book-in-the-office.jpg')] w-full h-72 max-sm:h-fit"></div>
+                  {/* <Image
                     src="/depositphotos_85888116-man-reading-a-book-in-the-office.jpg"
                     alt=""
-                    className="w-full h-72 max-sm:h-fit"
-                  />
+                    className="w-full h-72 max-sm:h-fit"                    
+                  /> */}
                   <p className="py-8 pr-2 leading-6 text-sm text-gray-600">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Eum, sunt rem. Voluptatem vero nostrum tenetur suscipit
@@ -126,11 +132,13 @@ function Home1() {
               </div>
 
               <div className="w-1/3 h-96 max-md:w-4/6 max-md:h-fit max-sm:w-5/6 max-[500px]:w-11/12">
-                <div className="bg-red-800 max-w-full flex items-center p-8 gap-4 text-white">
+                <div className="bg-[#006DB6] max-w-full flex items-center p-8 gap-4 text-white">
                   <Image
                     src="/svgs/sport-centre-svgrepo-com.svg"
                     alt=""
                     color="white"
+                    width={56}
+                    height={40}
                     className="w-14"
                   />
                   <span>
@@ -139,11 +147,12 @@ function Home1() {
                   </span>
                 </div>
                 <div className="max-w-full">
-                  <Image
+                  <div className="bg-[url('/studentAthlete.jpg')] w-full h-72 max-sm:h-fit"></div>
+                  {/* <Image
                     src="/studentAthlete.jpg"
                     alt=""
                     className="w-full h-72 max-sm:h-fit"
-                  />
+                  /> */}
                   <p className="py-8 pr-2 leading-6 text-sm text-gray-600">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Eum, sunt rem. Voluptatem vero nostrum tenetur suscipit
@@ -154,7 +163,10 @@ function Home1() {
               </div>
             </div>
 
-            <div id="Home_container-2__content-2" className="pb-24">
+            <div
+              id="Home_container-2__content-2"
+              className="bg-[#0099FF]/20 pb-24"
+            >
               <h2 className="text-center text-4xl max-sm:text-3xl  text-contingentText font-medium py-16 ">
                 Kingster At A Glance
               </h2>
@@ -162,12 +174,13 @@ function Home1() {
                 onEnter={() => setCounterOn(true)}
                 onExit={() => setCounterOn(false)}
               >
-                <div>
+                <div className="">
                   {counterOn && (
                     <div className="flex justify-evenly content-center items-center text-center max-sm:gap-8 max-sm:px-2 max-sm:flex-wrap">
                       <div>
                         <p className="font-medium text-6xl max-sm:text-4xl max-md:text-5xl text-primary pb-5 max-sm:pb-2">
-                          <CountUp start={0} end={800} duration={3} /> +
+                          <CountUp start={0} end={800} duration={3} />
+                          <span className="text-secondary">+</span>
                         </p>
                         <p className="text-gray-500 max-sm:text-xs">
                           Active Students
@@ -175,7 +188,8 @@ function Home1() {
                       </div>
                       <div>
                         <p className="font-medium text-6xl max-sm:text-4xl max-md:text-5xl text-primary pb-5 max-sm:pb-2">
-                          <CountUp start={0} end={5000} duration={3} />+
+                          <CountUp start={0} end={5000} duration={3} />
+                          <span className="text-secondary">+</span>
                         </p>
                         <p className="text-gray-500 max-sm:text-xs">
                           Graduated Students
@@ -183,7 +197,8 @@ function Home1() {
                       </div>
                       <div>
                         <p className="font-medium text-6xl max-sm:text-4xl max-md:text-5xl text-primary pb-5 max-sm:pb-2">
-                          <CountUp start={0} end={100} duration={3} />+
+                          <CountUp start={0} end={100} duration={3} />
+                          <span className="text-secondary">+</span>
                         </p>
                         <p className="text-gray-500 max-sm:text-xs">
                           Qualified Teachers
@@ -199,7 +214,7 @@ function Home1() {
           <div id="Home_container-3" className="h-full ">
             <div
               id="Home_container-3__content-1"
-              className="flex justify-end items-center content-center text-white h-5/6 -ml-16 bg-contain max-md:bg-cover max-md:content-center max-md:justify-center max-md:-ml-0 "
+              className="flex justify-end items-center content-center max-sm:text-white h-5/6 -ml-16 bg-contain max-md:bg-cover max-md:content-center max-md:justify-center max-md:-ml-0 "
             >
               <div className="px-20 leading-7 w-1/2 max-md:w-5/6 py-28 max-sm:px-4">
                 <div className="my-8 leading-8">
@@ -218,7 +233,7 @@ function Home1() {
                   their career- to discover a field they're passionate about and
                   dare to lead it.
                 </p>
-                <button className="bg-primary text-white font-bold mt-8 px-8 py-4">
+                <button className="border border-black max-sm:border-white max-sm:text-white font-bold mt-8 px-8 py-4">
                   Apply Now
                 </button>
               </div>
@@ -248,34 +263,34 @@ function Home1() {
                   className="mySwiper border-green-800"
                 >
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image src="/swiper-images/15.webp" alt="" />
+                    <img src="/swiper-images/15.webp" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image src="/swiper-images/16.webp" alt="" />
+                    <img src="/swiper-images/16.webp" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image src="/swiper-images/17.webp" alt="" />
+                    <img src="/swiper-images/17.webp" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image src="/swiper-images/18.webp" alt="" />
+                    <img src="/swiper-images/18.webp" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image src="/swiper-images/15.webp" alt="" />
+                    <img src="/swiper-images/15.webp" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image src="/swiper-images/16.webp" alt="" />
+                    <img src="/swiper-images/16.webp" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image src="/swiper-images/17.webp" alt="" />
+                    <img src="/swiper-images/17.webp" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image src="/swiper-images/18.webp" alt="" />
+                    <img src="/swiper-images/18.webp" alt="" />
                   </SwiperSlide>
                   {/* <SwiperSlide><Image src="/swiper-images/15.webp" alt="" /></SwiperSlide> */}
                 </Swiper>
               </div>
 
-              <div id="facilities" className="my-16">
+              <div id="facilities" className="my-16 bg-[]">
                 <h1 className="max-sm:mt-24 text-4xl max-sm:text-3xl text-center text-contingentText font-medium ">
                   Kingster Facilities
                 </h1>
@@ -418,7 +433,7 @@ function Home1() {
                   <div className="w-full flex flex-col items-center justify-center gap-8 h-fit max-md:w-5/6 ">
                     {/* <div className="flex flex-col items-center justify-center gap-8 w-80 h-64"> */}
                     <div className="">
-                      <Image src="/New-Grads.jpg" alt="" />
+                      <img src="/New-Grads.jpg" alt="" />
                     </div>
                     <div className="px-0">
                       <h1 className="text-contingentColor text-xl font-bold pb-2">

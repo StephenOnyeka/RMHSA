@@ -8,10 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#C50227",
-        contingentColor: "#1C1B3B",
-        contingentColor2: "#192F5A",
-        contingentText: "#353372",
+        primary: "#0099FF",
+        contingentColor: "#00416D",
+        contingentColor2: "#006DB6",
+        contingentText: "#002B48",
+        secondary: "#F8941C",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -26,7 +26,7 @@
   /* background-size: contain; */
   background-repeat: no-repeat;
   background-image: 
-  linear-gradient(to left, rgba(28, 27, 59, 3), rgba(28, 27, 59, 1),  transparent),
+  /* linear-gradient(to left, rgba(245, 158, 11, 3), rgba(245, 158, 11, 1),  transparent), */
     url("/istockphoto-620952978-612x612.jpg");
 }
 #Donor{

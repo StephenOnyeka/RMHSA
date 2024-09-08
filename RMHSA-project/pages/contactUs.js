@@ -25,7 +25,7 @@ function ContactUs() {
         <div className="bg-[url('/istockphoto-1307457391-612x612.jpg')] bg-cover bg-center">
           <div
             id="Contact_container-1"
-            className="bg-primary/70 h-screen px-8 pt-8 w-full font-Poppins text-white max-lg:h-screen/1.5 max-md:h-screen/2 max-sm:px-4 "
+            className="bg-primary/40 h-screen px-8 pt-8 w-full font-Poppins text-white max-lg:h-screen/1.5 max-md:h-screen/2 max-sm:px-4 "
           >
             <div className=" pb-64 max-sm:pb-36 ">
               <Navbar />

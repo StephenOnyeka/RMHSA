@@ -133,7 +133,7 @@ function About() {
             <div className="flex items-center w-full max-md:pb-8">
               <div className="flex flex-col gap-6 px-10 mr-10 max-md:mr-0 ">
                 <div className="relative">
-                  <Image
+                  <img
                     src="/svgs/about-icon-1.png"
                     alt=""
                     fill="#000"
@@ -161,7 +161,7 @@ function About() {
             <div className="flex items-center w-full max-md:pb-8">
               <div className="flex flex-col gap-6 px-10 ml-10 max-md:ml-0">
                 <div className="relative">
-                  <Image
+                  <img
                     src="/svgs/about-icon-2.png"
                     alt=""
                     fill="#000000"
@@ -187,7 +187,7 @@ function About() {
             <div className="flex items-center w-full max-md:pb-8">
               <div className="flex flex-col  gap-6 px-10 mr-10">
                 <div className="relative">
-                  <Image
+                  <img
                     src="/svgs/about-icon-3.png"
                     alt=""
                     fill="#000000"
@@ -212,11 +212,11 @@ function About() {
 
           <div className="bg-contingentColor py-8 w-full">
             <div className="grid grid-flow-col gap-4 justify-center content-center items-center max-md:flex max-md:flex-wrap max-md:gap-0 max-md:items-center">
-              <Image src="/banner-1.png" alt="" className="max-sm:w-24" />
-              <Image src="/banner-2.png" alt="" className="max-sm:w-24" />
-              <Image src="/banner-3.png" alt="" className="max-sm:w-24" />
-              <Image src="/banner-4-1.png" alt="" className="max-sm:w-24" />
-              <Image src="/banner-5.png" alt="" className="max-sm:w-24" />
+              <img src="/banner-1.png" alt="" className="max-sm:w-24" />
+              <img src="/banner-2.png" alt="" className="max-sm:w-24" />
+              <img src="/banner-3.png" alt="" className="max-sm:w-24" />
+              <img src="/banner-4-1.png" alt="" className="max-sm:w-24" />
+              <img src="/banner-5.png" alt="" className="max-sm:w-24" />
             </div>
           </div>
           <Footer />

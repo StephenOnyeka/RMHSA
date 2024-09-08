@@ -106,11 +106,11 @@ function SchoolLife() {
           </div>
 
           <div className=" bg-gray-200 pt-24 pb-20 px-10 pl-20 w-full text-gray-500 max-sm:px-8">
-            <Image src="/life-bus.jpg" alt="" />
+            <img src="/life-bus.jpg" alt="" />
 
             <div className="flex  flex-col">
               <div className="flex gap-6 items-center my-6 max-sm:gap-3">
-                <Image src="/icon-transportation.png" alt="" />
+                <img src="/icon-transportation.png" alt="" />
                 <p className="text-lg text-black font-semibold mt-4">
                   {" "}
                   Transportations
@@ -130,7 +130,7 @@ function SchoolLife() {
             </div>
             <div className="flex  flex-col">
               <div className="flex gap-6 items-center my-8">
-                <Image src="/icon-parking.png" alt="" />
+                <img src="/icon-parking.png" alt="" />
                 <p className="text-lg text-black font-semibold mt-4">
                   Parking
                 </p>

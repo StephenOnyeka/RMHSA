@@ -4,7 +4,7 @@ import Link from 'next/link';
 function Topfile() {
   return (
     <div>
-      <div className="bg-contingentColor p-10 h-20 w-full flex items-center text-white justify-between max-lg:hidden">
+      <div className="bg-[#F8941C] p-10 h-20 w-full flex items-center text-white justify-between max-lg:hidden">
         <div className="flex gap-8">
           <span className="flex gap-4">
             <svg
@@ -42,9 +42,7 @@ function Topfile() {
           <Link href="">Calendar</Link>
           <Link href="">Portal</Link>
           <Link href="">
-            <button className="bg-primary text-white font-bold p-7">
-              Support KU
-            </button>
+            <span className='border border-white p-4 rounded-lg'>Support RMHS</span>
           </Link>
         </div>
       </div>
@@ -53,3 +51,6 @@ function Topfile() {
 }
 
 export default Topfile
+
+// F59E0B;
+// F8941C;

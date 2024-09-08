@@ -81,7 +81,7 @@ function Donate() {
                     make the transition responsibly.
                   </p>
                   <br />
-                  <Image src="/support-building.jpg" className="pt-8" alt="" />
+                  <img src="/support-building.jpg" className="pt-8" alt="" />
                 </div>
 
                 <div id="" className="py-16 ">
@@ -342,7 +342,7 @@ function Donate() {
         <div className="text-white h-screen/2 max-sm:absolute z-1 ">
           <div className="bg-contingentColor flex gap-10 items-center justify-center px-6 pt-24 w-full py-28 max-sm:flex-wrap max-sm:py-16">
             <div className="w-2/4 px-8 max-sm:w-full max-sm:px-4">
-              <Image
+              <img
                 src="/240_F_109000790_1iCSQYErYo5znbWZsZVJyuC64H9BJAVA.jpg"
                 alt=""
                 className="w-full -mt-40 max-sm:-mt-32"

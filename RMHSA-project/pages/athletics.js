@@ -117,11 +117,11 @@ function Athletics() {
           <div className="bg-contingentColor py-8 w-full">
             {/* <div className="flex content-center "> */}
             <div className="grid grid-flow-col gap-4 justify-center">
-              <Image src="/banner-1.png" alt="" />
-              <Image src="/banner-2.png" alt="" />
-              <Image src="/banner-3.png" alt="" />
-              <Image src="/banner-4-1.png" alt="" />
-              <Image src="/banner-5.png" alt="" />
+              <img src="/banner-1.png" alt="" />
+              <img src="/banner-2.png" alt="" />
+              <img src="/banner-3.png" alt="" />
+              <img src="/banner-4-1.png" alt="" />
+              <img src="/banner-5.png" alt="" />
             </div>
             {/* </div> */}
           </div>

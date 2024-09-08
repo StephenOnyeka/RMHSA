@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 import { usePathname } from "next/navigation";  
 
@@ -122,7 +123,11 @@ function Navbar() {
 
         <div className="">
           <div className=" flex justify-between justify-items-center items-center">
-            <div className="logo">LOGO</div>
+            <div className="logo">
+              <div className="bg-[url('/images/RMHS.png')] w-20 h-20 rounded-full bg-cover bg-center max-sm:w-12 max-sm:h-12">
+                {/* <Image src="" width={50} height={50} className="rounded-full" /> */}
+              </div>
+            </div>
             <div className="flex space-x-5 gap-4">
               <span className="hideOnMobile">
                 <Link
