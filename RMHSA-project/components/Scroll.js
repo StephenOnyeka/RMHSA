@@ -139,7 +139,7 @@ const ScrollDiv = () => {
       </nav>
 
       <div
-        className={`fixed top-0 bg-contingentColor text-white px-8 pt-6 pb-4 max-md:py-3 w-full z-10 ${
+        className={`fixed top-0 bg-contingentColor text-white px-8 pt-6 pb-4 max-md:py-3 max-sm:px-6 w-full z-10 ${
           showDiv ? "block" : "hidden"
         }`}
         // style={{maxWidth: mustTrue ?  }}

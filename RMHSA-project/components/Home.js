@@ -213,31 +213,31 @@ function Home1() {
 
           <div id="Home_container-3" className="h-full ">
             {/* <span> */}
-              <div
-                id="Home_container-3__content-1"
-                className="bg-[url('/istockphoto-620952978-612x612.jpg')] bg-cover bg-no-repeat bg-center
+            <div
+              id="Home_container-3__content-1"
+              className="bg-[url('/istockphoto-620952978-612x612.jpg')] bg-cover bg-no-repeat bg-center
               flex justify-end items-center content-center text-white h-5/6 -ml-16 max-md:bg-cover max-md:content-center max-md:justify-center max-md:-ml-0"
-              >
-                <div className="bg-primary/70 px-20 leading-7 w-1/2 max-md:w-5/6 max-sm:w-full py-28 max-sm:px-4">
-                  <div className="my-8 leading-8">
-                    <p className="text-4xl max-sm:text-3xl font-bold pb-2">
-                      Apply for Admission
-                    </p>
-                    <p className="text-lg max-sm:text-base ">
-                      Fall 2024 applications are now open
-                    </p>
-                  </div>
-                  <p className="text-lg max-sm:text-base">
-                    We don't just give students an education and experiences
-                    that set them up for success in a career. We help them
-                    succeed in their career- to discover a field they're
-                    passionate about and dare to lead it.
+            >
+              <div className="bg-primary/70 px-20 leading-7 w-1/2 max-md:w-5/6 max-sm:w-full py-28 max-sm:px-6 max-sm:py-20">
+                <div className="my-8 leading-8">
+                  <p className="text-4xl max-sm:text-3xl font-bold pb-2">
+                    Apply for Admission
                   </p>
-                  <button className="border border-white max-sm:border-white max-sm:text-white font-bold mt-8 px-8 py-4">
-                    Apply Now
-                  </button>
+                  <p className="text-lg max-sm:text-base ">
+                    Fall 2024 applications are now open
+                  </p>
                 </div>
+                <p className="text-lg max-sm:text-base">
+                  We don't just give students an education and experiences that
+                  set them up for success in a career. We help them succeed in
+                  their career- to discover a field they're passionate about and
+                  dare to lead it.
+                </p>
+                <button className="border border-white max-sm:border-white max-sm:text-white font-bold mt-8 px-8 py-4">
+                  Apply Now
+                </button>
               </div>
+            </div>
             {/* </span> */}
 
             <div id="Home_container-3__content-2" className="pt-16">
@@ -380,7 +380,7 @@ function Home1() {
                       <hr />
                       <li className="mt-4"> Athletic Calendar</li>
                       <br /> <hr />
-                      <li className="mt-4"> All Kingster's Events </li>
+                      <li className="mt-4"> All Rosa Mystica's Events </li>
                       <br /> <hr />
                       <li className="mt-4"> Partnership & Out Reach </li>
                       <br /> <hr />
@@ -398,7 +398,7 @@ function Home1() {
                         xmlns="http://www.w3.org/2000/svg"
                         width="64"
                         // height="16"
-                        fill="#C50227"
+                        fill="#F8940F"
                         class="bi bi-envelope"
                         viewBox="0 0 16 16"
                       >
@@ -414,13 +414,13 @@ function Home1() {
                       </p>
                       {/* <p className="text-gray-500 leading-6 text-sm px-12"> */}
                       <p className="text-gray-500 leading-6 text-sm">
-                        The Campaign for the Kingster University is the largest
+                        The Campaign for Rosa Mystica High School is the largest
                         fundraising campaign in history. With a historic
                       </p>
                       <div className="">
                         <input
                           type="text"
-                          className="bg-gray-200 p-4 w-full mt-10"
+                          className="bg-gray-200 p-4 w-full mt-10 max-md:text-sm max-sm:text-xs"
                         />
                         <button className="bg-primary p-4 w-full mt-4 text-white font-semibold">
                           Subscribe
@@ -442,7 +442,7 @@ function Home1() {
                       </h1>
                       {/* <p className="text-gray-500 leading-6 text-sm px-12"> */}
                       <p className="text-gray-500 leading-6 text-sm">
-                        The Campaign for the Kingster University is the{" "}
+                        The Campaign for Rosa Mystica High School is the{" "}
                         <span className="font-bold">
                           largest fundraising campaign in history.
                         </span>

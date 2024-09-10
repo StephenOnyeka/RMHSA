@@ -24,7 +24,7 @@ export default function Home(){
     <div>
       <Head>
         <title>Rosa Mystica High School </title>
-        <link rel="icon" href="/RMHS.ico" />
+        <link rel="icon" href="/RMHS.png" />
       </Head>
       <CustomLoading />
     </div>
