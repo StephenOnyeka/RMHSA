@@ -23,7 +23,8 @@ export default function Home(){
   return (
     <div>
       <Head>
-        <title>Kingster - HighSchool </title>
+        <title>Rosa Mystica High School </title>
+        <link rel="icon" href="/RMHS.ico" />
       </Head>
       <CustomLoading />
     </div>

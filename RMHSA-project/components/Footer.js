@@ -13,7 +13,7 @@ function Footer() {
         <div className="flex justify-center text-white/50 gap-10 max-sm:flex-wrap max-sm:gap-10 ">
           <div className="box w-full text-white leading-9">
             <p className="text-2xl font-bold font-Playfair max-sm:text-xl">
-              Kingster <span className="font-normal"> HighSchool</span>
+              Rosa Mystica <span className="font-normal"> High School</span>
             </p>
             <div className="text-white/60 py-4 mt-6 leading-7 max-sm:text-xs max-sm:leading-6">
               <p>Box 35300</p>

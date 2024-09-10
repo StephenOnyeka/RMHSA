@@ -83,7 +83,7 @@ function Home1() {
                 </div>
                 <div className="max-w-full ">
                   <Image
-                    src="/brick-building-with-sign-reading-college-business-front_839169-3907.avif"
+                    src="/images/R- main.jpg"
                     alt=""
                     width={500}
                     height={288}
@@ -168,7 +168,7 @@ function Home1() {
               className="bg-[#0099FF]/20 pb-24"
             >
               <h2 className="text-center text-4xl max-sm:text-3xl  text-contingentText font-medium py-16 ">
-                Kingster At A Glance
+                Rosa Mystica At A Glance
               </h2>
               <ScrollTrigger
                 onEnter={() => setCounterOn(true)}
@@ -212,35 +212,36 @@ function Home1() {
           </div>
 
           <div id="Home_container-3" className="h-full ">
-            <div
-              id="Home_container-3__content-1"
-              className="flex justify-end items-center content-center max-sm:text-white h-5/6 -ml-16 bg-contain max-md:bg-cover max-md:content-center max-md:justify-center max-md:-ml-0 "
-            >
-              <div className="px-20 leading-7 w-1/2 max-md:w-5/6 py-28 max-sm:px-4">
-                <div className="my-8 leading-8">
-                  <p className="text-4xl font-bold pb-2">
-                    {" "}
-                    Apply for Admission
+            {/* <span> */}
+              <div
+                id="Home_container-3__content-1"
+                className="bg-[url('/istockphoto-620952978-612x612.jpg')] bg-cover bg-no-repeat bg-center
+              flex justify-end items-center content-center text-white h-5/6 -ml-16 max-md:bg-cover max-md:content-center max-md:justify-center max-md:-ml-0"
+              >
+                <div className="bg-primary/70 px-20 leading-7 w-1/2 max-md:w-5/6 max-sm:w-full py-28 max-sm:px-4">
+                  <div className="my-8 leading-8">
+                    <p className="text-4xl max-sm:text-3xl font-bold pb-2">
+                      Apply for Admission
+                    </p>
+                    <p className="text-lg max-sm:text-base ">
+                      Fall 2024 applications are now open
+                    </p>
+                  </div>
+                  <p className="text-lg max-sm:text-base">
+                    We don't just give students an education and experiences
+                    that set them up for success in a career. We help them
+                    succeed in their career- to discover a field they're
+                    passionate about and dare to lead it.
                   </p>
-                  <p className="text-lg">
-                    {" "}
-                    Fall 2019 applications are now open
-                  </p>
+                  <button className="border border-white max-sm:border-white max-sm:text-white font-bold mt-8 px-8 py-4">
+                    Apply Now
+                  </button>
                 </div>
-                <p className="text-lg">
-                  We don't just give students an education and experiences that
-                  set them up for success in a career. We help them succeed in
-                  their career- to discover a field they're passionate about and
-                  dare to lead it.
-                </p>
-                <button className="border border-black max-sm:border-white max-sm:text-white font-bold mt-8 px-8 py-4">
-                  Apply Now
-                </button>
               </div>
-            </div>
+            {/* </span> */}
 
             <div id="Home_container-3__content-2" className="pt-16">
-              <p className="text-4xl max-sm:text-3xl font-medium um text-center text-contingentText">
+              <p className="text-4xl max-sm:text-2xl font-medium um text-center text-contingentText">
                 Educational Affliations
               </p>
               <div className="my-10">
@@ -291,8 +292,8 @@ function Home1() {
               </div>
 
               <div id="facilities" className="my-16 bg-[]">
-                <h1 className="max-sm:mt-24 text-4xl max-sm:text-3xl text-center text-contingentText font-medium ">
-                  Kingster Facilities
+                <h1 className="max-sm:mt-24 text-4xl max-sm:text-2xl text-center text-contingentText font-medium ">
+                  Rosa Mystica Facilities
                 </h1>
                 <div className="flex flex-col items-center justify-between ">
                   <span>
@@ -303,9 +304,9 @@ function Home1() {
 
                   <span className="flex text-center gap-16 flex-wrap justify-center max-md:gap-10">
                     <div className="flex flex-col items-center justify-center gap-8 max-sm:gap-4 w-80 h-64 max-md:h-fit max-md:w-4/6">
-                      <div className="bg-primary hover:bg-blue-50 border text-white hover:text-black w-fit h-fit rounded-full">
+                      {/* <div className="bg-primary hover:bg-blue-50 border text-white hover:text-black w-fit h-fit rounded-full">
                         Icon
-                      </div>
+                      </div> */}
                       <div>
                         <h1 className="text-contingentColor text-xl font-medium pb-4 max-sm:text-lg">
                           Eco-Friendly Environment
@@ -318,9 +319,9 @@ function Home1() {
                       </div>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-8 max-sm:gap-4 w-80 h-64 max-md:h-fit max-md:w-4/6">
-                      <div className="bg-primary hover:bg-blue-50 border text-white hover:text-black w-fit h-fit rounded-full">
+                      {/* <div className="bg-primary hover:bg-blue-50 border text-white hover:text-black w-fit h-fit rounded-full">
                         Icon
-                      </div>
+                      </div> */}
                       <div>
                         <h1 className="text-contingentColor text-xl font-medium pb-4 max-sm:text-lg">
                           Innovative Classrooms
@@ -332,9 +333,9 @@ function Home1() {
                       </div>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-8 max-sm:gap-4 w-80 h-64 max-md:h-fit max-md:w-4/6">
-                      <div className="bg-primary hover:bg-blue-50 border text-white hover:text-black w-fit h-fit rounded-full">
+                      {/* <div className="bg-primary hover:bg-blue-50 border text-white hover:text-black w-fit h-fit rounded-full">
                         Icon
-                      </div>
+                      </div> */}
                       <div>
                         <h1 className="text-contingentColor text-xl font-medium pb-4 max-sm:text-lg">
                           Relevant Amenities

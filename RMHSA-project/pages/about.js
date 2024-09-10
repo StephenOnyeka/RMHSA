@@ -59,7 +59,7 @@ function About() {
             <div className="flex gap-16 max-xl:flex-wrap max-sm:gap-8">
               <div className="min-w-80">
                 <p className=" font-bold font-Poppins text-3xl text-contingentColor max-sm:text-2xl">
-                  Kingster's History
+                  Rosa Mystica's History
                   <span className="element-divider-seperator flex w-5/6 mt-4 border-2 border-primary max-sm:w-4/6 "></span>
                 </p>
               </div>
@@ -76,7 +76,7 @@ function About() {
                 If you would like to study in the university in the heart of the
                 city that focus on chaning the world for better to morrow,
                 you’re choosin the right place. We do not use special formulas
-                to select students. We look at every single applicantt’s
+                to select students. We look at every single applicant’s
                 application, academic and personal, to select students who suit
                 to our community.
               </p>
@@ -104,7 +104,7 @@ function About() {
               </div>
               <div className="">
                 <p className="font-bold text-xl max-sm:text-lg">
-                  Kingster's Princiiple
+                  Rosa Mystica's Principle
                 </p>
                 <br />
                 <p>
@@ -129,7 +129,7 @@ function About() {
         </div>
 
         <div id="About_container-3" className="h-screen absolute max-md:h-fit">
-          <div className="flex w-full h-5/6 max-md:flex-col max-sm:pt-10">
+          <div className="flex w-full h-5/6 max-md:flex-col max-sm:pt-10 max-md:mt-6">
             <div className="flex items-center w-full max-md:pb-8">
               <div className="flex flex-col gap-6 px-10 mr-10 max-md:mr-0 ">
                 <div className="relative">

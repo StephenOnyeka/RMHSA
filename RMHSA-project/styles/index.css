@@ -24,22 +24,22 @@
 }
 #Home_container-3__content-1 {
   /* background-size: contain; */
-  background-repeat: no-repeat;
-  background-image: 
-  /* linear-gradient(to left, rgba(245, 158, 11, 3), rgba(245, 158, 11, 1),  transparent), */
-    url("/istockphoto-620952978-612x612.jpg");
-}
+  /* background-repeat: no-repeat;
+  background-image:  */
+  /* linear-gradient(to left, rgba(204, 235, 255, 3), rgba(204, 235, 255, 1),  transparent),
+    url("/istockphoto-620952978-612x612.jpg") */
+  }
 #Donor{
   padding-top: 120px;
   padding-bottom: 120px;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: 
-  linear-gradient( rgba(197, 2, 39, 0.8), rgba(197, 2, 39, 0.7)),
+  linear-gradient( rgba(0, 153, 255, 0.8), rgba(0, 153, 255, 0.7)),
     url("/the-samford-clock-tower-jc-findley.jpg");
 }
 hr{
-  border-color: #772030;
+  border-color: #006DB6;
 }
 
 /* #About_container-1 {

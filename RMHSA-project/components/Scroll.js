@@ -35,7 +35,10 @@ const ScrollDiv = () => {
     <div className="">
       {/* <div className="max-md:opacity-0"> */}
       <nav className="navbar">
-        <ul className="sidebar bg-contingentColor text-white" style={{ display: isOpen ? "flex" : "none" }}>
+        <ul
+          className="sidebar bg-contingentColor text-white"
+          style={{ display: isOpen ? "flex" : "none" }}
+        >
           <li onClick={toggleMenu} className="m-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -141,9 +144,11 @@ const ScrollDiv = () => {
         }`}
         // style={{maxWidth: mustTrue ?  }}
       >
-
         <div className="flex justify-between items-center justify-items-center ">
-          <div className="logo">LOGO</div>
+          <div className="logo">
+            <div className="bg-[url('/images/RMHS.png')] w-10 h-10 rounded-full bg-cover bg-center max-sm:w-10 max-sm:h-10">
+            </div>
+          </div>
           <div className="flex space-x-5 gap-4">
             <span className="hideOnMobile">
               <Link

@@ -124,7 +124,7 @@ function Navbar() {
         <div className="">
           <div className=" flex justify-between justify-items-center items-center">
             <div className="logo">
-              <div className="bg-[url('/images/RMHS.png')] w-20 h-20 rounded-full bg-cover bg-center max-sm:w-12 max-sm:h-12">
+              <div className="bg-[url('/images/RMHS.png')] w-20 h-20 rounded-full bg-cover bg-center max-md:w-16 max-md:h-16 max-sm:w-12 max-sm:h-12">
                 {/* <Image src="" width={50} height={50} className="rounded-full" /> */}
               </div>
             </div>
