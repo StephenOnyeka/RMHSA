@@ -28,7 +28,7 @@ function Home1() {
       <ScrollDiv />
       <div className="font-Poppins">
         <div id="Home" className="max-sm:overflow-hidden">
-          <Topfile />
+          <Topfile /> 
 
           <div className="bg-[url('/images/R-bmain.jpg')] bg-fixed bg-cover bg-no-repeat bg-center ">
             <div

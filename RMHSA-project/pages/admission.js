@@ -33,7 +33,7 @@ function admission() {
               </p>
               <p className="text-5xl font-bold max-sm:text-3xl">
                 {" "}
-                Apply To Kingster{" "}
+                Apply To Rosa Mystica{" "}
               </p>
             </div>
           </div>
@@ -64,7 +64,7 @@ function admission() {
                 />
               </svg>
               <Link href="/about" className="text-primary">
-                Apply To Kingster
+                Apply To Rosa Mystica
               </Link>
             </span>
             <div className="py-10">
@@ -75,23 +75,23 @@ function admission() {
                   </p>
                   <div className="flex max-xl:flex-wrap max-xl:justify-content max-xl:gap-4">
                     <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-2 max-sm:leading-6 max-sm:text-sm max-sm:text-justify">
-                      If you would like to study in the university in the heart
-                      of the city that focus on chaning the world for better to
-                      morrow, you’re choosin the right place. We do not use
-                      special formulas to select students. We look at every
-                      single applicant’s application, academic and personal, to
-                      select students who suit to our community with a full
-                      range of backgrounds. If you would like to study
+                      If you would like to study in a school in the heart of the
+                      city that focus on changing the world for better to
+                      morrow, you’re in the right place. We do not use special
+                      formulas to select students. We look at every single
+                      applicant’s application, academic and personal, to select
+                      students who suit to our community with a full range of
+                      backgrounds.
                     </p>
 
-                    <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-2 max-sm:leading-6 max-sm:text-sm max-sm:text-justify">
-                      If you would like to study in the university in the heart
-                      of the city that focus on chaning the world for better to
-                      morrow, you’re choosin the right place. We do not use
+                    {/* <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-2 max-sm:leading-6 max-sm:text-sm max-sm:text-justify">
+                      If you would like to study in a school in the heart
+                      of the city that focus on changing the world for better to
+                      morrow, you’ve chosen the right place. We do not use
                       special formulas to select students. We look at every
-                      single applicantt’s application, academic and personal, to
+                      single applicant’s application, academic and personal, to
                       select students who suit to our community.
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -105,35 +105,47 @@ function admission() {
             className="flex items-center px-10 gap-8 bg-contingentColor h-screen/2 text-white leading-7 max-md:h-fit max-md: py-10 max-md:flex-wrap max-md:leading-6 max-sm:gap-12"
           >
             <div className="">
-              <p className="font-bold text-xl max-sm:text-lg">Education Services</p>
+              <p className="font-bold text-xl max-sm:text-lg">
+                Education Services
+              </p>
               <br />
               <p>
-                Kingster University was established by John Smith in 1920 for
-                the public benefit and it is recognized.
+                Rosa Mystica High School was established by late Archbishop
+                CharlesHeery C.S. SP. Archbishop of Onitsha in 1966 for the
+                public benefit and it is recognized.
               </p>
             </div>
             <div className="">
-              <p className="font-bold text-xl max-sm:text-lg">International Hubs</p>
+              <p className="font-bold text-xl max-sm:text-lg">
+                International Hubs
+              </p>
               <br />
               <p>
-                Kingster University was established by John Smith in 1920 for
-                the public benefit and it is recognized.
+                Rosa Mystica High School was established by late Archbishop
+                CharlesHeery C.S. SP. Archbishop of Onitsha in 1966 for the
+                public benefit and it is recognized.
               </p>
             </div>
             <div className="">
-              <p className="font-bold text-xl max-sm:text-lg">Bachelor's and Master's</p>
+              <p className="font-bold text-xl max-sm:text-lg">
+                Bachelor's and Master's
+              </p>
               <br />
               <p>
-                Kingster University was established by John Smith in 1920 for
-                the public benefit and it is recognized.
+                Rosa Mystica High School was established by late Archbishop
+                CharlesHeery C.S. SP. Archbishop of Onitsha in 1966 for the
+                public benefit and it is recognized.
               </p>
             </div>
             <div className="">
-              <p className="font-bold text-xl max-sm:text-lg">University Life</p>
+              <p className="font-bold text-xl max-sm:text-lg">
+                University Life
+              </p>
               <br />
               <p>
-                Kingster University was established by John Smith in 1920 for
-                the public benefit and it is recognized.
+                Rosa Mystica High School was established by late Archbishop
+                CharlesHeery C.S. SP. Archbishop of Onitsha in 1966 for the
+                public benefit and it is recognized.
               </p>
             </div>
           </div>
@@ -256,8 +268,9 @@ function admission() {
               <p>
                 {" "}
                 The Common Application is required for students applying to any
-                or all of KU's three degree. You'll be able to choose your
-                campus and program{"(s)"} that you are interested.
+                of our school's classes. You'll be able to choose your class and
+                course{"(s)"} that you are interested in{" "}
+                {"(if in senior category)"}.
               </p>
               <p> You will need: </p>
 
@@ -294,9 +307,10 @@ function admission() {
               </div>
             </div>
 
+            {/* The first column is for time range the applicants can start applying through the online form. The second column is the Application Deadline; when they are expected to stop applying. The third column is when the school will definitely respond back to you (Decision) */}
             <div className="flex flex-col gap-8 w-1/2 max-md:w-full">
               <p className="font-bold text-xl text-black">When To Apply</p>
-              <table className="text-center">
+              <table className="text-center"> 
                 <thead>
                   <tr className=" text-white ">
                     <th className="bg-primary p-4 border-2 border-white"> </th>

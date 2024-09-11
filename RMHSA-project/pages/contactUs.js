@@ -73,7 +73,7 @@ function ContactUs() {
                   like these.
                 </p>
                 <br />
-                <p className="text-red-700 max-sm:text-sm"> +1-2345-2345</p>
+                <p className="text-primary max-sm:text-sm"> +1-2345-2345</p>
               </div>
               <div className="">
                 <svg
@@ -96,9 +96,9 @@ function ContactUs() {
                   like these.
                 </p>
                 <br />
-                <p className="text-red-700 max-sm:text-sm">
+                <p className="text-primary max-sm:text-sm">
                   {" "}
-                  Contact@goodlayers.com
+                  info@rmhsagulu.com.ng
                 </p>
               </div>
               <div className="">
@@ -120,7 +120,7 @@ function ContactUs() {
                   4 apt. Flawing Street. The Grand Avenue. Liverpool, UK 33342
                 </p>
                 <br />
-                <p className="text-red-700 max-sm:text-sm">
+                <p className="text-primary max-sm:text-sm">
                   {" "}
                   View on Google Map
                 </p>

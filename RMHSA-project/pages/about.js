@@ -141,10 +141,10 @@ function About() {
                   />
                 </div>
                 <p className="text-3xl font-semibold max-md:text-xl">
-                  Special Campus Tour
+                  Special School Tour
                 </p>
                 <p className="text-gray-500 leading-7 max-md:leading-6 max-md:text-sm">
-                  Campus on a tour designed for prospective graduate and
+                  School on a tour designed for prospective graduate and
                   professional students. You will see how our university like,
                   facilities, studenst and life in this university. Meet our
                   graduate admissions representative to learn more about our
