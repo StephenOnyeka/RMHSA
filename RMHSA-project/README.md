@@ -1,1 +1,5 @@
 There are a lot of Ideas I have about creating an online form for admission. I will create a google form sheet that they will apply on and submit to the school's official email. The school will go through and decide how they will be answered.
+
+
+
+For online exams there is absolutely no way that it can without the student taking it in the school. 

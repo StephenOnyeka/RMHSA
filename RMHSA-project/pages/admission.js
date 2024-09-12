@@ -139,7 +139,7 @@ function admission() {
             </div>
             <div className="">
               <p className="font-bold text-xl max-sm:text-lg">
-                University Life
+                School Life
               </p>
               <br />
               <p>
@@ -282,7 +282,7 @@ function admission() {
                   School Report and submit your official high school transcript.
                 </p>
               </div>
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <CgEditBlackPoint className="text-black w-7 h-7 " />
                 <p>
                   Contact information for one teacher (or two, maximum) who will
@@ -295,14 +295,14 @@ function admission() {
                   Nonrefundable $50 application fee. Students who are unable to
                   pay the application fee can request a fee waiver
                 </p>
-              </div>
+              </div> **/}
 
               <div className="flex gap-4 text-white font-semibold">
                 <button className="bg-primary p-6 max-sm:p-4">
-                  Request a campus tour
+                  Request a school tour
                 </button>
                 <button className="bg-contingentColor p-6 max-sm:p-4">
-                  Request information
+                  Request information {/** Lead to contact page*/}
                 </button>
               </div>
             </div>
@@ -330,7 +330,7 @@ function admission() {
                       Early Decision 1
                     </td>
                     <td className="p-4 border-2 border-white">November 1</td>
-                    <td className="p-4 border-2 border-white">December 15</td>
+                    <td className="p-4 border-2 border-white">December 15 {/*or would be communicated via email*/}</td>
                   </tr>
                   <tr className="bg-gray-100">
                     <td className="p-4 border-2 border-white">
@@ -357,14 +357,14 @@ function admission() {
                 <br />
                 <p className="">
                   Document not submitted through the online method can be mailed
-                  to:
+                  to: // The school's Post Office Box
                 </p>
                 <br />
-                <div className="text-gray-400">
+                {/* <div className="text-gray-400">
                   <p>Box 35300</p>
-                  <p>1810 Campus Way NE</p>
+                  <p>1810 School Way NE</p>
                   <p>Bothell, WA 98011-8246 USA</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

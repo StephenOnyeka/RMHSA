@@ -113,9 +113,9 @@ const ScrollDiv = () => {
           </li>
           <li>
             <Link
-              href="/give-to-Kingster"
+              href="/give-to-RMHS"
               className={`text-white ${
-                pathname === "/give-to-Kingster"
+                pathname === "/give-to-RMHS"
                   ? "font-semibold border-primary border-b-2 text-xl bg-white/10"
                   : "hover:bg-white/10 hover:text-xl "
               }`}
@@ -212,9 +212,9 @@ const ScrollDiv = () => {
             </span>
             <span className="hideOnMobile">
               <Link
-                href="/give-to-Kingster"
+                href="/give-to-RMHS"
                 className={` ${
-                  pathname === "/give-to-Kingster"
+                  pathname === "/give-to-RMHS"
                     ? "font-semibold border-primary border-b-8 pb-2.5"
                     : "border-primary border-b-8 border-opacity-0 hover:border-opacity-100 pb-2.5 hover:font-medium focus:font-semibold"
                 }`}

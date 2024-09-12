@@ -64,19 +64,19 @@ function About() {
                 </p>
               </div>
               <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-0 max-sm:leading-6 max-sm:text-sm max-sm:text-justify">
-                If you would like to study in the university in the heart of the
-                city that focus on chaning the world for better to morrow,
-                you’re choosin the right place. We do not use special formulas
-                to select students. We look at every single applicant’s
-                application, academic and personal, to select students who suit
-                to our community with a full range of backgrounds. If you would
-                like to study
+                If you would like to study in a school in the heart of the city
+                that focus on changing the world for better to morrow, you’re in
+                the right place. We do not use special formulas to select
+                students. We look at every single applicant’s application,
+                academic and personal, to select students who suit to our
+                community with a full range of backgrounds.s. If you would like
+                to study
               </p>
               <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-0 max-sm:leading-6 max-sm:text-sm max-sm:text-justify">
-                If you would like to study in the university in the heart of the
-                city that focus on chaning the world for better to morrow,
-                you’re choosin the right place. We do not use special formulas
-                to select students. We look at every single applicant’s
+                If you would like to study in a school in the heart of the city
+                that focus on changing the world for better tomorrow, you’re
+                choosing the right place. We do not use special formulas to
+                select students. We look at every single applicant’s
                 application, academic and personal, to select students who suit
                 to our community.
               </p>
@@ -146,7 +146,7 @@ function About() {
                 <p className="text-gray-500 leading-7 max-md:leading-6 max-md:text-sm">
                   School on a tour designed for prospective graduate and
                   professional students. You will see how our university like,
-                  facilities, studenst and life in this university. Meet our
+                  facilities, student and life in this university. Meet our
                   graduate admissions representative to learn more about our
                   graduate programs and decide what it the best for you.
                 </p>

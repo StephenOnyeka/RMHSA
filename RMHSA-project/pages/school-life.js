@@ -32,10 +32,10 @@ function SchoolLife() {
                   </div>
 
                   <p className="text-lg leading-8 px-6 max-md:px-3 max-md:leading-6 max-md:text-sm max-sm:px-0 ">
-                    Campus on a tour designed for prospective graduate and
-                    professional students. You will see how our university like,
-                    facilities, studenst and life in this university. Meet our
-                    graduate admissions representative to learn more about our
+                    School on a tour designed for prospective graduate and
+                    professional students. You will see how our university-like
+                    facilities, students and life in this school. Meet our
+                    graduate admissions representatives to learn more about our
                     graduate programs and decide what it the best for you.
                   </p>
                 </div>
@@ -83,7 +83,7 @@ function SchoolLife() {
                 unorthographic life.
               </p>
               <button className="bg-primary flex items-center gap-4 text-white font-bold p-4 mt-4 max-sm:text-sm">
-                Athletics Guide Book
+                Daily Guide Routine
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -117,7 +117,7 @@ function SchoolLife() {
                 </p>
               </div>
               <p className="font-bold mb-2 max-sm:text-sm max-sm:leading-6">
-                There are many options to travel in the campus.
+                There are many options to travel in the school.
               </p>
               <p className="max-sm:text-sm max-sm:leading-6">
                 There live the blind texts. Separated they live in Bookmarks
@@ -131,13 +131,11 @@ function SchoolLife() {
             <div className="flex  flex-col">
               <div className="flex gap-6 items-center my-8">
                 <img src="/icon-parking.png" alt="" />
-                <p className="text-lg text-black font-semibold mt-4">
-                  Parking
-                </p>
+                <p className="text-lg text-black font-semibold mt-4">Parking</p>
               </div>
               <p className="max-sm:text-sm max-sm:leading-6">
-                More than 1000 parking lots avilable in the west side of the
-                compus. The parking is available 24 hours with 24hours security.
+                More than 1000 parking lots available on the west inside of the
+                school. The parking is available 24 hours with 24hours security.
                 We make sure that everything is under control.
               </p>
             </div>
@@ -152,14 +150,15 @@ function SchoolLife() {
         >
           <div className=" flex justify-between content-center gap-8 px-10 w-full bg-primary/70 py-36 text-white leading-7 max-md:flex-wrap max-md:items-center max-md:px-8 max-sm:py-24">
             <p className="font-bold text-3xl w-2/5 max-md:text-2xl max-md:w-full max-sm:text-xl">
-              The Campus Experience
+              The School Experience
             </p>
             <p className="text-xl font-medium leading-8 w-4/5 max-sm:w-full max-sm: max-sm:text-justify">
-              Kingster University was established by John Smith in 1920 for the
-              public benefit and it is recognized globally. Throughout our great
-              history, Kingster has offered access to a wide range of academic
+              Rosa Mystica High School was established by late Archbishop
+              CharlesHeery C.S. SP. Archbishop of Onitsha in 1966 for the public
+              benefit and it is recognized globally. Throughout our great
+              history, Rosa Mystica has offered access to a wide range of academic
               opportunities. As a world leader in higher education, the
-              University has pioneered change in the sector.
+              School has pioneered change in the sector.
             </p>
           </div>
         </div>
@@ -190,7 +189,7 @@ function SchoolLife() {
                   winning pace across every distance.
                 </p>
                 <p className="text-lg font-semibold max-sm:text-sm">
-                  John Smith / CEO Of Financity
+                  Name / School Principal
                 </p>
               </div>
             </div>

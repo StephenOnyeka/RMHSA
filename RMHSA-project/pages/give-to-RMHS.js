@@ -27,7 +27,7 @@ function Donate() {
                 Become a donor
               </p>
               <p className="text-5xl font-bold max-sm:text-3xl">
-                Give To Kingster
+                Give To Rosa Mystica
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@ function Donate() {
               />
             </svg>
             <Link href="/about" className="text-primary">
-              Give To Kingster
+              Give To Rosa Mystica
             </Link>
           </span>
           <div className="py-10">
@@ -62,7 +62,7 @@ function Donate() {
               <div className="w-5/6 max-sm:w-full">
                 <div>
                   <p className=" font-semibold font-Poppins text-3xl text-black max-md:text-2xl max-sm:text-xl">
-                    About Kingster Fund
+                    About Rosa Mystica Fund
                   </p>
                   <br />
                   <p className=" text-gray-500 leading-7 max-sm:text-sm max-sm:leading-6">
@@ -70,11 +70,11 @@ function Donate() {
                     disciplines of study and new ways of learning. Your gift
                     enriches the experience of all students by supporting
                     efforts to recruit top faculty, expand academic programs and
-                    respond to the emerging needs of our campus and our world.
+                    respond to the emerging needs of our school and our world.
                   </p>
                   <br />
                   <p className=" text-gray-500 leading-7 max-sm:text-sm max-sm:leading-6">
-                    Not only does Kingster University provide you the practical
+                    Not only does Rosa Mystica High School provide you the practical
                     skills that is necessary to transition seamlessly into the
                     workforce upon your graduation, but we also make sure that
                     you will have a good sense of social justice so that you
@@ -148,7 +148,7 @@ function Donate() {
                 <div className="">
                   <div className="flex justify-between w-full items-center pb-8">
                     <p className="text-2xl font-semibold max-sm:text-xl">
-                      Why give to Kingster?
+                      Why give to Rosa Mystica?
                     </p>
                     <hr className="border-2 border-gray-200 w-3/5" />
                   </div>

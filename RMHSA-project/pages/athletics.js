@@ -24,7 +24,7 @@ function Athletics() {
 
             <div className="absolute z-1 bottom-64 lg:bottom-8 max-sm:bottom-80 text-white">
               <p className="text-xl pb-3 max-sm:text-lg max-sm:pb-1">
-                Go For KU Team
+                Go For RMHS Team
               </p>
               <p className="text-5xl font-bold max-sm:text-3xl">Athletics</p>
             </div>
@@ -105,10 +105,10 @@ function Athletics() {
                   </svg>
                 </div>
                 <p className="text-xl font-semibold leading-9 pr-20 max-sm:pr-0">
-                  Our goal is to be at the heart of every game and keep.
+                  Our goal is to be at the heart of every game and keep on.
                 </p>
                 <p className="text-lg font-semibold max-sm:text-sm">
-                  John Smith / CEO Of Financity
+                  Name / Games Master
                 </p>
               </div>
             </div>
@@ -131,7 +131,7 @@ function Athletics() {
           <div className="flex justify-between pt-40 pb-20 px-10 gap-10 max-md:flex-wrap max-sm:px-4">
             <div className="w-full">
               <p className=" font-bold font-Poppins text-2xl text-contingentColor pb-6 max-sm:text-xl">
-                KU Team Has A Long Story
+                RMHS Team Has A Long Story
               </p>
               <p className=" text-primary text-xl leading-8 max-sm:text-lg">
                 Far far away, behind the word mountains, far from the countries
