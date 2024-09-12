@@ -3,7 +3,7 @@ import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaSkype } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";  
 import { FaInstagram } from "react-icons/fa";
 
 function Footer() {
@@ -35,7 +35,7 @@ function Footer() {
             <hr className="border border-primary mt-4" />
           </div>
           <div className="box w-full">
-            <p className="text-white font-semibold">Our Campus</p>
+            <p className="text-white font-semibold">Our School</p>
             <hr className="border border-primary mt-3 mb-5" />
             <ul className="font-light leading-9 max-sm:leading-7 max-sm:text-xs">
               <li className="hover:text-white transition-all duration-200 ease-in">
@@ -45,35 +45,35 @@ function Footer() {
                 <a href="">Planning & Administration</a>
               </li>
               <li className="hover:text-white transition-all duration-200 ease-in">
-                <a href="">Campus Safety</a>
+                <a href="">School Safety</a>
               </li>
               <li className="hover:text-white transition-all duration-200 ease-in">
-                <a href="">Office of the Chancellor</a>
+                <a href="">Office of the Manager</a>
               </li>
-              <li className="hover:text-white transition-all duration-200 ease-in">
+              {/* <li className="hover:text-white transition-all duration-200 ease-in">
                 <a href="">Facility Services</a>
-              </li>
-              <li className="hover:text-white transition-all duration-200 ease-in">
+              </li> */}
+              {/* <li className="hover:text-white transition-all duration-200 ease-in">
                 <a href="">Human Resources</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="box w-full">
-            <p className="text-white font-semibold">Campus Life</p>
+            <p className="text-white font-semibold">School Life</p>
             <hr className="border border-primary mt-3 mb-5" />
             <ul className="font-light leading-9 max-sm:leading-7 max-sm:text-xs">
-              <li className="hover:text-white transition-all duration-200 ease-in">
+              {/* <li className="hover:text-white transition-all duration-200 ease-in">
                 <a href="">Accessibility</a>
-              </li>
+              </li> */}
               <li className="hover:text-white transition-all duration-200 ease-in">
                 <a href="">Financial Aid</a>
               </li>
               <li className="hover:text-white transition-all duration-200 ease-in">
                 <a href="">Food Services</a>
               </li>
-              <li className="hover:text-white transition-all duration-200 ease-in">
+              {/* <li className="hover:text-white transition-all duration-200 ease-in">
                 <a href="">Housing</a>
-              </li>
+              </li> */}  
               <li className="hover:text-white transition-all duration-200 ease-in">
                 <a href="">Information Technologies</a>
               </li>
@@ -86,12 +86,12 @@ function Footer() {
             <p className="text-white font-semibold">Academics</p>
             <hr className="border border-primary mt-3 mb-5" />
             <ul className="font-light leading-9 max-sm:leading-7 max-sm:text-xs">
-              <li className="hover:text-white transition-all duration-200 ease-in">
+              {/* <li className="hover:text-white transition-all duration-200 ease-in">
                 <a href="">Canvas</a>
-              </li>
-              <li className="hover:text-white transition-all duration-200 ease-in">
+              </li> */}
+              {/* <li className="hover:text-white transition-all duration-200 ease-in">
                 <a href="">Catalyst</a>
-              </li>
+              </li> */}
               <li className="hover:text-white transition-all duration-200 ease-in">
                 <a href="">Library</a>
               </li>

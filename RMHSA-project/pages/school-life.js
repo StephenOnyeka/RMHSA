@@ -120,12 +120,13 @@ function SchoolLife() {
                 There are many options to travel in the school.
               </p>
               <p className="max-sm:text-sm max-sm:leading-6">
-                There live the blind texts. Separated they live in Bookmarks
+                {/* There live the blind texts. Separated they live in Bookmarks
                 grove right at the coast of the Semantics, a large language
                 ocean. A small river named Duden flows by their place and
                 supplies it with the necessary regelialia. It is a
                 paradisematic. It is a paradise matic country, in which roasted
-                parts of sentences fly into.
+                parts of sentences fly into. */}
+                Land transportation is the most commute way of getting to us. Don't forget to observe traffic lights.
               </p>
             </div>
             <div className="flex  flex-col">
@@ -134,7 +135,7 @@ function SchoolLife() {
                 <p className="text-lg text-black font-semibold mt-4">Parking</p>
               </div>
               <p className="max-sm:text-sm max-sm:leading-6">
-                More than 1000 parking lots available on the west inside of the
+                More than 1000 parking lots available on the west and north side of the
                 school. The parking is available 24 hours with 24hours security.
                 We make sure that everything is under control.
               </p>

@@ -117,7 +117,7 @@ function ContactUs() {
                 </p>
                 <br />
                 <p className="max-sm:text-sm">
-                  4 apt. Flawing Street. The Grand Avenue. Liverpool, UK 33342
+                  426P+H48, Awka - Okigwe Rd, Nkitaku, Agulu 422109, Anambra
                 </p>
                 <br />
                 <p className="text-primary max-sm:text-sm">
@@ -177,8 +177,7 @@ function ContactUs() {
         {/* <div className=" h-screen"> */}
         <div className=" overflow-hidden h-screen max-md:h-screen/2 max-sm:h-screen/3 ">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.1489973793214!2d7.221241541187521!3d5.974210178614527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10430dabbf9537bb%3A0x376b8ebd1d7c39db!2sMadonna%20Secondary%20School!5e0!3m2!1sen!2sng!4v1715306310319!5m2!1sen!2sng"
-            // width="1200"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.573755078161!2d7.035027191487738!3d6.110833482556428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10439d2b0bc5fc21%3A0x6cac8e221d738a8d!2sRosa%20Mystica%20High%20school!5e0!3m2!1sen!2sng!4v1726104479830!5m2!1sen!2sng"
             // height="450"
             // style="border:0;"
             allowfullscreen

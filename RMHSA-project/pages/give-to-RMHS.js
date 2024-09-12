@@ -169,11 +169,11 @@ function Donate() {
                       <p className="text-xl font-bold pb-2">
                         Department Contact Info
                       </p>
-                      <p className="font-semibold ">Office of Development</p>
+                      <p className="font-semibold ">Office of Science</p>
                     </div>
                     <div className="pb-6">
-                      <p>1810 Campus Way NE</p>
-                      <p>Bothell, WA 98011-8246</p>
+                      <p>Inside School Roadway - NW (North-West)</p>
+                      {/* <p>Bothell, WA 98011-8246</p> */}
                     </div>
                     <div className="pb-6">
                       <p>+1-2345-6789-10</p>
@@ -261,23 +261,23 @@ function Donate() {
                       <p className="text-xl font-bold pb-4">
                         Department Contact Info
                       </p>
-                      <p className="font-semibold text-green-600">
-                        Engineering
+                      <p className="font-semibold text-secondary">
+                        Office of Arts
                       </p>
                     </div>
                     <div className="pb-6">
-                      <p>1810 Campus Way NE</p>
-                      <p>Bothell, WA 98011-8246</p>
+                      <p>Inside School Roadway - NW (North-West)</p>
+                      {/* <p>Bothell, WA 98011-8246</p> */}
                     </div>
                     <div className="pb-6">
                       <p>+1-2345-6789-10</p>
                       <p>sample@hiskool.edu</p>
                     </div>
-                    <p className="pb-6 text-green-600">
+                    <p className="pb-6 text-secondary">
                       Mon-Fri 9:00A.M.-5:00P.M.
                     </p>
                     <p className="font-bold text-xl py-4">Social Info</p>
-                    <div className="flex gap-4 text-green-600 pb-12">
+                    <div className="flex gap-4 text-secondary pb-12">
                       <svg
                         stroke="currentColor"
                         fill="currentColor"

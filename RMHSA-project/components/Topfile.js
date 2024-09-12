@@ -5,8 +5,8 @@ function Topfile() {
   return (
     <div>
       <div className="bg-[#F8941C] p-10 h-20 w-full flex items-center text-white justify-between max-lg:hidden">
-        <div className="flex gap-8">
-          <span className="flex gap-4">
+        <div className="flex gap-8 content-center justify-center">
+          <span className="flex gap-4 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -20,7 +20,7 @@ function Topfile() {
             <p>info@rmhsagulu.com.ng</p>
           </span>
 
-          <span className="flex gap-4">
+          <span className="flex gap-4 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
