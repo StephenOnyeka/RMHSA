@@ -152,8 +152,8 @@ function About() {
                 </p>
               </div>
             </div>
-
-            <div className="bg-[url('/istockphoto-1404294992-612x612.jpg')] bg-cover w-full max-sm:py-36"></div>
+            <div className=" school bg-cover w-full max-sm:py-36"></div>
+            {/* bg-[url('/images/R-entrance.jpg')] */}
           </div>
 
           <div className="flex w-full h-5/6 max-md:flex-col max-sm:pt-10">

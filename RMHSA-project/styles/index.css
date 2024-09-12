@@ -64,6 +64,13 @@ hr{
   transition: 0.3s ease-in-out;
 }
 
+.school{
+    /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  background-image: linear-gradient(rgba(0, 153, 255, 0.2), rgba(0, 153, 255, 0.2)),
+    url("/images/R-entrance.jpg");
+}
 
 .loader {
   color: #000;
