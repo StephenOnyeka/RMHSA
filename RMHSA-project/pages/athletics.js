@@ -12,11 +12,15 @@ function Athletics() {
       <Topfile />
       <ScrollDiv />
       <div className=" h-full font-Poppins overflow-hidden">
-        <div className="bg-[url('/240_F_66155005_PcFq0uZuTyqMlfDjA10ulpJZU6UQFmRU.jpg')] bg-cover bg-top-center">
+        <div className="bg-[url('/RMHS/IMG_20241015_140910.jpg')] bg-cover bg-top-center">
           <div
             id="Athletics_container-1"
-            className="bg-black/70 h-screen max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
+            className="bg-gradient-to-b from-black/40 to-black/80 h-screen max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
           >
+            {/* <div
+            id="Athletics_container-1"
+            className="bg-black/70 h-screen max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
+          > */}
             {/* <div className="pb-64"> */}
             <div className="pb-64">
               <Navbar />

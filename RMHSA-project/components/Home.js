@@ -28,7 +28,7 @@ function Home1() {
       <ScrollDiv />
       <div className="font-Poppins">
         <div id="Home" className="max-sm:overflow-hidden">
-          <Topfile /> 
+          <Topfile />
 
           <div className="bg-[url('/images/R-bmain.jpg')] bg-fixed bg-cover bg-no-repeat bg-center ">
             <div
@@ -92,10 +92,11 @@ function Home1() {
                     className="w-full h-72 max-sm:h-fit"
                   />
                   <p className="py-8 pr-2 leading-6 text-sm text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eum, sunt rem. Voluptatem vero nostrum tenetur suscipit
-                    voluptates alias ea nisi dolore tempora cupiditate odio ut,
-                    soluta voluptas eius officia laborum mollitia, esse facilis!
+                    Our school is more than just an institution; it's a
+                    community that fosters intellectual curiosity, emotional
+                    well-being, and personal growth. Students are encouraged to
+                    explore their passions, develop their talents, and become
+                    well-rounded individuals.
                   </p>
                 </div>
               </div>
@@ -116,17 +117,18 @@ function Home1() {
                   </span>
                 </div>
                 <div className="max-w-full">
-                  <div className="bg-[url('/depositphotos_85888116-man-reading-a-book-in-the-office.jpg')] w-full h-72 max-sm:h-fit"></div>
+                  <div className="bg-[url('/RMHS/IMG_20241015_140156.jpg')] bg-cover bg-center w-full h-72 max-sm:h-fit"></div>
                   {/* <Image
                     src="/depositphotos_85888116-man-reading-a-book-in-the-office.jpg"
                     alt=""
                     className="w-full h-72 max-sm:h-fit"                    
                   /> */}
                   <p className="py-8 pr-2 leading-6 text-sm text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eum, sunt rem. Voluptatem vero nostrum tenetur suscipit
-                    voluptates alias ea nisi dolore tempora cupiditate odio ut,
-                    soluta voluptas eius officia laborum mollitia, esse facilis!
+                    Our rigorous academic program is designed to challenge
+                    students and prepare them for success in higher education
+                    and beyond. With experienced faculty and state-of-the-art
+                    facilities, we provide a stimulating learning environment
+                    that inspires critical thinking and innovation.
                   </p>
                 </div>
               </div>
@@ -147,17 +149,16 @@ function Home1() {
                   </span>
                 </div>
                 <div className="max-w-full">
-                  <div className="bg-[url('/studentAthlete.jpg')] w-full h-72 max-sm:h-fit"></div>
+                  <div className="bg-[url('/RMHS/1730144543943.jpg')] bg-cover w-full h-72 max-sm:h-fit"></div>
                   {/* <Image
                     src="/studentAthlete.jpg"
                     alt=""
                     className="w-full h-72 max-sm:h-fit"
                   /> */}
                   <p className="py-8 pr-2 leading-6 text-sm text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eum, sunt rem. Voluptatem vero nostrum tenetur suscipit
-                    voluptates alias ea nisi dolore tempora cupiditate odio ut,
-                    soluta voluptas eius officia laborum mollitia, esse facilis!
+                    Our athletics program emphasizes the importance of
+                    sportsmanship, teamwork, and dedication. Through competitive
+                    sports, students learn valuable life skills - perseverance, resilience, and leadership!
                   </p>
                 </div>
               </div>
@@ -264,30 +265,47 @@ function Home1() {
                   className="mySwiper border-green-800"
                 >
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <img src="/swiper-images/15.webp" alt="" />
-                  </SwiperSlide>
-                  <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <img src="/swiper-images/16.webp" alt="" />
+                    <img src="/swiper-RMHS/NECO.png" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
                     <img src="/swiper-images/17.webp" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <img src="/swiper-images/18.webp" alt="" />
+                    <img src="/swiper-RMHS/JAMB.png" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <img src="/swiper-images/15.webp" alt="" />
+                    <img
+                      src="/swiper-RMHS/Awka3.png"
+                      className="mt-6 max-sm:mt-3 w-[400px]"
+                      alt=""
+                    />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <img src="/swiper-images/16.webp" alt="" />
+                    <img src="/swiper-RMHS/WACE.png" alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
+                    <img src="/swiper-RMHS/NECO.png" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
                     <img src="/swiper-images/17.webp" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <img src="/swiper-images/18.webp" alt="" />
+                    <img src="/swiper-RMHS/JAMB.png" alt="" />
                   </SwiperSlide>
-                  {/* <SwiperSlide><Image src="/swiper-images/15.webp" alt="" /></SwiperSlide> */}
+                  <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
+                    <img
+                      src="/swiper-RMHS/Awka3.png"
+                      className="mt-6 max-sm:mt-3 w-[400px]"
+                      alt=""
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
+                    <img src="/swiper-RMHS/WACE.png" alt="" />
+                  </SwiperSlide>
+                  {/* <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
+                    <img src="/swiper-images/18.webp" alt="" />
+                  </SwiperSlide> */}
+                  {/* <SwiperSlide><Image src="/swiper-images/15.webp" alt></SwiperSlide> */}
                 </Swiper>
               </div>
 

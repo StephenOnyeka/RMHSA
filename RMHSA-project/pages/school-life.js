@@ -5,15 +5,27 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
+
 function SchoolLife() {
   return (
     <div>
       <ScrollDiv />
       <div className=" h-full font-Poppins overflow-hidden">
-        <div className="bg-[url('/240_F_66155005_PcFq0uZuTyqMlfDjA10ulpJZU6UQFmRU.jpg')] bg-cover bg-top-center">
+        <div className="bg-[url('/RMHS/IMG_20241015_124820.jpg')] bg-cover bg-center">
           <div
             id="SchoolLife_container-1"
-            className="bg-black/70 h-screen max-sm:h-screen/1.5 max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
+            className="bg-gradient-to-b from-black/40 via-black/60 to-black/80 h-screen max-sm:h-screen/1.5 max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
+            // className="bg-black/60 h-screen max-sm:h-screen/1.5 max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
           >
             <div className=" ">
               <Navbar />
@@ -106,7 +118,8 @@ function SchoolLife() {
           </div>
 
           <div className=" bg-gray-200 pt-24 pb-20 px-10 pl-20 w-full text-gray-500 max-sm:px-8">
-            <img src="/life-bus.jpg" alt="" />
+            {/* <img src="/life-bus.jpg" alt="" /> */}
+            <img src="/RMHS/signboard.png" alt="" />
 
             <div className="flex  flex-col">
               <div className="flex gap-6 items-center my-6 max-sm:gap-3">
@@ -126,7 +139,8 @@ function SchoolLife() {
                 supplies it with the necessary regelialia. It is a
                 paradisematic. It is a paradise matic country, in which roasted
                 parts of sentences fly into. */}
-                Land transportation is the most commute way of getting to us. Don't forget to observe traffic lights.
+                Land transportation is the most commute way of getting to us.
+                Don't forget to observe traffic lights.
               </p>
             </div>
             <div className="flex  flex-col">
@@ -135,21 +149,83 @@ function SchoolLife() {
                 <p className="text-lg text-black font-semibold mt-4">Parking</p>
               </div>
               <p className="max-sm:text-sm max-sm:leading-6">
-                More than 1000 parking lots available on the west and north side of the
-                school. The parking is available 24 hours with 24hours security.
-                We make sure that everything is under control.
+                More than 1000 parking lots available on the west and north side
+                of the school. The parking is available 24 hours with 24hours
+                security. We make sure that everything is under control.
               </p>
             </div>
           </div>
           {/* </div> */}
         </div>
         {/* </div> */}
-
+        <div className="flex content-center justify-center items-center h-32">
+          {/* Drawer Open */}
+          <div className="">
+            <Drawer>
+              <DrawerTrigger asChild>
+                <button variant="outline">Open Drawer</button>
+              </DrawerTrigger>
+              <DrawerContent className="">
+                <div className="mx-auto w-full px-10">
+                  <DrawerHeader>
+                    <DrawerTitle>School Structure</DrawerTitle>
+                    <DrawerDescription>Gallery Photos</DrawerDescription>
+                  </DrawerHeader>
+                  <div className=" ">
+                    <div className="flex justify-center items-center flex-wrap">
+                      <img src="/images/R-bmain.jpg" className="h-20" alt="" />
+                      <br />
+                      <br />
+                      <br />
+                      <img src="/images/R-main.jpg" alt="" />
+                      <img src="/images/R-main.jpg" alt="" />
+                      <img src="/images/R-main.jpg" alt="" />
+                      <img src="/images/R-main.jpg" alt="" />
+                    </div>
+                  </div>
+                  <DrawerFooter>
+                    <DrawerClose asChild>
+                      <button
+                        className="border border-black p-2"
+                        variant="outline"
+                      >
+                        Cancel
+                      </button>
+                    </DrawerClose>
+                  </DrawerFooter>
+                </div>
+              </DrawerContent>
+            </Drawer>
+          </div>
+          {/* Drawer Close */}
+          {/* <div>
+              <div key={accordion.id} className="py-3">
+                <button
+                  className="flex gap-4 justify-between text-primary"
+                  onClick={() => toggleAccordion(accordion.id)}
+                >
+                  {accordion.isOpen ? <span>-</span> : <span> +</span>}
+                  {accordion.buttonText}
+                </button>
+                <div
+                  id="accordion-content"
+                  style={{ maxHeight: accordion.isOpen ? "300px" : "0" }}
+                  className="text-slate-400"
+                >
+                  {accordion.isOpen && (
+                    <div className="pl-6 leading-7 max-sm:text-xs max-sm:leading-5">
+                      {accordion.content}
+                    </div>
+                  )}
+                </div>
+              </div>
+          </div> */}
+        </div>
         <div
           id="SchoolLife_container-3"
           className=" bg-[url('/istockphoto-620952978-612x612.jpg')] bg-cover bg-fixed bg-top-center bg-opacity-50 "
         >
-          <div className=" flex justify-between content-center gap-8 px-10 w-full bg-primary/70 py-36 text-white leading-7 max-md:flex-wrap max-md:items-center max-md:px-8 max-sm:py-24">
+          <div className="flex justify-between content-center gap-8 py-32 px-10 w-full bg-primary/70 text-white leading-7 max-md:flex-wrap max-md:items-center max-md:px-8 max-sm:py-24">
             <p className="font-bold text-3xl w-2/5 max-md:text-2xl max-md:w-full max-sm:text-xl">
               The School Experience
             </p>
@@ -157,8 +233,8 @@ function SchoolLife() {
               Rosa Mystica High School was established by late Archbishop
               CharlesHeery C.S. SP. Archbishop of Onitsha in 1966 for the public
               benefit and it is recognized globally. Throughout our great
-              history, Rosa Mystica has offered access to a wide range of academic
-              opportunities. As a world leader in higher education, the
+              history, Rosa Mystica has offered access to a wide range of
+              academic opportunities. As a world leader in higher education, the
               School has pioneered change in the sector.
             </p>
           </div>
@@ -166,7 +242,7 @@ function SchoolLife() {
 
         <div id="SchoolLife_container-4" className="">
           <div className="flex w-full h-5/6 max-md:flex-wrap max-md:items-center">
-            <div className="bg-[url('/Sept.-20-The-Principal-as-Leader_web.jpg')] bg-cover bg-top-center bg-no-repeat w-full max-md:py-64 max-sm:py-32"></div>
+            <div className="bg-[url('/RMHS/IMG_20241015_144746~3.jpg')] bg-cover bg-center bg-no-repeat w-full max-md:py-64 max-sm:py-32"></div>
             <div className="bg-gray-200 flex items-center w-full py-36 max-sm:py-12">
               <div className="flex flex-col gap-6 px-16 ml-10 max-sm:ml-0">
                 <div>

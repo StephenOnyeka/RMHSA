@@ -17,10 +17,10 @@ function admission() {
       <Topfile />
       <ScrollDiv />
       <div className=" h-full font-Poppins overflow-hidden">
-        <div className="bg-[url('/istockphoto-1307457391-612x612.jpg')] bg-cover bg-center">
+        <div className="bg-[url('/RMHS/IMG_3941.png')] bg-cover bg-top">
           <div
             id="Admission_container-1"
-            className="bg-black/50 h-screen  max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
+            className="bg-gradient-to-b from-black/40 to-black/80 h-screen  max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
           >
             <div className=" ">
               <Navbar />
@@ -138,9 +138,7 @@ function admission() {
               </p>
             </div>
             <div className="">
-              <p className="font-bold text-xl max-sm:text-lg">
-                School Life
-              </p>
+              <p className="font-bold text-xl max-sm:text-lg">School Life</p>
               <br />
               <p>
                 Rosa Mystica High School was established by late Archbishop
@@ -153,7 +151,7 @@ function admission() {
 
         <div
           id="Admission_container-4"
-          className="bg-[url('/istockphoto-520701970-612x612.jpg')] bg-no-repeat bg-cover bg-fixed leading-7 bg-center max-sm:bg-contain "
+          className="bg-[url('/RMHS/IMG_20241015_125530.jpg')] bg-no-repeat bg-cover bg-fixed leading-7 bg-center max-sm:bg-contain "
         >
           <div className="h-screen max-sm:h-screen/3"></div>
         </div>
@@ -181,7 +179,7 @@ function admission() {
                 </p>
               </div>
             </div>
-            <div className="flex gap-6 max-sm:gap-4">
+            <div className="flex gap-6 max-sm:gap-4"> 
               <p className="text-5xl max-sm:text-3xl font-bold text-red-600">
                 2
               </p>
@@ -310,7 +308,7 @@ function admission() {
             {/* The first column is for time range the applicants can start applying through the online form. The second column is the Application Deadline; when they are expected to stop applying. The third column is when the school will definitely respond back to you (Decision) */}
             <div className="flex flex-col gap-8 w-1/2 max-md:w-full">
               <p className="font-bold text-xl text-black">When To Apply</p>
-              <table className="text-center"> 
+              <table className="text-center">
                 <thead>
                   <tr className=" text-white ">
                     <th className="bg-primary p-4 border-2 border-white"> </th>
@@ -330,7 +328,9 @@ function admission() {
                       Early Decision 1
                     </td>
                     <td className="p-4 border-2 border-white">November 1</td>
-                    <td className="p-4 border-2 border-white">December 15 {/*or would be communicated via email*/}</td>
+                    <td className="p-4 border-2 border-white">
+                      December 15 {/*or would be communicated via email*/}
+                    </td>
                   </tr>
                   <tr className="bg-gray-100">
                     <td className="p-4 border-2 border-white">

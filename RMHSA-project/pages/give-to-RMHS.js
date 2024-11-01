@@ -74,14 +74,18 @@ function Donate() {
                   </p>
                   <br />
                   <p className=" text-gray-500 leading-7 max-sm:text-sm max-sm:leading-6">
-                    Not only does Rosa Mystica High School provide you the practical
-                    skills that is necessary to transition seamlessly into the
-                    workforce upon your graduation, but we also make sure that
-                    you will have a good sense of social justice so that you
-                    make the transition responsibly.
+                    Not only does Rosa Mystica High School provide you the
+                    practical skills that is necessary to transition seamlessly
+                    into the workforce upon your graduation, but we also make
+                    sure that you will have a good sense of social justice so
+                    that you make the transition responsibly.
                   </p>
                   <br />
-                  <img src="/support-building.jpg" className="pt-8" alt="" />
+                  <img
+                    src="/RMHS/IMG_20241015_115530~2.jpg"
+                    className="pt-8"
+                    alt=""
+                  />
                 </div>
 
                 <div id="" className="py-16 ">
@@ -339,11 +343,11 @@ function Donate() {
           </div>
         </div>
         {/* </div> */}
-        <div className="text-white h-screen/2 max-sm:absolute z-1 ">
+        <div className="text-white h-screen/2 max-sm:absolute z-1 mb-32">
           <div className="bg-contingentColor flex gap-10 items-center justify-center px-6 pt-24 w-full py-28 max-sm:flex-wrap max-sm:py-16">
             <div className="w-2/4 px-8 max-sm:w-full max-sm:px-4">
               <img
-                src="/240_F_109000790_1iCSQYErYo5znbWZsZVJyuC64H9BJAVA.jpg"
+                src="/RMHS/IMG_20241015_114703.jpg"
                 alt=""
                 className="w-full -mt-40 max-sm:-mt-32"
               />
@@ -353,6 +357,7 @@ function Donate() {
                 Thanks to you, our students are gaining the knowledge, skills
                 and values to create a more humane, just, and sustainable world.
               </p>
+              <p>- School Principal</p>
               <div className="">
                 <button className="bg-primary flex gap-2 text-sm font-semibold p-4 px-6 max-sm:text-xs">
                   Become A Donor
@@ -378,10 +383,10 @@ function Donate() {
               </div>
             </div>
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
