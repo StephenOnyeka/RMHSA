@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import { IoIosNotifications } from "react-icons/io";
 
 import { usePathname } from "next/navigation";  
 
@@ -22,18 +23,29 @@ function Navbar() {
             className="sidebar bg-contingentColor text-white"
             style={{ display: isOpen ? "flex" : "none" }}
           >
-            <li onClick={toggleMenu} className="m-8">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                // height="26"
-                viewBox="0 96 960 960"
-                width="40"
-                fill="#ffffff"
-                // className="mt-8"
-              >
-                <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-              </svg>
-            </li>
+            <span className="tog flex justify-between content-center gap-12 ">
+              <li onClick={toggleMenu} className="m-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  // height="26"
+                  viewBox="0 96 960 960"
+                  width="40"
+                  fill="#ffffff"
+                  // className="mt-8"
+                >
+                  <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                </svg>
+              </li>
+              <li className="m-8">
+                <span className="flex relative">
+                  <IoIosNotifications size={38} />
+                  <span class="absolute top-0 -left-3 relative flex h-4 w-4 ">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-4 w-4 bg-sky-500"></span>
+                  </span>
+                </span>
+              </li>
+            </span>
             <li>
               <Link
                 href="/"
@@ -82,7 +94,7 @@ function Navbar() {
                 School Life
               </Link>{" "}
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="athletics"
                 className={`text-white ${
@@ -93,7 +105,7 @@ function Navbar() {
               >
                 Athletics
               </Link>{" "}
-            </li>
+            </li> */}
             <li>
               <Link
                 href="/give-to-RMHS"
@@ -128,7 +140,7 @@ function Navbar() {
                 {/* <Image src="" width={50} height={50} className="rounded-full" /> */}
               </div>
             </div>
-            <div className="flex space-x-5 gap-4">
+            <div className="flex space-x-5 gap-4 items-center justify-center">
               <span className="hideOnMobile">
                 <Link
                   href="/"
@@ -177,7 +189,7 @@ function Navbar() {
                   School Life
                 </Link>{" "}
               </span>
-              <span className="hideOnMobile">
+              {/* <span className="hideOnMobile">
                 <Link
                   href="/athletics"
                   className={` ${
@@ -188,7 +200,7 @@ function Navbar() {
                 >
                   Athletics
                 </Link>{" "}
-              </span>
+              </span> */}
               <span className="hideOnMobile">
                 <Link
                   href="/give-to-RMHS"
@@ -211,6 +223,24 @@ function Navbar() {
                   }`}
                 >
                   Contact
+                </Link>
+              </span>
+              <span className="hideOnMobile pl-12">
+                <Link
+                  href="/"
+                  className={` ${
+                    pathname === "/"
+                      ? "font-semibold border-primary border-b-8 pb-2.5"
+                      : "border-primary border-b-8 border-opacity-0 hover:border-opacity-100 pb-2.5 hover:font-medium focus:font-semibold"
+                  }`}
+                >
+                  <span className="flex relative">
+                    <IoIosNotifications size={38} />
+                    <span class="absolute top-0 -left-3 relative flex h-4 w-4 ">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-4 w-4 bg-sky-500"></span>
+                    </span>
+                  </span>
                 </Link>
               </span>
               <span

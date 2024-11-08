@@ -39,18 +39,18 @@ function Home1() {
               <div>
                 <Navbar />
               </div>
-              <div className="mt-40">
+              <div className="mt-32">
                 <div className="flex flex-col items-start gap-5 max-sm:gap-3">
                   <p className="font-Playfair italic text-5xl max-md:text-4xl max-sm:text-2xl max-sm:">
                     Welcome to{" "}
                   </p>
-                  <p className="font-Playfair text-8xl max-sm:text-5xl max-md:text-7xl ">
+                  <p className="font-Playfair text-8xl max-sm:text-5xl max-md:text-6xl max-lg:text-7xl">
                     <span className="font-bold">Rosa Mystica</span> High School,
                     <br />
                     Agulu.
                   </p>
-                  <p>{"{ R.M.H.S }"}</p>
-                  <button className="bg-blue-600 text-white font-bold mt-2 px-8 py-4 max-sm:mt-6">
+                  {/* <p>{"{ R.M.H.S. }"}</p> */}
+                  <button className="bg-primary hover:bg-transparent hover:border hover:border-white text-white font-bold mt-2 px-8 py-4 max-sm:mt-6">
                     Take a Tour
                   </button>
                 </div>
@@ -267,8 +267,8 @@ function Home1() {
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
                     <img src="/swiper-RMHS/NECO.png" alt="" />
                   </SwiperSlide>
-                  <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <img src="/swiper-images/17.webp" alt="" />
+                  <SwiperSlide className="mt-6 max-sm:mt-3 p-6 max-sm:p-0 max-sm:-mx-0">
+                    <img src="/swiper-images/ministry.png" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
                     <img src="/swiper-RMHS/JAMB.png" alt="" />
@@ -276,7 +276,7 @@ function Home1() {
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
                     <img
                       src="/swiper-RMHS/Awka3.png"
-                      className="mt-6 max-sm:mt-3 w-[400px]"
+                      className="mt-6 max-sm:mt-3 w-[500px]"
                       alt=""
                     />
                   </SwiperSlide>
@@ -286,8 +286,8 @@ function Home1() {
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
                     <img src="/swiper-RMHS/NECO.png" alt="" />
                   </SwiperSlide>
-                  <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <img src="/swiper-images/17.webp" alt="" />
+                  <SwiperSlide className="mt-6 max-sm:mt-3 p-6 max-sm:p-0 max-sm:-mx-0">
+                    <img src="/swiper-images/ministry.png" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
                     <img src="/swiper-RMHS/JAMB.png" alt="" />
@@ -315,9 +315,10 @@ function Home1() {
                 </h1>
                 <div className="flex flex-col items-center justify-between ">
                   <span>
+                    <Link href="/gallery">
                     <button className="bg-primary hover:bg-blue-400 border rounded-lg text-white px-6 py-4 my-8 mb-20">
                       Visit Page
-                    </button>
+                    </button></Link> 
                   </span>
 
                   <span className="flex text-center gap-16 flex-wrap justify-center max-md:gap-10">
@@ -359,7 +360,7 @@ function Home1() {
                           Relevant Amenities
                         </h1>
                         <p className="text-gray-500 leading-7 max-sm:text-sm">
-                          From Health Centers to dedicated and furnished
+                          From Dedicated and furnished
                           laboratories, to sports centers and center for skill
                           acquisition.
                         </p>

@@ -1,9 +1,11 @@
-import React from "react";
+import React,{useState} from "react";
 import Link from "next/link";
 import ScrollDiv from "@/components/Scroll";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+
 
 import {
   Drawer,
@@ -17,6 +19,7 @@ import {
 } from "@/components/ui/drawer"
 
 function SchoolLife() {
+  const [show, setShow]= useState(false)
   return (
     <div>
       <ScrollDiv />
@@ -32,23 +35,23 @@ function SchoolLife() {
             </div>
 
             {/* <div className=" absolute z-1 bottom-64 lg:bottom-8 max-sm:bottom-72 text-white"> */}
-            <div className=" pt-80 max-sm:pt-24 text-white">
+            <div className=" pt-96 max-sm:pt-24 text-white">
               {/**pt-24 */}
               <div className="py-10">
                 <div className="flex gap-16 max-md:flex-wrap max-md:content-center max-md:gap-8">
                   <div className="min-w-80">
                     <p className=" font-bold font-Poppins text-4xl max-md:text-2xl">
-                      School Life
+                      Elevate Your Potential at Rosa Mystica
                       <span className="element-divider-seperator flex w-5/6 mt-4 border-2 border-primary "></span>
                     </p>
                   </div>
 
                   <p className="text-lg leading-8 px-6 max-md:px-3 max-md:leading-6 max-md:text-sm max-sm:px-0 ">
-                    School on a tour designed for prospective graduate and
-                    professional students. You will see how our university-like
-                    facilities, students and life in this school. Meet our
-                    graduate admissions representatives to learn more about our
-                    graduate programs and decide what it the best for you.
+                    Immerse yourself in a stimulating academic environment
+                    designed to nurture your intellectual curiosity. Experience
+                    rigorous coursework, engaging extracurricular activities,
+                    and a vibrant campus community. Join a legacy of excellence
+                    and prepare for a bright future.
                   </p>
                 </div>
               </div>
@@ -66,18 +69,16 @@ function SchoolLife() {
               Event and traditions
             </p>
             <p className=" text-contingentColor text-xl leading-8 ">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in
+              {" "}
+              For generations, Rosa Mystica has been shaping the minds of future
+              leaders. Our rich history of academic achievement, coupled with a
+              strong emphasis on character development, sets us apart.
             </p>
             <br />
             <p className=" text-gray-500 leading-7 pr-30 max-sm:leading-6 max-sm:text-sm">
-              Separated they live in Bookmarksgrove right at the coast of the
-              Semantics, a large language ocean. A small river named Duden flows
-              by their place and supplies it with the necessary regelialia. It
-              is a paradisematic country, in which roasted parts of sentences
-              fly into your mouth. Even the all-powerful Pointing has no control
-              about the blind texts it is an almost unorthographic life.
+              Experience a wide range of academic and extracurricular
+              opportunities, from prestigious competitions to cultural
+              celebrations.
             </p>
             <div className="">
               <span className="element-divider-seperator flex my-12 border-2 border-contingentColor"></span>
@@ -85,15 +86,69 @@ function SchoolLife() {
               <p className=" font-bold font-Poppins text-2xl text-contingentColor py-6 max-sm:text-xl">
                 How to Participate?
               </p>
-              <p className=" text-gray-500 leading-7 max-sm:text-sm max-sm:leading-6">
-                Separated they live in Bookmarks grove right at the coast of the
-                Semantics, a large language ocean. A small river named Duden
-                flows by their place and supplies it with the necessary
-                regelialia. It is a paradisematic country, in which roasted
-                parts of sentences fly into your mouth. Even the all-powerful
-                Pointing has no control about the blind texts it is an almost
-                unorthographic life.
-              </p>
+              <ol className=" text-gray-500 leading-7 max-sm:text-sm max-sm:leading-6 list-decimal">
+                <li>
+                  <b>Schedule a Campus Tour:</b> Explore our state-of-the-art
+                  facilities and meet our dedicated faculty.
+                </li>
+                <li>
+                  <b>Attend an Information Session:</b> Learn about our rigorous
+                  academic curriculum, athletic teams, and exciting
+                  extracurricular activities.
+                </li>
+                <li>
+                  <b>Apply Online:</b> Submit your application and supporting
+                  documents.
+                </li>
+              </ol>
+              {/* <br /> */}
+              <button
+                onClick={() => {
+                  setShow((show) => !show);
+                }}
+                className="my-2"
+              >
+                {show ? (
+                  <p className="animate-pulse text-primary cursor-pointer">
+                    See Less...
+                  </p>
+                ) : (
+                  <p className="animate-pulse text-primary cursor-pointer">
+                    See more...
+                  </p>
+                )}
+              </button>
+              <div
+                className={`overflow-hidden transition-max-height ${
+                  show ? "max-h-[15000px]" : "max-h-0"
+                }`}
+              >
+                {show && (
+                  <div className="flex flex-wrap leading-7 max-sm:leading-6 max-sm:text-sm">
+                    <p className="text-gray-500 ">
+                      Imagine a place where learning is fun, friendships are
+                      strong, and opportunities are endless. A place where you
+                      can excel in academics, dominate the sports field, or
+                      unleash your creativity.
+                      <img src="/RMHS/IMG_20241015_140910.jpg" alt="" className="" />
+                      
+                      At Rosa Mystica, we believe in
+                      nurturing well-rounded individuals. Our dedicated teachers
+                      inspire you to reach your full potential, while our
+                      state-of-the-art facilities provide the perfect
+                      environment for learning and growth.
+                      <img src="/RMHS/IMG_20241015_141332.jpg" alt="" />From exciting clubs
+                      and societies to thrilling sports competitions, there’s
+                      always something to get involved in. Join us and
+                      experience a school life that’s both challenging and
+                      rewarding
+                    </p>
+                    
+                  </div>
+                )}
+              </div>
+              <br />
+              <a href="/PDF/DAILY TIME TABLE.pdf" download="DAILY TIME TABLE">
               <button className="bg-primary flex items-center gap-4 text-white font-bold p-4 mt-4 max-sm:text-sm">
                 Daily Guide Routine
                 <svg
@@ -113,7 +168,8 @@ function SchoolLife() {
                     d="M4.99787498,8.99999999 L4.99787498,0.999999992 L19.4999998,0.999999992 L22.9999998,4.50000005 L23,23 L4,23 M18,1 L18,6 L23,6 M3,12 L3.24999995,12 L4.49999995,12 C6.5,12 6.75,13.25 6.75,14 C6.75,14.75 6.5,16 4.49999995,16 L3.24999995,16 L3.24999995,18 L3,17.9999999 L3,12 Z M9.5,18 L9.5,12 C9.5,12 10.4473684,12 11.2052633,12 C12.3421053,12 13.5,12.5 13.5,15 C13.5,17.5 12.3421053,18 11.2052633,18 C10.4473684,18 9.5,18 9.5,18 Z M16.5,19 L16.5,12 L20.5,12 M16.5,15.5 L19.5,15.5"
                   ></path>
                 </svg>
-              </button>
+                </button>
+              </a>
             </div>
           </div>
 
@@ -163,24 +219,342 @@ function SchoolLife() {
           <div className="">
             <Drawer>
               <DrawerTrigger asChild>
-                <button variant="outline">Open Drawer</button>
+                <button
+                  variant="outline"
+                  className="flex gap-4 text-primary text-lg font-semibold"
+                >
+                  Open Gallery{" "}
+                  <span>
+                    <MdKeyboardDoubleArrowDown
+                      size={35}
+                      fill="#0099FF"
+                      className="animate-bounce "
+                    />
+                  </span>
+                </button>
               </DrawerTrigger>
               <DrawerContent className="">
-                <div className="mx-auto w-full px-10">
+                <div className="mx-auto w-full px-4">
                   <DrawerHeader>
                     <DrawerTitle>School Structure</DrawerTitle>
                     <DrawerDescription>Gallery Photos</DrawerDescription>
                   </DrawerHeader>
                   <div className=" ">
-                    <div className="flex justify-center items-center flex-wrap">
-                      <img src="/images/R-bmain.jpg" className="h-20" alt="" />
-                      <br />
-                      <br />
-                      <br />
-                      <img src="/images/R-main.jpg" alt="" />
-                      <img src="/images/R-main.jpg" alt="" />
-                      <img src="/images/R-main.jpg" alt="" />
-                      <img src="/images/R-main.jpg" alt="" />
+                    <div className="overflow-hidden overflow-y-scroll p-4 h-[70vh]">
+                      {/* <p className="py-4 mb-2 font-bold text-lg text-center">
+                        Gallery
+                      </p> */}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-sm:gap-2 ">
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/images/R-main(entrance).jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            {/* <div className="p-4"> */}
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Main Building (Entrance-View)
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/images/R- main.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Main building
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/images/R-chapel.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Chapel
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/images/R-chapel(inward).jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Chapel (inner-view)
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/images/chapel.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Hail Mary Grotto
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/images/R-hailmary.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Hail Mary Grotto (closer-view)
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/images/R-admin.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Administrative Block
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/images/R-library.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Library
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/images/R-science2.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Science Lab
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/images/R-class.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Classroom
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/images/R-conference.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Conference Hall
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/images/R-ICT.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              ICT Lab
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="added font-bold text-blue-600 text-lg italic my-6 max-sm:my-4">
+                        <p>
+                          We are pivoted on giving your child the best of growth
+                          experience, academically, morally,...
+                        </p>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-sm:gap-2 ">
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/Events/1726065374828.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            {/* <div className="p-4"> */}
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Representing at national competitions
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/Events/1726065382316.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Educational competition at National level.
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/Events/IMG-20241026-WA0007~4.jpg"
+                              className="h-full w-full object-cover object-top"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            {/* <div className="p-4"> */}
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Conference with Students
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/Events/IMG-20241026-WA0008 (1).jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Ongoing conference with students - 2nd image
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="added font-bold text-blue-600 text-lg italic my-6 max-sm:my-4">
+                        <p>...And spiritual wise.</p>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-sm:gap-2 ">
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/Events/1726065589415.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
+                            {/* <div className="p-4"> */}
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Meeting with his Lordship, Bishop of Ekwulobia
+                              Diocese
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/Events/1726065592701.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              A brief chat with the Bishop on Christianity and
+                              Spiritual growth
+                              {/* Meeting with his Lordship, Bishop of Ekwulobia Diocese - 2nd image */}
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/Events/IMG-20241026-WA0006.jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Celebration of Mass with Students
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full">
+                            <img
+                              src="/Events/IMG-20241026-WA0005 (1).jpg"
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Ongoing church service
+                            </p>
+                            {/* </div> */}
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <DrawerFooter>
@@ -197,29 +571,6 @@ function SchoolLife() {
               </DrawerContent>
             </Drawer>
           </div>
-          {/* Drawer Close */}
-          {/* <div>
-              <div key={accordion.id} className="py-3">
-                <button
-                  className="flex gap-4 justify-between text-primary"
-                  onClick={() => toggleAccordion(accordion.id)}
-                >
-                  {accordion.isOpen ? <span>-</span> : <span> +</span>}
-                  {accordion.buttonText}
-                </button>
-                <div
-                  id="accordion-content"
-                  style={{ maxHeight: accordion.isOpen ? "300px" : "0" }}
-                  className="text-slate-400"
-                >
-                  {accordion.isOpen && (
-                    <div className="pl-6 leading-7 max-sm:text-xs max-sm:leading-5">
-                      {accordion.content}
-                    </div>
-                  )}
-                </div>
-              </div>
-          </div> */}
         </div>
         <div
           id="SchoolLife_container-3"
@@ -227,22 +578,22 @@ function SchoolLife() {
         >
           <div className="flex justify-between content-center gap-8 py-32 px-10 w-full bg-primary/70 text-white leading-7 max-md:flex-wrap max-md:items-center max-md:px-8 max-sm:py-24">
             <p className="font-bold text-3xl w-2/5 max-md:text-2xl max-md:w-full max-sm:text-xl">
-              The School Experience
+              A Legacy of Excellence
             </p>
             <p className="text-xl font-medium leading-8 w-4/5 max-sm:w-full max-sm: max-sm:text-justify">
-              Rosa Mystica High School was established by late Archbishop
-              CharlesHeery C.S. SP. Archbishop of Onitsha in 1966 for the public
-              benefit and it is recognized globally. Throughout our great
-              history, Rosa Mystica has offered access to a wide range of
-              academic opportunities. As a world leader in higher education, the
-              School has pioneered change in the sector.
+              Rosa Mystica High School, founded in 1966, is a renowned
+              institution with a rich history of academic excellence and
+              character development. We are committed to providing a world-class
+              education that empowers students to reach their full potential.
             </p>
           </div>
         </div>
 
         <div id="SchoolLife_container-4" className="">
           <div className="flex w-full h-5/6 max-md:flex-wrap max-md:items-center">
-            <div className="bg-[url('/RMHS/IMG_20241015_144746~3.jpg')] bg-cover bg-center bg-no-repeat w-full max-md:py-64 max-sm:py-32"></div>
+            <div className="bg-[url('/BeautyPlus_Fr.jpg')] bg-cover bg-center bg-no-repeat w-full max-md:py-64 max-sm:py-32 max-md:hidden"></div>
+            <div className="bg-[url('/BeautyPlus_20241106130216554_save.jpg')] bg-cover bg-center bg-no-repeat w-full max-md:py-64 max-sm:py-32 md:hidden max-md:visible"></div>
+            {/* <div className="bg-[url('/RMHS/IMG_20241015_144746~3.jpg')] bg-cover bg-center bg-no-repeat w-full max-md:py-64 max-sm:py-32"></div> */}
             <div className="bg-gray-200 flex items-center w-full py-36 max-sm:py-12">
               <div className="flex flex-col gap-6 px-16 ml-10 max-sm:ml-0">
                 <div>

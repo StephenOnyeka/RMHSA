@@ -69,3 +69,11 @@ nav a:hover {
     width: 100%;
   }
 } */
+@media (min-width: 500px) {
+  .sidebar {
+    width: 450px;
+  }
+  .tog {
+    gap: 14rem;
+  }
+}

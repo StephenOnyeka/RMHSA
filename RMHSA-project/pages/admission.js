@@ -10,6 +10,7 @@ import { GrFacebookOption } from "react-icons/gr";
 import { FaEnvelope } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { CgEditBlackPoint } from "react-icons/cg";
+import { useNavigate } from "react-router-dom";
 
 function admission() {
   return (
@@ -28,12 +29,10 @@ function admission() {
 
             <div className="absolute z-1 bottom-64 lg:bottom-8 max-sm:bottom-80  text-white">
               <p className="text-xl pb-3 max-sm:text-lg max-sm:pb-1">
-                {" "}
-                Admission{" "}
+                Admission
               </p>
               <p className="text-5xl font-bold max-sm:text-3xl">
-                {" "}
-                Apply To Rosa Mystica{" "}
+                Apply To Rosa Mystica
               </p>
             </div>
           </div>
@@ -71,17 +70,16 @@ function admission() {
               <div className="flex gap-8 max-xl:flex-wrap max-xl:justify-content ">
                 <div>
                   <p className=" leading-10 min-w-60 px-6 text-2xl font-bold pb-8 text-black max-sm:px-2 max-sm:text-xl">
-                    Detail About How To Apply
+                    Join a Community of Change-Makers
                   </p>
                   <div className="flex max-xl:flex-wrap max-xl:justify-content max-xl:gap-4">
                     <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-2 max-sm:leading-6 max-sm:text-sm max-sm:text-justify">
-                      If you would like to study in a school in the heart of the
-                      city that focus on changing the world for better to
-                      morrow, you’re in the right place. We do not use special
-                      formulas to select students. We look at every single
-                      applicant’s application, academic and personal, to select
-                      students who suit to our community with a full range of
-                      backgrounds.
+                      Are you ready to be part of a vibrant community that's
+                      shaping the future? We're looking for passionate and
+                      talented students who share our vision of a better
+                      tomorrow. Our admissions process is holistic, considering
+                      your academic achievements, personal qualities, and
+                      potential to contribute to our diverse community.
                     </p>
 
                     {/* <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-2 max-sm:leading-6 max-sm:text-sm max-sm:text-justify">
@@ -106,44 +104,25 @@ function admission() {
           >
             <div className="">
               <p className="font-bold text-xl max-sm:text-lg">
-                Education Services
+                A Legacy of Excellence
               </p>
               <br />
               <p>
-                Rosa Mystica High School was established by late Archbishop
-                CharlesHeery C.S. SP. Archbishop of Onitsha in 1966 for the
-                public benefit and it is recognized.
+                Founded in 1966 by the late Archbishop CharlesHeery C.S. SP.,
+                Archbishop of Onitsha, Rosa Mystica High School has a
+                long-standing tradition of academic excellence and character
+                development.
               </p>
             </div>
             <div className="">
               <p className="font-bold text-xl max-sm:text-lg">
-                International Hubs
+                A Vibrant Campus Life
               </p>
               <br />
               <p>
-                Rosa Mystica High School was established by late Archbishop
-                CharlesHeery C.S. SP. Archbishop of Onitsha in 1966 for the
-                public benefit and it is recognized.
-              </p>
-            </div>
-            <div className="">
-              <p className="font-bold text-xl max-sm:text-lg">
-                Bachelor's and Master's
-              </p>
-              <br />
-              <p>
-                Rosa Mystica High School was established by late Archbishop
-                CharlesHeery C.S. SP. Archbishop of Onitsha in 1966 for the
-                public benefit and it is recognized.
-              </p>
-            </div>
-            <div className="">
-              <p className="font-bold text-xl max-sm:text-lg">School Life</p>
-              <br />
-              <p>
-                Rosa Mystica High School was established by late Archbishop
-                CharlesHeery C.S. SP. Archbishop of Onitsha in 1966 for the
-                public benefit and it is recognized.
+                Experience a dynamic campus life filled with opportunities to
+                explore your passions. From academic clubs and sports teams to
+                arts and cultural events, there's something for everyone.
               </p>
             </div>
           </div>
@@ -173,22 +152,19 @@ function admission() {
                   Start Online Submission
                 </p>
                 <p className="max-sm:text-sm max-sm:leading-6">
-                  A wonderful serenity has taken possession of my entire soul,
-                  like these sweet mornings of spring which I enjoy with my
-                  whole heart. I am alone, and feel the charm of existence.
+                  Begin your journey by completing our online application form.
                 </p>
               </div>
             </div>
-            <div className="flex gap-6 max-sm:gap-4"> 
+            <div className="flex gap-6 max-sm:gap-4">
               <p className="text-5xl max-sm:text-3xl font-bold text-red-600">
                 2
               </p>
               <div>
                 <p className="font-semibold pb-4 text-lg"> Submit The Form</p>
                 <p className="max-sm:text-sm max-sm:leading-6">
-                  A wonderful serenity has taken possession of my entire soul,
-                  like these sweet mornings of spring which I enjoy with my
-                  whole heart. I am alone, and feel the charm of existence.
+                  Once you've filled out the form, submit it to our admissions
+                  office
                 </p>
               </div>
             </div>
@@ -201,9 +177,8 @@ function admission() {
                   Review The Submission
                 </p>
                 <p className="max-sm:text-sm max-sm:leading-6">
-                  A wonderful serenity has taken possession of my entire soul,
-                  like these sweet mornings of spring which I enjoy with my
-                  whole heart. I am alone, and feel the charm of existence.
+                  Our admissions committee will carefully review your
+                  application
                 </p>
               </div>
             </div>
@@ -216,9 +191,8 @@ function admission() {
                   Gather Necessary Documents
                 </p>
                 <p className="max-sm:text-sm max-sm:leading-6">
-                  A wonderful serenity has taken possession of my entire soul,
-                  like these sweet mornings of spring which I enjoy with my
-                  whole heart. I am alone, and feel the charm of existence.
+                  Prepare the necessary documents, such as transcripts and test
+                  scores.
                 </p>
               </div>
             </div>
@@ -231,9 +205,8 @@ function admission() {
                   Interviewing Process
                 </p>
                 <p className="max-sm:text-sm max-sm:leading-6">
-                  A wonderful serenity has taken possession of my entire soul,
-                  like these sweet mornings of spring which I enjoy with my
-                  whole heart. I am alone, and feel the charm of existence.
+                  Selected applicants may be invited to an interview with our
+                  admissions team.
                 </p>
               </div>
             </div>
@@ -244,9 +217,8 @@ function admission() {
               <div>
                 <p className="font-semibold pb-4 text-lg"> Last Decision</p>
                 <p className="max-sm:text-sm max-sm:leading-6">
-                  A wonderful serenity has taken possession of my entire soul,
-                  like these sweet mornings of spring which I enjoy with my
-                  whole heart. I am alone, and feel the charm of existence.
+                  You will receive a notification of our decision according to
+                  the admission calendar.
                 </p>
               </div>
             </div>
@@ -265,43 +237,44 @@ function admission() {
               </p>
               <p>
                 {" "}
-                The Common Application is required for students applying to any
+                {/* The Common Application is required for students applying to any
                 of our school's classes. You'll be able to choose your class and
                 course{"(s)"} that you are interested in{" "}
-                {"(if in senior category)"}.
+                {"(if in senior category)"}. */}
+                To apply to Rosa Mystica High School, you'll need to complete
+                the <b>Common Application.</b>
               </p>
               <p> You will need: </p>
 
               <div className="flex items-center gap-4">
                 <CgEditBlackPoint className="text-black w-12 h-12 " />
                 <p>
-                  Contact information for the counselor or other school
-                  representative who will complete your Common Application
-                  School Report and submit your official high school transcript.
-                </p>
-              </div>
-              {/* <div className="flex items-center gap-4">
-                <CgEditBlackPoint className="text-black w-7 h-7 " />
-                <p>
-                  Contact information for one teacher (or two, maximum) who will
-                  complete the Teacher Evaluation form.
+                  <span className="font-bold"> Contact information:</span>{" "}
+                  Provide the contact details of your previous school counselor
+                  or representative who will complete your Common Application
+                  School Report and submit your official previous school
+                  transcript.
                 </p>
               </div>
               <div className="flex items-center gap-4">
-                <CgEditBlackPoint className="text-black w-8 h-8 " />
+                <CgEditBlackPoint className="text-black w-7 h-7 " />
                 <p>
-                  Nonrefundable $50 application fee. Students who are unable to
-                  pay the application fee can request a fee waiver
+                  <span className="font-bold"> Course Selection:</span> If
+                  you're applying to a senior-level program, you'll have the
+                  opportunity to select specific courses of interest.
                 </p>
-              </div> **/}
-
+              </div>
               <div className="flex gap-4 text-white font-semibold">
-                <button className="bg-primary p-6 max-sm:p-4">
-                  Request a school tour
-                </button>
-                <button className="bg-contingentColor p-6 max-sm:p-4">
-                  Request information {/** Lead to contact page*/}
-                </button>
+                <Link href="/gallery">
+                  <button className="bg-primary p-6 max-sm:p-4">
+                    Request a school tour
+                  </button>
+                </Link>
+                <Link href="/about#RosaMystica">
+                  <button className="bg-contingentColor p-6 max-sm:p-4">
+                    Request information {/** Lead to contact page*/}
+                  </button>
+                </Link>
               </div>
             </div>
 

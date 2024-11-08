@@ -99,7 +99,7 @@ const ScrollDiv = () => {
               School Life
             </Link>{" "}
           </li>
-          <li>
+          {/* <li>
             <Link
               href="/athletics"
               className={`text-white ${
@@ -110,7 +110,7 @@ const ScrollDiv = () => {
             >
               Athletics
             </Link>{" "}
-          </li>
+          </li> */}
           <li>
             <Link
               href="/give-to-RMHS"
@@ -198,7 +198,7 @@ const ScrollDiv = () => {
                 School Life
               </Link>{" "}
             </span>
-            <span className="hideOnMobile">
+            {/* <span className="hideOnMobile">
               <Link
                 href="/athletics"
                 className={` ${
@@ -209,7 +209,7 @@ const ScrollDiv = () => {
               >
                 Athletics
               </Link>{" "}
-            </span>
+            </span> */}
             <span className="hideOnMobile">
               <Link
                 href="/give-to-RMHS"

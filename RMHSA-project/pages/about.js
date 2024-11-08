@@ -59,7 +59,7 @@ function About() {
               About Us
             </Link>
           </span>
-          <div className="flex flex-col items-center py-10">
+          <div id="RosaMystica" className="flex flex-col items-center py-10">
             <div className="flex gap-16 max-xl:flex-wrap max-sm:gap-8">
               <div className="min-w-80">
                 <p className=" font-bold font-Poppins text-3xl text-contingentColor max-sm:text-2xl">
@@ -87,20 +87,35 @@ function About() {
             </div>
 
             <br />
-            {/* {show ? "" : {setShow= ()=> {<MdKeyboardDoubleArrowDown size={35} />} }} */}
+            
             <button
               onClick={() => {
-                setShow(true);
+                setShow((show) => !show);
               }}
+              className=" flex items-center justify-center bg-transparent border-none cursor-pointer"
             >
-              {show ? "" : <MdKeyboardDoubleArrowDown size={35} />}
-            </button>
-            <br />
-            <div>
               {show ? (
-                // <p className="w-[600px] max-w-full mx-0 my-auto">
-                // <p className="columns-3 gap-x-8">
-                <p className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-4">
+                <MdKeyboardDoubleArrowUp
+                  size={35}
+                  fill="#0099FF"
+                  className="animate-pulse"
+                />
+              ) : (
+                <MdKeyboardDoubleArrowDown
+                  size={35}
+                  fill="#0099FF"
+                  className="animate-bounce "
+                />
+              )}
+            </button>
+            <div
+              className={`overflow-hidden transition-max-height ${
+                show ? "max-h-[10000px]" : "max-h-0"
+              }`}
+            >
+              {show && (
+                // <div className="transition duration-1500 ease-in-out grid grid-cols-1 leading-7 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 max-sm:text-sm max-sm:text-justify text-gray-500 max-sm:leading-6">
+                <div className=" grid grid-cols-1 leading-7 mt-4 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 max-sm:text-sm max-sm:text-justify text-gray-500 max-sm:leading-6">
                   Girls’ High School, Agulu, formerly named Catholic Girls’
                   Secondary School Agulu was founded in 1966 by late Archbishop
                   CharlseHeery C.S. SP. Archbishop of Onitsha. The site of
@@ -239,20 +254,42 @@ function About() {
                     academically, physically, and socially for God and Nigeria
                     so that we can make Girls’ High School Agulu the most viable
                     School in Anambra State. AD moultusannos. SR MIRIAM THERESE
-                    OZOMMA PRINCIPA
+                    OZOMMA PRINCIPAL
                   </p>
-                </p>
-              ) : (
-                ""
+                  <div>
+                    <p className="italic font-bold">
+                      To know more Extensively about the School's history,
+                      download here
+                    </p>
+                    <a
+                      href="/PDF/HISTORY OF GIRLS HIGH SCHOOL AGULU.pdf"
+                      download="HISTORY OF ROSA MYSTICA HIGH SCHOOL AGULU"
+                    >
+                      <button className="bg-primary flex items-center gap-4 text-white font-bold px-4 py-3 mt-4 max-sm:text-sm">
+                        Full History File
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 24 24"
+                          height="1em"
+                          width="1em"
+                          className="text-white font-black"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill="none"
+                            // stroke="#000"
+                            stroke-width="2"
+                            d="M4.99787498,8.99999999 L4.99787498,0.999999992 L19.4999998,0.999999992 L22.9999998,4.50000005 L23,23 L4,23 M18,1 L18,6 L23,6 M3,12 L3.24999995,12 L4.49999995,12 C6.5,12 6.75,13.25 6.75,14 C6.75,14.75 6.5,16 4.49999995,16 L3.24999995,16 L3.24999995,18 L3,17.9999999 L3,12 Z M9.5,18 L9.5,12 C9.5,12 10.4473684,12 11.2052633,12 C12.3421053,12 13.5,12.5 13.5,15 C13.5,17.5 12.3421053,18 11.2052633,18 C10.4473684,18 9.5,18 9.5,18 Z M16.5,19 L16.5,12 L20.5,12 M16.5,15.5 L19.5,15.5"
+                          ></path>
+                        </svg>
+                      </button>
+                    </a>
+                  </div>
+                </div>
               )}
             </div>
-            <button
-              onClick={() => {
-                setShow(false);
-              }}
-            >
-              {show ? <MdKeyboardDoubleArrowUp size={35} /> : ""}
-            </button>
           </div>
         </div>
         {/* </div> */}
@@ -359,6 +396,7 @@ function About() {
           </div>
 
           <div className="flex w-full h-5/6 max-md:flex-col max-sm:pt-10">
+            
             <div className="flex items-center w-full max-md:pb-8">
               <div className="flex flex-col  gap-6 px-10 mr-10">
                 <div className="relative">
@@ -382,16 +420,26 @@ function About() {
               </div>
             </div>
 
-            <div className="bg-[url('/images/1730037194304.jpg')] bg-cover bg-center w-full max-sm:py-36"></div>
+            <div className="bg-[url('/FunPic_20241106_131746088.jpg')] bg-contain bg-no-repeat bg-center w-full max-sm:py-36"></div>
           </div>
 
-          <div className="bg-contingentColor py-8 w-full">
+          {/* <div className="bg-contingentColor py-8 w-full">
             <div className="grid grid-flow-col gap-4 justify-center content-center items-center max-md:flex max-md:flex-wrap max-md:gap-0 max-md:items-center">
-              <img src="/banner-1.png" alt="" className="max-sm:w-24" />
-              <img src="/banner-2.png" alt="" className="max-sm:w-24" />
-              <img src="/banner-3.png" alt="" className="max-sm:w-24" />
-              <img src="/banner-4-1.png" alt="" className="max-sm:w-24" />
-              <img src="/banner-5.png" alt="" className="max-sm:w-24" />
+              <img src="/1-Banner.png" alt="" className="w-[100px] max-sm:w-24" />
+              <img src="/2-Banner.png" alt="" className="w-[100px] max-sm:w-24" />
+              <img src="/3-Banner.png" alt="" className="w-[100px] max-sm:w-24" />
+              <img src="/4-Banner.png" alt="" className="w-[100px] max-sm:w-24" />
+              <img src="/banner-5.png" alt="" className="w-[100px] max-sm:w-24" />
+            </div>
+          </div> */}
+          <div className="bg-contingentColor py-16 w-full">
+            <div className="grid grid-flow-col gap-28 justify-center content-center items-center max-md:flex max-md:flex-wrap max-md:justify-evenly max-md:gap-12 max-md:items-center">
+              <img src="/1-Banner.png" alt="" className="w-20 max-sm:w-16" />
+              <img src="/2-Banner.png" alt="" className="w-20 max-sm:w-16" />
+              <img src="/3-Banner.png" alt="" className="max-sm:w-10" />
+              <img src="/4-Banner.png" alt="" className="w-44 max-sm:w-32" />
+              <img src="/5-Banner1.png" alt="" className="w-20 max-sm:w-20 bg-white" />
+              {/* <img src="/5-Banner.png" alt="" className="w-[100px] max-sm:w-24" /> */}
             </div>
           </div>
           <Footer />

@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 
 function Gallery() {
-  const [isHovered, setIsHovered] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
+  // const handleMouseEnter = () => {
+  //   setIsHovered(true);
+  // };
 
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+  // const handleMouseLeave = () => {
+  //   setIsHovered(false);
+  // };
   return (
     // <div className="flex gap-4 max-md:gap-2 flex-wrap content-center">
     <div className="p-4">
+      <p className="py-4 mb-2 font-bold text-lg text-center">Gallery</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-sm:gap-2 ">
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
@@ -185,19 +186,6 @@ function Gallery() {
             {/* </div> */}
           </div>
         </div>
-        {/* <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-        <div className="h-full w-full">
-          <img
-            src="/images/R-bmain.jpg"
-            className="h-full w-full object-cover"
-          />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all mt-2">
-          <div className="p-4">
-            <p className="text-white italic bold">Entrance</p>
-          </div>
-        </div>
-      </div> */}
       </div>
 
       <div className="added font-bold text-blue-600 text-lg italic my-6 max-sm:my-4">

@@ -241,7 +241,7 @@ function Donate() {
                 </>
 
                 <>
-                  <div className="py-8">
+                  {/* <div className="py-8">
                     <div className="bg-gray-200 p-4 text-black font-semibold border-b-4 mb-8 border-primary">
                       Video Presentation
                     </div>
@@ -258,7 +258,7 @@ function Donate() {
                         className="w-full h-full"
                       ></iframe>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="bg-contingentColor2 py-12 pl-10 leading-8 max-lg:px-4 max-sm:px-8 max-sm:mb-8 max-sm:py-6">
                     <div className="pb-6">
