@@ -66,7 +66,7 @@ function Donate() {
                   </p>
                   <br />
                   <p className=" text-gray-500 leading-7 max-sm:text-sm max-sm:leading-6">
-                    We continues to adapt to new ways of teaching, new
+                    We continue to adapt to new ways of teaching, new
                     disciplines of study and new ways of learning. Your gift
                     enriches the experience of all students by supporting
                     efforts to recruit top faculty, expand academic programs and
@@ -109,7 +109,8 @@ function Donate() {
                         <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
                           <p className="text-base font-semibold max-md:text-sm">
                             {" "}
-                            Schools & Colleges
+                            {/* Schools & Colleges */}
+                            Academic Ecosystem
                           </p>
                         </div>
                       </div>
@@ -125,7 +126,8 @@ function Donate() {
                         <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
                           <p className="text-base font-semibold max-md:text-sm">
                             {" "}
-                            Support Sport Team
+                            {/* Support Sport Team */}
+                            Campus Infrastructure
                           </p>
                         </div>
                       </div>

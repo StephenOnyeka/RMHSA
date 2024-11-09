@@ -1,41 +1,42 @@
 import React, { useState } from "react";
 
 function Accordion() {
-  const [accordions, setAccordions] = useState([ 
+  const [accordions, setAccordions] = useState([
     {
       id: 1,
       isOpen: false,
-      buttonText: "Student Scholarships",
+      buttonText: "Pioneering Intellectual Brilliance/ Educational Innovation",
       content:
-        "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. “What’s happened to me?” he thought. It wasn’t a dream. His room, a proper human room although.",
+        "By supporting Rosa Mystica, you contribute to the cultivation of intellectual eminence. Your donation will facilitate the acquisition of cutting-edge resources, the recruitment of distinguished faculty, and the implementation of innovative pedagogical approaches",
     },
     {
       id: 2,
       isOpen: false,
-      buttonText: "Schools & Colleges",
+      buttonText: "Emergency Fund",
       content:
-        "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. “What’s happened to me?” he thought. It wasn’t a dream. His room, a proper human room although.",
+        "Unforeseen circumstances can disrupt the educational journey of our students. Your generous donation to our Emergency Fund will provide critical support to students facing unexpected challenges, ensuring they can continue their studies uninterrupted. Whether it's a sudden illness, a natural disaster, or a family crisis, your contribution will make a tangible difference in the lives of those in need.",
     },
     {
       id: 3,
       isOpen: false,
-      buttonText: "Library & Cultural Institutions",
+      buttonText: "Student Scholarships",
       content:
-        "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. “What’s happened to me?” he thought. It wasn’t a dream. His room, a proper human room although.",
+        "By providing scholarships, we empower talented students from diverse backgrounds to realize their full potential. Your donation will help ensure that financial constraints do not hinder academic aspirations.",
     },
     {
       id: 4,
       isOpen: false,
-      buttonText: "Rosa Mystica Sport Team",
+      buttonText: "Fostering a Dynamic Ecosystem",
       content:
-        "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. “What’s happened to me?” he thought. It wasn’t a dream. His room, a proper human room although.",
+        `Your support will nourish a dynamic ecosystem where intellectual curiosity flourishes, creativity thrives, and collaboration reigns supreme. From stimulating academic discourse to vibrant <b> extracurricular activities </b>, your donation will enrich every facet of student life.`,
     },
     {
       id: 5,
       isOpen: false,
-      buttonText: "Student Life",
+      buttonText: "Elevating Campus Infrastructure",
       content:
-        "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. “What’s happened to me?” he thought. It wasn’t a dream. His room, a proper human room although.",
+        "Rosa Mystica is committed to enhancing the campus infrastructure, your donation facilitates us to build more structures and improve the current state-of-the art that inspires learning and foster a sense of community. Our objective is to provide an environment that enables our future leaders maximize their potentials without hinderance.",
+        // "Rosa Mystica is committed to pioneering educational innovation. Your generosity will empower us to explore groundbreaking initiatives, adopt emerging technologies, and adapt to the ever-evolving educational landscape",
     },
   ]);
 
@@ -50,28 +51,34 @@ function Accordion() {
   };
 
   return (
-        <div>
-          {accordions.map((accordion) => (
-            <div key={accordion.id} className="py-3">
-              <button
-                className="flex gap-4 justify-between text-primary"
-                onClick={() => toggleAccordion(accordion.id)}
-              >
-                {accordion.isOpen ? <span>-</span> : <span> +</span>}
-                {accordion.buttonText}
-              </button>
+    <div>
+      {accordions.map((accordion) => (
+        <div key={accordion.id} className="py-3">
+          <button
+            className="flex gap-4 justify-between text-primary"
+            onClick={() => toggleAccordion(accordion.id)}
+          >
+            {accordion.isOpen ? <span>-</span> : <span> +</span>}
+            {accordion.buttonText}
+          </button>
+          <div
+            id="accordion-content"
+            style={{ maxHeight: accordion.isOpen ? "300px" : "0" }}
+            className="text-slate-400"
+          >
+            {accordion.isOpen && (
               <div
-                id="accordion-content"
-                style={{ maxHeight: accordion.isOpen ? "300px" : "0" }}
-                className="text-slate-400"
+                className="pl-6 leading-7 max-sm:text-xs max-sm:leading-5"
+                dangerouslySetInnerHTML={{ __html: accordion.content }}
               >
-                {accordion.isOpen && (
-                  <div className="pl-6 leading-7 max-sm:text-xs max-sm:leading-5">{accordion.content}</div>
-                )}
-              </div>
-            </div>
-          ))}
+                {/* {accordion.content} */}
+              </div> //On a normal the correct approach to render this is using the commented 'div' tag below, however this method of rendering the accordion.content is the make the <b> tag have effect on the without appearing as a string.
+              // <div className="pl-6 leading-7 max-sm:text-xs max-sm:leading-5">{accordion.content}</div>
+            )}
+          </div>
         </div>
+      ))}
+    </div>
   );
 }
 

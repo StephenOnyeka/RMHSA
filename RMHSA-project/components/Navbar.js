@@ -115,7 +115,7 @@ function Navbar() {
                     : "hover:bg-white/10 hover:text-xl "
                 }`}
               >
-                Benefacto
+                Benefacio
               </Link>
             </li>
             <li>
@@ -210,7 +210,7 @@ function Navbar() {
                       : "border-primary border-b-8 border-opacity-0 hover:border-opacity-100 pb-2.5 hover:font-medium focus:font-semibold"
                   }`}
                 >
-                  Benefacto
+                  Benefacio
                 </Link>
               </span>
               <span className="hideOnMobile">
