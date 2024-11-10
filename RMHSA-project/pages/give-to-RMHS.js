@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ScrollDiv from "@/components/Scroll";
@@ -8,6 +8,11 @@ import Topfile from "@/components/Topfile";
 import Footer from "@/components/Footer";
 
 function Donate() {
+  const [openAccordionId, setOpenAccordionId] = useState();
+  const handleAccordionToggle = (id) => {
+    setOpenAccordionId(openAccordionId === id? null : id)
+    // setOpenAccordionId(openAccordionId && id)
+  };
   return (
     <div>
       <Topfile />
@@ -97,7 +102,10 @@ function Donate() {
                   </div>
                   <div className="h-screen/2 text-center max-sm:h-fit">
                     <div className=" grid grid-cols-3 gap-6 max-md:gap-3">
-                      <div className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 ">
+                      <div
+                        onClick={() => handleAccordionToggle(1)}
+                        className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
+                      >
                         <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
                           <p className="text-base font-semibold max-md:text-sm">
                             {" "}
@@ -105,7 +113,10 @@ function Donate() {
                           </p>
                         </div>
                       </div>
-                      <div className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 ">
+                      <div
+                        onClick={() => handleAccordionToggle(2)}
+                        className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
+                      >
                         <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
                           <p className="text-base font-semibold max-md:text-sm">
                             {" "}
@@ -114,15 +125,22 @@ function Donate() {
                           </p>
                         </div>
                       </div>
-                      <div className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 ">
+                      <div
+                        onClick={() => handleAccordionToggle(3)}
+                        className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
+                      >
                         <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
                           <p className="text-base font-semibold max-md:text-sm">
                             {" "}
                             Library & Cultural
+                            {/* Student Experience */}
                           </p>
                         </div>
                       </div>
-                      <div className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 ">
+                      <div
+                        onClick={() => handleAccordionToggle(4)}
+                        className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
+                      >
                         <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
                           <p className="text-base font-semibold max-md:text-sm">
                             {" "}
@@ -131,7 +149,10 @@ function Donate() {
                           </p>
                         </div>
                       </div>
-                      <div className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 ">
+                      <div
+                        onClick={() => handleAccordionToggle(3)}
+                        className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
+                      >
                         <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
                           <p className="text-base font-semibold max-md:text-sm">
                             {" "}
@@ -139,7 +160,10 @@ function Donate() {
                           </p>
                         </div>
                       </div>
-                      <div className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 ">
+                      <div
+                        onClick={() => handleAccordionToggle(5)}
+                        className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
+                      >
                         <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
                           <p className="text-base font-semibold max-md:text-sm">
                             {" "}
@@ -160,7 +184,10 @@ function Donate() {
                   </div>
 
                   <div className="py-4">
-                    <Accordion />
+                    <Accordion
+                      openAccordionId={openAccordionId}
+                      toggleAccordion={handleAccordionToggle}
+                    />
                   </div>
                 </div>
               </div>

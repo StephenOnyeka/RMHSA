@@ -33,13 +33,13 @@ function Home1() {
           <div className="bg-[url('/images/R-bmain.jpg')] bg-fixed bg-cover bg-no-repeat bg-center ">
             <div
               id="Home_container-1"
-              className="bg-gradient-to-b from-black/80 to-black/15 h-screen px-8 pt-8 max-sm:px-4 w-full text-white "
-              // className="bg-black/60 h-screen px-8 pt-8 w-full text-white"
+              className="bg-gradient-to-b from-black/80 to-black/15 h-screen px-8 pt-8 max-sm:px-4 w-full text-white grid grid-cols-1"
             >
-              <div>
+              <div className="">
                 <Navbar />
               </div>
-              <div className="mt-32">
+              {/* <div className="mt-32"> */}
+              <div className="">
                 <div className="flex flex-col items-start gap-5 max-sm:gap-3">
                   <p className="font-Playfair italic text-5xl max-md:text-4xl max-sm:text-2xl max-sm:">
                     Welcome to{" "}
@@ -158,7 +158,8 @@ function Home1() {
                   <p className="py-8 pr-2 leading-6 text-sm text-gray-600">
                     Our athletics program emphasizes the importance of
                     sportsmanship, teamwork, and dedication. Through competitive
-                    sports, students learn valuable life skills - perseverance, resilience, and leadership!
+                    sports, students learn valuable life skills - perseverance,
+                    resilience, and leadership!
                   </p>
                 </div>
               </div>
@@ -316,9 +317,10 @@ function Home1() {
                 <div className="flex flex-col items-center justify-between ">
                   <span>
                     <Link href="/gallery">
-                    <button className="bg-primary hover:bg-blue-400 border rounded-lg text-white px-6 py-4 my-8 mb-20">
-                      Visit Page
-                    </button></Link> 
+                      <button className="bg-primary hover:bg-blue-400 border rounded-lg text-white px-6 py-4 my-8 mb-20">
+                        Visit Page
+                      </button>
+                    </Link>
                   </span>
 
                   <span className="flex text-center gap-16 flex-wrap justify-center max-md:gap-10">
@@ -360,9 +362,8 @@ function Home1() {
                           Relevant Amenities
                         </h1>
                         <p className="text-gray-500 leading-7 max-sm:text-sm">
-                          From Dedicated and furnished
-                          laboratories, to sports centers and center for skill
-                          acquisition.
+                          From Dedicated and furnished laboratories, to sports
+                          centers and center for skill acquisition.
                         </p>
                       </div>
                     </div>

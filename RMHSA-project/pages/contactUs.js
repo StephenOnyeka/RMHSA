@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 // import CountUp from "react-countup";
 
 import Link from "next/link";
@@ -17,6 +17,41 @@ import { FaTwitter } from "react-icons/fa";
 import Loading from "@/components/loading";
 
 function ContactUs() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [response, setResponse] = useState("");
+  const [isSuccess, setIsSuccess] = useState(false); // State to track success
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent the default form submission
+
+    // Send the form data to the Node.js backend
+    const res = await fetch("http://localhost:5000/submitContact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, subject, message }),
+    });
+
+    const data = await res.json();
+    setResponse(data.message); // Update the response state with the message from the server
+    setIsSuccess(data.success); // Update the response state with the message from the server
+
+    // Clear the form inputs after submission
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+
+    // Clear the response after 10 seconds
+    setTimeout(() => {
+      setResponse(""); // Clear the response state
+    }, 10000); // 10000 milliseconds = 10 seconds
+  };
+
   return (
     <div>
       <Topfile />
@@ -121,7 +156,6 @@ function ContactUs() {
                 </p>
                 <br />
                 <p className="text-primary max-sm:text-sm">
-                  {" "}
                   View on Google Map
                 </p>
               </div>
@@ -133,7 +167,7 @@ function ContactUs() {
           id="Contact_container-3"
           className="h-full bg-gray-200 py-32 max-md:py-16"
         >
-          <div className="flex flex-col content-center items-center">
+          {/* <form method="POST" action="/submitContact" className="flex flex-col content-center items-center">
             <div className="text-center py-8">
               <p className="text-4xl font-extrabold py-4 max-sm:text-2xl max-sm:py-2">
                 LEAVE US YOUR INFO
@@ -146,19 +180,25 @@ function ContactUs() {
               <input
                 type="text"
                 placeholder="Full Name*"
-                className="h-14 text-sm px-4 "
+                className="h-14 text-sm px-4"
+                name="name"
+                // value=" "
               />
               <br />
               <input
-                type="text"
+                type="email"
                 placeholder="Email*"
                 className="h-14 text-sm px-4"
+                name="email"
+                // value=" "
               />
               <br />
               <input
                 type="text"
                 placeholder="Subject*"
                 className="h-14 text-sm px-4"
+                name="subject"
+                // value=" "
               />
               <br />
               <textarea
@@ -168,11 +208,81 @@ function ContactUs() {
                 id=""
               ></textarea>
               <br />
-              <button className="bg-primary text-white text-xs font-bold tracking-wider py-4">
+              <button type="submit" className="bg-primary text-white text-xs font-bold tracking-wider py-4">
                 SUBMIT NOW
               </button>
             </div>
-          </div>
+          </form> */}
+          <form
+            // method="POST"
+            // action="/submitContact"
+            onSubmit={handleSubmit}
+            className="flex flex-col content-center items-center"
+          >
+            <div className="text-center py-8">
+              <p className="text-4xl font-extrabold py-4 max-sm:text-2xl max-sm:py-2">
+                LEAVE US YOUR INFO
+              </p>
+              <p className="text-lg text-gray-500 max-sm:text-sm">
+                AND WE WILL GET BACK TO YOU.
+              </p>
+            </div>
+            <div className="flex flex-col w-700 max-md:w-full max-sm:px-4 max-md:px-8">
+              <input
+                type="text"
+                placeholder="Full Name*"
+                className="h-14 text-sm px-4"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+                // value=" "
+              />
+              <br />
+              <input
+                type="email"
+                placeholder="Email*"
+                className="h-14 text-sm px-4"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                // value=" "
+              />
+              <br />
+              <input
+                type="text"
+                placeholder="Subject*"
+                className="h-14 text-sm px-4"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                required
+              />
+              <br />
+              <textarea
+                name="message"
+                placeholder="Message*"
+                className="min-h-32 text-sm px-4 pt-4 "
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
+              ></textarea>
+              <br />
+              <button
+                type="submit"
+                className="bg-primary text-white text-xs font-bold tracking-wider py-4"
+              >
+                SUBMIT NOW
+              </button>
+            </div>
+            <br />
+            {response && (
+              <p className={`${ isSuccess ? "text-green-600 font-semibold" : "text-red-500" }`}>{response}</p> // Set color based on success
+            )}
+            {/* {response && (
+              <p>{response}</p>
+            )} */}
+            {/* Display the response message */}
+          </form>
+          {/* <br /> */}
         </div>
         {/* <div className=" h-screen"> */}
         <div className=" overflow-hidden h-screen max-md:h-screen/2 max-sm:h-screen/3 ">
