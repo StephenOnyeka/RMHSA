@@ -75,7 +75,7 @@ const Transport = require("nodemailer-brevo-transport");
 const transporter = nodemailer.createTransport(
   new Transport({
     apiKey:
-      "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 ",
+      process.env.BREVO_API,
   })
 );
 

@@ -12,6 +12,9 @@ import { FaTwitter } from "react-icons/fa";
 import { CgEditBlackPoint } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
 
+//<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSesRY6sgo6ritF2-LPnOdo78eszojpl8VxTjye6eZfePJtSmA/viewform?embedded=true" width="640" height="1280" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+//https://forms.gle/ypvwbo4a3fqAEX7q8
+
 function admission() {
   return (
     <div>
@@ -223,6 +226,7 @@ function admission() {
               </div>
             </div>
           </div>
+          <a href="https://forms.gle/ypvwbo4a3fqAEX7q8"><button className="bg-primary py-2 px-6 text-white mt-4">Take test </button></a>
         </div>
         <div className="flex w-full justify-center">
           <hr className="border border-contingentColor w-5/6" />
