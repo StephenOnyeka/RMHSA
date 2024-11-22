@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { IoIosNotifications } from "react-icons/io";
+
 const ScrollDiv = () => {
   const [showDiv, setShowDiv] = useState(false);
 
@@ -39,18 +41,32 @@ const ScrollDiv = () => {
           className="sidebar bg-contingentColor text-white"
           style={{ display: isOpen ? "flex" : "none" }}
         >
-          <li onClick={toggleMenu} className="m-8">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              // height="26"
-              viewBox="0 96 960 960"
-              width="40"
-              fill="#ffffff"
-              // className="mt-8"
-            >
-              <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-            </svg>
-          </li>
+          <span className="tog flex justify-between content-center gap-12 ">
+            <li onClick={toggleMenu} className="m-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                // height="26"
+                viewBox="0 96 960 960"
+                width="40"
+                fill="#ffffff"
+                // className="mt-8"
+              >
+                <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+              </svg>
+            </li>
+
+            <li className="mb-0 mt-8 mr-16">
+              <Link href="/notifications">
+                <span className="flex relative">
+                  <IoIosNotifications size={38} color="white" />
+                  <span class="absolute top-0 -left-3 relative flex h-4 w-4 ">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-4 w-4 bg-sky-500"></span>
+                  </span>
+                </span>
+              </Link>
+            </li>
+          </span>
           <li>
             <Link
               href="/"
@@ -125,6 +141,18 @@ const ScrollDiv = () => {
           </li>
           <li>
             <Link
+              href="/blogs"
+              className={`text-white ${
+                pathname === "/blogs"
+                  ? "font-semibold border-primary border-b-2 text-xl bg-white/10"
+                  : "hover:bg-white/10 hover:text-xl "
+              }`}
+            >
+              Blogs
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/contactUs"
               className={`text-white ${
                 pathname === "/contactUs"
@@ -146,8 +174,7 @@ const ScrollDiv = () => {
       >
         <div className="flex justify-between items-center justify-items-center ">
           <div className="logo">
-            <div className="bg-[url('/images/RMHS.png')] w-10 h-10 rounded-full bg-cover bg-center max-sm:w-10 max-sm:h-10">
-            </div>
+            <div className="bg-[url('/images/RMHS.png')] w-10 h-10 rounded-full bg-cover bg-center max-sm:w-10 max-sm:h-10"></div>
           </div>
           <div className="flex space-x-5 gap-4">
             <span className="hideOnMobile">
@@ -220,6 +247,18 @@ const ScrollDiv = () => {
                 }`}
               >
                 Benefacio
+              </Link>
+            </span>
+            <span className="hideOnMobile">
+              <Link
+                href="/blogs"
+                className={` ${
+                  pathname === "/blogs"
+                    ? "font-semibold border-primary border-b-8 pb-2.5"
+                    : "border-primary border-b-8 border-opacity-0 hover:border-opacity-100 pb-2.5 hover:font-medium focus:font-semibold"
+                }`}
+              >
+                Blogs
               </Link>
             </span>
             <span className="hideOnMobile">

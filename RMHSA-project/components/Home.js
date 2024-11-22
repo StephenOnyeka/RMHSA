@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,6 +9,7 @@ import ScrollDiv from "./Scroll";
 import Navbar from "./Navbar";
 import Topfile from "./Topfile";
 import Footer from "./Footer";
+import { useSubscriptionsContext } from "../hooks/useSubscriptionsContext";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -23,6 +24,55 @@ import { Autoplay, Pagination, FreeMode, Navigation } from "swiper/modules";
 
 function Home1() {
   const [counterOn, setCounterOn] = useState(false);
+
+      const { dispatch } = useSubscriptionsContext();
+
+      const [email, setEmail] = useState("");
+      const [error, setError] = useState(); //initialize with null
+      const [mssg, setMssg] = useState();
+      const [warn, setWarn] = useState();
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        const subscription = { email };
+        // Clear previous messages
+        setError(null);
+        setMssg(null);
+        setWarn(null);
+
+        const response = await fetch("http://localhost:5000/api/subscriptions", {
+          method: "POST",
+          body: JSON.stringify(subscription),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        const json = await response.json();
+        if (response.ok) {
+          setEmail("");
+          // setError() // Reset error on success
+          console.log("new subscription added", json);
+          setMssg(json.mssg);
+
+          //dispatch action to add the new subscription to the context
+          dispatch({ type: "CREATE_SUBSCRIPTION", payload: json });
+        } else {
+          // setError(json.error); //Set error message
+          if (json.error) {
+            setError(json.error);
+          } else if (json.warn) {
+            setWarn(json.warn); //set warning message
+          }
+        }
+      };
+
+      useEffect(() => {
+        const timer = setTimeout(() => {
+          setMssg(null);
+          setWarn(null);
+          setError(null);
+        }, 5000);
+        return () => clearTimeout(timer);
+      });
   return (
     <div className=" ">
       <ScrollDiv />
@@ -181,7 +231,7 @@ function Home1() {
                     <div className="flex justify-evenly content-center items-center text-center max-sm:gap-8 max-sm:px-2 max-sm:flex-wrap">
                       <div>
                         <p className="font-medium text-6xl max-sm:text-4xl max-md:text-5xl text-primary pb-5 max-sm:pb-2">
-                          <CountUp start={0} end={800} duration={3} />
+                          <CountUp start={0} end={500} duration={3} />
                           <span className="text-secondary">+</span>
                         </p>
                         <p className="text-gray-500 max-sm:text-xs">
@@ -425,7 +475,7 @@ function Home1() {
                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
                       </svg>
                     </div>
-                    <div className="px-8">
+                    <form action="" onSubmit={handleSubmit} className="px-8">
                       <h1 className="text-contingentColor text-xl font-bold pb-2">
                         Subscribe To Newsletter
                       </h1>
@@ -440,13 +490,30 @@ function Home1() {
                       <div className="">
                         <input
                           type="text"
-                          className="bg-gray-200 p-4 w-full mt-10 max-md:text-sm max-sm:text-xs"
+                          className="bg-gray-200 p-4 w-full mt-10 max-lg:text-sm max-sm:text-xs"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                         <button className="bg-primary p-4 w-full mt-4 text-white font-semibold">
                           Subscribe
                         </button>
+                        {error && (
+                          <div className="text-red-500 border border-red-500 bg-red-100 p-2 mt-4">
+                            {error}
+                          </div>
+                        )}
+                        {mssg && (
+                          <div className="text-green-500 border border-green-500 bg-green-100 p-2 mt-4">
+                            {mssg}
+                          </div>
+                        )}
+                        {warn && (
+                          <div className="text-yellow-500 border border-yellow-500 bg-yellow-100 p-2 mt-4">
+                            {warn}
+                          </div>
+                        )}
                       </div>
-                    </div>
+                    </form>
 
                     {/* </div> */}
                   </div>

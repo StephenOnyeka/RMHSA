@@ -1,32 +1,34 @@
-import React, { useRef, useState } from "react";
+import React, { Suspense } from "react";
 import Head from "next/head";
-import { Suspense } from "react";
-import Home1 from "@/components/Home";
-import About from "./about";
 import dynamic from "next/dynamic";
-import Loading from "@/components/loading";
+import Loading from "@/components/loading"; // Ensure this is your loading component
 
+// Dynamically import the Home component
+const HomeComponent = dynamic(() => import("../components/Home"), {
+  suspense: true, // Enable suspense for this dynamic import
+});
 
-const CustomLoading = dynamic(() => {
-    return new Promise((resolve) =>
-      setTimeout(() => {
-        resolve(import("../components/Home"));
-      }, 3000)
-    );
-  },
-  {
-    loading: () => { <Loading /> }
-  }
-);
-
-export default function Home(){
+export default function Home() {
   return (
     <div>
       <Head>
-        <title>Rosa Mystica High School </title>
+        <title>Rosa Mystica High School</title>
         <link rel="icon" href="/RMHS.png" />
       </Head>
-      <CustomLoading />
+      <Suspense fallback={Loader()}>
+        <HomeComponent />
+      </Suspense>
     </div>
   );
 }
+
+// Loader component
+const Loader = () => {
+  return (
+    <div>
+      <div className="h-screen w-screen flex justify-center items-center animate-pulse">
+        <div className="bg-[url('/images/RMHS.png')] w-20 h-20 rounded-full bg-cover bg-center max-md:w-16 max-md:h-16 max-sm:w-12 max-sm:h-12"></div>
+      </div>
+    </div>
+  );
+};

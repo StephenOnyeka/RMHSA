@@ -35,7 +35,7 @@ function SchoolLife() {
             </div>
 
             {/* <div className=" absolute z-1 bottom-64 lg:bottom-8 max-sm:bottom-72 text-white"> */}
-            <div className=" pt-96 max-sm:pt-24 text-white">
+            <div className=" pt-80 max-sm:pt-24 text-white">
               {/**pt-24 */}
               <div className="py-10">
                 <div className="flex gap-16 max-md:flex-wrap max-md:content-center max-md:gap-8">

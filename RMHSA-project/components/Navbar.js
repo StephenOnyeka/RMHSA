@@ -14,6 +14,10 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const [dropOpen, setDropOpen] = useState(false);
+  const toggleDropOpen = () => {
+    setDropOpen(!dropOpen);
+  }
 
   return (
     <>
@@ -36,14 +40,17 @@ function Navbar() {
                   <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
                 </svg>
               </li>
-              <li className="m-8">
-                <span className="flex relative">
-                  <IoIosNotifications size={38} />
-                  <span class="absolute top-0 -left-3 relative flex h-4 w-4 ">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-4 w-4 bg-sky-500"></span>
+
+              <li className="mb-0 mt-8 mr-16">
+                <Link href="/notifications">
+                  <span className="flex relative">
+                    <IoIosNotifications size={38} color="white" />
+                    <span class="absolute top-0 -left-3 relative flex h-4 w-4 ">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-4 w-4 bg-sky-500"></span>
+                    </span>
                   </span>
-                </span>
+                </Link>
               </li>
             </span>
             <li>
@@ -94,18 +101,6 @@ function Navbar() {
                 School Life
               </Link>{" "}
             </li>
-            {/* <li>
-              <Link
-                href="athletics"
-                className={`text-white ${
-                  pathname === "/athletics"
-                    ? "font-semibold border-primary border-b-2 text-xl bg-white/10"
-                    : "hover:bg-white/10 hover:text-xl "
-                }`}
-              >
-                Athletics
-              </Link>{" "}
-            </li> */}
             <li>
               <Link
                 href="/give-to-RMHS"
@@ -116,6 +111,18 @@ function Navbar() {
                 }`}
               >
                 Benefacio
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/blogs"
+                className={`text-white ${
+                  pathname === "/blogs"
+                    ? "font-semibold border-primary border-b-2 text-xl bg-white/10"
+                    : "hover:bg-white/10 hover:text-xl "
+                }`}
+              >
+                Blogs
               </Link>
             </li>
             <li>
@@ -135,11 +142,13 @@ function Navbar() {
 
         <div className="">
           <div className=" flex justify-between justify-items-center items-center">
-            <div className="logo">
-              <div className="bg-[url('/images/RMHS.png')] w-20 h-20 rounded-full bg-cover bg-center max-md:w-16 max-md:h-16 max-sm:w-12 max-sm:h-12">
-                {/* <Image src="" width={50} height={50} className="rounded-full" /> */}
+            <Link href={'/'}>
+              <div className="logo">
+                <div className="bg-[url('/images/RMHS.png')] w-20 h-20 rounded-full bg-cover bg-center max-md:w-16 max-md:h-16 max-sm:w-12 max-sm:h-12">
+                  {/* <Image src="" width={50} height={50} className="rounded-full" /> */}
+                </div>
               </div>
-            </div>
+            </Link>
             <div className="flex space-x-5 gap-4 items-center justify-center">
               <span className="hideOnMobile">
                 <Link
@@ -215,6 +224,18 @@ function Navbar() {
               </span>
               <span className="hideOnMobile">
                 <Link
+                  href="/blogs"
+                  className={` ${
+                    pathname === "/blogs"
+                      ? "font-semibold border-primary border-b-8 pb-2.5"
+                      : "border-primary border-b-8 border-opacity-0 hover:border-opacity-100 pb-2.5 hover:font-medium focus:font-semibold"
+                  }`}
+                >
+                  Blogs
+                </Link>
+              </span>
+              <span className="hideOnMobile">
+                <Link
                   href="/contactUs"
                   className={` ${
                     pathname === "/contactUs"
@@ -225,22 +246,52 @@ function Navbar() {
                   Contact
                 </Link>
               </span>
-              <span className="hideOnMobile pl-12">
+              <span className="hideOnMobile pl-10">
                 <Link
                   href="/"
                   className={` ${
                     pathname === "/"
-                      ? "font-semibold border-primary border-b-8 pb-2.5"
-                      : "border-primary border-b-8 border-opacity-0 hover:border-opacity-100 pb-2.5 hover:font-medium focus:font-semibold"
+                    // ? "font-semibold border-primary border-b-8 pb-2.5"
+                    // : "border-primary border-b-8 border-opacity-0 hover:border-opacity-100 pb-2.5 hover:font-medium focus:font-semibold"
                   }`}
                 >
-                  <span className="flex relative">
-                    <IoIosNotifications size={38} />
-                    <span class="absolute top-0 -left-3 relative flex h-4 w-4 ">
-                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-                      <span class="relative inline-flex rounded-full h-4 w-4 bg-sky-500"></span>
+                  <div
+                    className="dropdown relative inline-block "
+                    onMouseEnter={toggleDropOpen}
+                    onMouseLeave={toggleDropOpen}
+                  >
+                    <span className="flex relative">
+                      <IoIosNotifications size={38} />
+                      <span class="absolute top-0 -left-3 relative flex h-4 w-4 ">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-4 w-4 bg-sky-500"></span>
+                      </span>
                     </span>
-                  </span>
+                    {/* {dropOpen && (
+                      <div className="dropdown-content absolute bg-[#f9f9f9] min-w-[100px] z-1">
+                        <Link
+                          href="/blogs"
+                          className={`text-black py-3 px-4 mr-8 block ${
+                            pathname === "/blogs"
+                              ? "font-semibold border-primary border-b-8 pb-2.5"
+                              : "border-primary border-2 border-opacity-0 hover:border-opacity-100 pb-2.5 hover:font-medium focus:font-semibold hover:bg-slate-200"
+                          }`}
+                        >
+                          Blogs
+                        </Link>
+                        <Link
+                          href="/notifications"
+                          className={`text-black py-3 px-4 mr-8 block ${
+                            pathname === "/notifications"
+                              ? "font-semibold border-primary border-b-8 pb-2.5"
+                              : "border-primary border-2 border-opacity-0 hover:border-opacity-100 pb-2.5 hover:font-medium focus:font-semibold hover:bg-slate-200"
+                          }`}
+                        >
+                          Notifications
+                        </Link>
+                      </div>
+                    )} */}
+                  </div>
                 </Link>
               </span>
               <span
