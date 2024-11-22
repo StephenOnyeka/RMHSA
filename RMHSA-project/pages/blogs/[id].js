@@ -61,18 +61,11 @@ const BlogPost = () => {
         </svg>
       </Link>
       <div key={blog._id} className="bg-white p-6 my-6">
-        <p className="text-green-700 font-extrabold">{blog.title}</p>
+        <p className="font-bold text-center text-3xl">{blog.title}</p>
         <br />
-        {/* <p className="font-bold">
-          Desc: <span className="font-normal">
-            {blog.desc}
-          </span>
-        </p> */}
         <p className="font-bold">Body:</p>{" "}
-        {/* <div className="font-normal">{blog.body}</div> */}
         <div
           className="font-normal"
-          // dangerouslySetInnerHTML={{ __html: blog.body }} // Render HTML content
           dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(blog.body) }}
         />
         {/* <p>{blog.createdAt}</p> */}
@@ -96,52 +89,3 @@ const BlogPost = () => {
 
 export default BlogPost;
 
-// import React from "react";
-// import { useBlogsContext } from "../hooks/useBlogsContext";
-// // date fns
-// import DOMPurify from "dompurify";
-// import formatDistanceToNow from "date-fns/formatDistanceToNow";
-
-// function BlogDetails({ blog }) {
-//   const { dispatch } = useBlogsContext();
-//   const handleClick = async () => {
-//     const response = await fetch("/api/blogs/" + blog._id, {
-//       method: "DELETE",
-//     });
-//     const json = await response.json();
-//     if (response.ok) {
-//       dispatch({ type: "DELETE_BLOG", payload: json });
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <div key={blog._id} className="bg-white p-6 my-6">
-//         <p className="text-green-700 font-extrabold">{blog.title}</p>
-//         <br />
-//         <p className="font-bold">
-//           Desc: <span className="font-normal">{blog.desc}</span>
-//         </p>
-//         <p className="font-bold">Body:</p>{" "}
-//         {/* <div className="font-normal">{blog.body}</div> */}
-//         <div
-//           className="font-normal"
-//           // dangerouslySetInnerHTML={{ __html: blog.body }} // Render HTML content
-//           dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(blog.body) }}
-//         />
-//         {/* <p>{blog.createdAt}</p> */}
-//         <br />
-//         <p>
-//           {formatDistanceToNow(new Date(blog.createdAt), {
-//             addSuffix: true,
-//           })}
-//         </p>
-//         <button className="bg-red-400 px-4 py-2" onClick={handleClick}>
-//           Delete
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default BlogDetails;
