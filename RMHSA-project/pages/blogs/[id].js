@@ -61,11 +61,18 @@ const BlogPost = () => {
         </svg>
       </Link>
       <div key={blog._id} className="bg-white p-6 my-6">
+        {/* <div className="w-screen h-screen/2">
+          <img
+            src={blog.titleImg}
+            alt=""
+            classname="h-full w-full object-cover"
+          />
+        </div> */}
         <p className="font-bold text-center text-3xl">{blog.title}</p>
         <br />
-        <p className="font-bold">Body:</p>{" "}
+        {/* <p className="font-bold">Body:</p> */}
         <div
-          className="font-normal"
+          className=""
           dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(blog.body) }}
         />
         {/* <p>{blog.createdAt}</p> */}

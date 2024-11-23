@@ -1,12 +1,12 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 const blogSchema = new Schema(
   {
-    titleImg: {
-      type: String,
-      required: true,
-    },
+    // titleImg: {
+    //   type: String,
+    //   required: true,
+    // },
     title: {
       type: String,
       required: true,
@@ -23,4 +23,4 @@ const blogSchema = new Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model('Blog', blogSchema)
+module.exports = mongoose.model("Blog", blogSchema);

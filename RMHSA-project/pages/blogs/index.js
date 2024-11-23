@@ -13,7 +13,7 @@ import dynamic from "next/dynamic";
 
 // Dynamically import BlogForm with no SSR
 const BlogForm = dynamic(() => import("@/components/BlogForm"), {
-  ssr: false,
+  ssr: false
 });
 
 function Blogs() {
@@ -33,14 +33,6 @@ function Blogs() {
   }, [dispatch]);
 
   if (loading) return <Loading/>
-  // <div>
-  //   <div className="h-screen w-screen flex justify-center items-center animate-pulse">
-  //     <div className="bg-[url('/images/RMHS.png')] w-20 h-20 rounded-full bg-cover bg-center max-md:w-16 max-md:h-16 max-sm:w-12 max-sm:h-12">
-  //               </div>
-  //   </div>
-    
-  // </div>;
-  // if (error) return <p>{error}</p>;
   return (
     <div>
       <Topfile />
@@ -56,9 +48,7 @@ function Blogs() {
             blogs &&
             // blogs.map((blog) => <Link key={blog._id} href={`/${blog._id}`}>
             blogs.map((blog) => (
-              <Link key={blog._id} href={`/blogs/${blog._id}`}>
                 <BlogsDetails key={blog._id} blog={blog} />
-              </Link>
             ))
           }
         </div>
@@ -69,22 +59,6 @@ function Blogs() {
         <BlogForm />
       </div>
     </div>
-    // <div className="px-8">
-    //   <div className="font-semibold">
-    //     {loading ? (
-    //       <div>Loading well....</div>
-    //     ) : (
-    //       blogs &&
-    //       blogs.map((blog) => <BlogDetails key={blog._id} blog={blog} />)
-    //     )}
-    //   </div>
-    //   <br />
-    //   <br />
-    //   <div className="flex flex-wrap justify-between">
-    //     <BlogForm />
-    //     {/* Render BlogForm here */}
-    //   </div>
-    // </div>
   );
 }
 
