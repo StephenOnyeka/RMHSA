@@ -19,6 +19,7 @@ function Gallery() {
           <div className="h-64 w-full">
             <img
               src="/images/R-main(entrance).jpg"
+              // src="/Edited/1732230029113.jpg"
               className="h-full w-full object-cover"
             />
           </div>
@@ -34,7 +35,8 @@ function Gallery() {
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
             <img
-              src="/images/R- main.jpg"
+              // src="/images/R- main.jpg"
+              src="/Edited/1732230029126.jpg"
               className="h-full w-full object-cover"
             />
           </div>
@@ -49,7 +51,8 @@ function Gallery() {
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
             <img
-              src="/images/R-chapel.jpg"
+              // src="/images/R-chapel.jpg"
+              src="/Edited/1732230029099.jpg"
               className="h-full w-full object-cover"
             />
           </div>
@@ -63,7 +66,8 @@ function Gallery() {
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
             <img
-              src="/images/R-chapel(inward).jpg"
+              // src="/images/R-chapel(inward).jpg"
+              src="/Edited/1732230029081.jpg"
               className="h-full w-full object-cover"
             />
           </div>
@@ -77,7 +81,8 @@ function Gallery() {
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
             <img
-              src="/images/chapel.jpg"
+              // src="/images/chapel.jpg"
+              src="/Edited/1732230029066.jpg"
               className="h-full w-full object-cover"
             />
           </div>

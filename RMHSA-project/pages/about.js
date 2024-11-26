@@ -68,26 +68,33 @@ function About() {
                 </p>
               </div>
               <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-0 max-sm:leading-6 max-sm:text-sm max-sm:text-justify">
-                If you would like to study in a school in the heart of the city
-                that focus on changing the world for better to morrow, you’re in
-                the right place. We do not use special formulas to select
-                students. We look at every single applicant’s application,
-                academic and personal, to select students who suit to our
-                community with a full range of backgrounds.s. If you would like
-                to study
+                <span className="font-bold mb-8">THE PRELIMNARIES</span>
+                <br />
+                {/* <br /> */}
+                The birth of Girls’ High School Agulu (now renamed “Rosa Mystica
+                High School, Agulu) was forerun in the missionary enterprise of
+                the early missionaries whose interest was fundamentally the
+                establishment of church as well as schools. In other word, the
+                missions of the early missionaries were inseparably about God
+                and learning and so we talk about Mission Schools. Thus, schools
+                were veritable means of learning more about God, self, the world
+                and fellow human beings.
               </p>
               <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-0 max-sm:leading-6 max-sm:text-sm max-sm:text-justify">
-                If you would like to study in a school in the heart of the city
-                that focus on changing the world for better tomorrow, you’re
-                choosing the right place. We do not use special formulas to
-                select students. We look at every single applicant’s
-                application, academic and personal, to select students who suit
-                to our community.
+                In his second Missionary journey to Agulu in 1914, Rev. Fr.
+                Albert Bubendorff opened an evening school that was to be an
+                opportunity for more learning and exercise of faith. The choice
+                of Nwagu, Agulu as a central place in the town for the school
+                was welcomed as Chiefs Agupugo Ejelue and Anyoke Ogbudaa donated
+                a land at Onike/Ogbuduli Agulu. The evening school serving also
+                as the Church was very functional till 1924 when some members
+                from Agulu-Enu asked that an equivalent should be established
+                nearer to them lest they began attending Masses elsewhere
               </p>
             </div>
 
             <br />
-            
+
             <button
               onClick={() => {
                 setShow((show) => !show);
@@ -116,145 +123,105 @@ function About() {
               {show && (
                 // <div className="transition duration-1500 ease-in-out grid grid-cols-1 leading-7 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 max-sm:text-sm max-sm:text-justify text-gray-500 max-sm:leading-6">
                 <div className=" grid grid-cols-1 leading-7 mt-4 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 max-sm:text-sm max-sm:text-justify text-gray-500 max-sm:leading-6">
-                  Girls’ High School, Agulu, formerly named Catholic Girls’
-                  Secondary School Agulu was founded in 1966 by late Archbishop
-                  CharlseHeery C.S. SP. Archbishop of Onitsha. The site of
-                  Girls’ High School is the former Practising Teachers’ College.
-                  In 1946 it was converted to lower Elementary Training College
-                  by name St. John Bosco’s College Agulu. The site was formerly
-                  a big forest uninhabited and dreaded by people. It is the
-                  highest peak at Agulu. The initial clearing and lease of land
-                  was done by Rev. Fr. Lidan, who was the Parish Priest of
-                  Adazi-Nnukwu. The college was owned exclusively by the
-                  Catholic Mission and it was headed by Rev. Fathers_ Rev. Fr.
-                  Halping, Rev. Fr. Chamberline, Fr. Regan and finally by Rev.
-                  Fr. Edward Hurley_all were Holy Ghost Fathers from Kimage
-                  Manor in Ireland. Mr Nwabugwu and Mr E.C. Ezeobi also helped
-                  in the Administration of the school. Rev. Fr. Edward Hurley
-                  made St Anthony’s college famous by discipline, high academic
-                  standards and excellence in sports. He constructed most of the
-                  buildings but the most outstanding constructions are the games
-                  field and Hurley Hall. He spent himself for the interest of
-                  the school. He had a very powerful personality and his
-                  presence permeated into every nook and corner. His good
-                  influence on his students is seen in the high intergrity and
-                  conscientiousness of former St Anthony’s students. Fr Hurley
-                  died in active service in this school in August 1962. May his
-                  noble and great soul rest in perfect peace. Amen. In 1965, the
-                  Irish Sisters of St. John of God took over the administration
-                  of the school named it "Catholic Girl’s Secondary School
-                  Agulu". The compound was very neat and beautifully decorated
-                  with flowers but this was short lived because soon the
-                  Nigerian civil war began in 1967 and the beauty of the
-                  compound was completely destroyed. The Nigerian soldiers came
-                  into Agulu and occupied the school in 1968. They were driven
-                  out by Biafran soldiers who equally in their turn occupied the
-                  school. Towards the end of the war in early 1970, when the
-                  Biafrans lost the war, the Nigerian soldiers came in again and
-                  occupied the school. With subsequent occupation of the school
-                  by soldiers, the school was completely ruined. The school
-                  chapel was desecrated and turned into a court. The Nigerian
-                  soldiers refused to quit the school even after repeated appeal
-                  to the highest quarters. They stayed even till 1975. The
-                  school took refuge in Agulu Town Hall. This Occupation of the
-                  school by soldiers left the school buildings and the school
-                  compound in a very pitiable condition, and was the cause of
-                  non- reconstruction of the school when the State Government
-                  poured money{" "}
+                  In 1927, the Agulu people from Umuowele, Umunnowu, Umuifite,
+                  Ifiteana and Nneogidi villages first decamped from the Mission
+                  school at Nwagu and had their own Church, “St. Mathias Mission
+                  School at Ikpo. In 1934, considering a more central position,
+                  the Church and Mission at Ikpo were relocated to the site of
+                  the present ‘St. John Catholic Mission, Agulu’. Consequently,
+                  the same year, ‘Eze-Anyanwu Primary Mission School’ was opened
+                  through the generous donation of land by Chief Muojama
+                  Ezeobikili of Nneoha village, Agulu. This school was regarded
+                  as “Agulu B Station” which later metamorphosed into ‘St.
+                  Patrick Catholic Mission, Agulu’. Consequent upon the internal
+                  crisis at ‘Eze-Anyanwu Primary Mission School’, a new mission
+                  school that gave birth to the present ‘St. Theresa’s Catholic 
+                  Mission’ was opened at Isiamaigbo village Agulu through the
+                  generous donation of land by Mr. Ofo Mgbachi. With the
+                  transfer of Rev. Fr. Liddane to Adazli in 1930, a decree was
+                  made that closed of all the stations (except for evening
+                  classes) nearer to Adazi where Holy Masses were being
+                  celebrated every Sunday. In 1936, ‘Agulu Catholic Pioneer
+                  Teachers’ comprising of few members came and made peace among
+                  all the stations in Agulu. Their efforts yielded fruits as a
+                  central catechumen class involving all the stations was
+                  established and the town became united once more having a
+                  central committee and central finance. In 1938, through the
+                  influence and sponsorship of the union, a big football field
+                  was carved out on the same land at Nwagu that accommodated the
+                  Central Catechumen class attached to ‘St. Mary’s Agulu’ and a
+                  football match was held on 27th December, 1938.
                   <p>
-                    into schools for reconstruction. In 1970, the Est Central
-                    State Government took over all schools in the State and the
-                    name Catholic Girls’ Secondary School became Girls’ High
-                    School, Agulu. The first Principal after the civil war was
-                    Mr Bernard NduegbunemOkoye. He worked very hard and on 17th
-                    and 18th May 1971, the school was inspected and approved for
-                    West African School Certificate Examination. On 4th March
-                    1972, Mrs MediatrixEneasato replaced Mr B. N. Okoye as the
-                    Principal of the school. She did her best to uplift the
-                    image of the school. With the aid of Mr John Ukoh- one of
-                    the Landlords, she stopped encroachment on the school land.
-                    She walled some parts of the school. The number of students
-                    increased steadily. With the co-operation of the staff,
-                    discipline was improved. The P.T.A helped her financially to
-                    construct one dormitory block. She also built a
-                    six-classroom block. The school team of Basket ball won Gold
-                    medals during this period. Mrs Eneasato finally was
-                    transferred to Ogidi Girls’ Secondary School while Sr.
-                    Miriam ThereseOzomma from Ogidi Girls’ came to Agulu. On 8th
-                    September 1979, Sr. Miriam Therese Ozomma- the new Principal
-                    arrived with her loads , ready for the new term. She noticed
-                    that the main problems were how to improve the academic
-                    standard, accommodation, water, security, light furniture
-                    etc. On 13th October 1979, she met the Executives of Agulu
-                    People’s Union at Onitsha and in a letter read to them, she
-                    portrayed the lack of accommodation in the school. It was
-                    unanimously agreed that the A.P.U will build a one storey
-                    building to ease the congestion. The building is now nearing
-                    completion. She increased the study period to improve the
-                    academic standard. A water tanker was arranged to bring
-                    water to the school so that students go out only once a week
-                    to fetch water. The school Rules and regulations was printed
-                    and distributed to every student in aid of discipline. The
-                    P.T.A provided the finance that helped to accomplish the
-                    complete fencing of the school. The P.T.A also built ten
-                    water system toilet with twenty modern bathrooms. Through
-                    their instrumentality also, pipes were laid throughout the
-                    school for pipe borne-water. Arrangement is also being made
-                    for bore-hole by Soma project so that within a short time
-                    lack of water at Girls’ High School will be fought to a
-                    finish. The P.T.A has also provided money to help pay for
-                    furniture for the new science Lab. The P.T.A contributions
-                    towards the progress of the school cannot be overestimated.
-                    The State Education Commission provided the initial money to
-                    help rewire the school for{" "}
-                  </p>{" "}
+                    In 1947, another school named ‘St. John Bosco’s Preliminary
+                    Training Centre’ was opened at the same Nwagu, Agulu for one
+                    year course for teachers. The school was later re-named ‘St.
+                    Anthony’s College’ serving as Elementary Training College
+                    (ETC). With Fr. Chamberline as her first Principal, it
+                    started running four years program. The ‘St. Mary’s Infant
+                    School’ became the Practicing School for the college and has
+                    remained till today. St. Anthony’s Elementary Training
+                    College became very famous through the notable leadership of
+                    her various Principals: Fr. Chamberline (1948-1950); Fr.
+                    Halpping (1951-1956); Fr. Edward Hurley (1957-1962) and Fr.
+                    Cockran (1963-1965) who was heading the school until 1965
+                    when the government of Eastern Nigerian Region closed down
+                    schools of such kind. The ‘St. Anthony’s Elementary Teacher
+                    Training College’ phased out but the practicing school
+                    remained in the land of ‘St. Mary’s, Agulu. The closure of
+                    the college was a very painful one to all but little did
+                    anyone know that God had a plan: the foundation of ‘Girls’
+                    High School, Agulu’.
+                    <br />
+                    <br />
+                    <span className="font-bold mb-8">
+                      THE BIRTH OF GIRLS’ HIGH SCHOOL AGULU
+                    </span>
+                    <br />
+                    The ‘Girls’ High School, Agulu’, formerly called ‘Catholic
+                    Girls’ Secondary School, Agulu’ was founded in January, 1966
+                    by late Archbishop Charles Heery (C.S.Sp.), the Archbishop
+                    of Onitsha. According to the preliminary accounts above, the
+                    site, formerly a big forest uninhabited by people first
+                    became the former Practising Teachers’ College converted in
+                    1964 to lower Elementary Training College popularly known as
+                    ‘St. John Bosco’s College, Agulu and later to higher
+                    Elementary college named ‘St. Anthony’s Teachers College,
+                    Agulu’. With the clearing and lease of land by Rev. Fr.
+                    Liddane, the then Parish Priest of Adazi-Nnukwu, the College
+                    was solely owned and managed by the Catholic Mission.
+                    Initially, the Holy Ghost Fathers from Kimage Manor in
+                    Ireland: Rev. Fathers Halpping, Chamberline, Regan and
+                    finally Rev. Fr. Edward Hurley were in-charge of the school
+                    while Mr. Nwabugwu and Mr. E. C. Ezeobi were of much help in
+                    the administration of the school.
+                  </p>
                   <p>
-                    electricity so that on 28th October 1981, the school began
-                    to enjoy N.E.P.A. In 1982 the refectory which was used as
-                    Dormitory was evacuated, twenty formica tables and two
-                    hundred and forty plastic chairs were constructed and put
-                    into use so that students will learn how to eat like ladies.
-                    The popularity of the school continues to grow every day.
-                    Many parents love Girls’ High School Agulu and the evidence
-                    is the number of children in the school- nearly 1,000
-                    students. There are two festival occasions in the school
-                    yearly_ the Founder’s Day celebration every February when
-                    the Bishop comes as the Founder and prays and blesses the
-                    staff and students. Agulu people also turn out in mass in
-                    full support of the school. On Prize Giving day at the end
-                    of the academic year, prizes and cups are given to the best
-                    students that won both academic and moral excellence. In the
-                    field of sports, Girls’ High School Agulu is leading in the
-                    State. Girls’ High School has maintained Gold Medals in
-                    Basket Ball, Hockey and Volley ball for many years. In
-                    academics, the progress is steady. In matters of discipline,
-                    I simply state what the Zonal Commissioner, Rev S.N.C.
-                    Okonkwo said on Founders/Sports Day of 14thFebuary 1983_
-                    "Girls’ High School Agulu is a very disciplined school. It
-                    is one of the best schools in Awka Zone. The compound is
-                    always very neat. The staff cooperate with the Principal and
-                    things move as they ought to be. We are very happy about
-                    this. The Principal deserves commendation and we wish them
-                    more grease to their elbows" Moral instruction is taught by
-                    the Parish Priest and Pastor regularly every Thursday. The
-                    Chairman of former Board of Governors and P.T.A. Mr C.U.O.O.
-                    Adi, Mr Obiekezie and Mr Solomon Obi and members of their
-                    Committees help a lot to set matters going. We thank His
-                    Excellency Chief IfeanyichukwuNwobodo for the new school van
-                    he gave us. We thank Bishop A.K Obiefuna, Igwe Chief E. U
-                    Ejidike, the State Education Commission Enugu and Awka, the
-                    Ministry of Education Enudu and Awka, the A. P. U; the P. T.
-                    A; the Priests and Pastors, our dedicated members of staff
-                    who are doing everything possible for the progress of the
-                    school; Udokamma Club, generous individuals who have helped
-                    the school in cash and kind. May the Lord bless and reward
-                    them. We ask all people of goodwill who have the interest of
-                    Girls’ High School Agulu at heart not to relent in their
-                    efforts to help us train our children spiritually, morally,
-                    academically, physically, and socially for God and Nigeria
-                    so that we can make Girls’ High School Agulu the most viable
-                    School in Anambra State. AD moultusannos. SR MIRIAM THERESE
-                    OZOMMA PRINCIPAL
+                    Significant to mention was the enormous effort of Rev. Fr.
+                    Edward Hurley. With his administration, the then ‘St.
+                    Anthony’s College’ was famous for discipline, high academic
+                    standards and excellence in sports. He constructed the
+                    buildings, the sports arena and the present school hall. His
+                    enviable personality and effective presence made much impact
+                    on the former St. Anthony’s students and teachers who, in a
+                    way, were respectively the prefigures of the students and
+                    teachers of Girls’ High School, Agulu. Pleased with God, Fr.
+                    Edward Hurley died in active service in the school in
+                    August, 1962 while about completing the hall which later was
+                    named after him (Hurley Hall) in the school. We pray for the
+                    peaceful rest of his soul in the bosom of the Lord. The
+                    first Principal of ‘Girls High School, Agulu’ was Rev. Sr.
+                    Mary Emmanuel (S.J.O.G) (1966-1970). She worked for two
+                    years (1966-1969) when the Nigerian civil war started in
+                    1967 and disturbed the normal academic program. The beauty
+                    as well as the progress of the school was halted and ruined
+                    with the inhabitation of the Nigeria soldiers in the school
+                    in 1968 and later, the Biafran soldiers who drove them out.
+                    In early 1970, the Nigerian soldiers came in again and
+                    occupied the school. Despite several appeals to quit the
+                    school, the Nigerian soldiers lived in the school till 1975.
+                    What a hell! The school chapel was desecrated and turned
+                    into a court and the school buildings were in ruins.
+                    Meanwhile, the school was relocated to Agulu Town Hall. ...
                   </p>
                   <div>
                     <p className="italic font-bold">
@@ -262,7 +229,7 @@ function About() {
                       download here
                     </p>
                     <a
-                      href="/PDF/HISTORY OF GIRLS HIGH SCHOOL AGULU.pdf"
+                      href="/PDF/HISTORY OF ROSA MYSTICA HIGH SCHOOL.pdf"
                       download="HISTORY OF ROSA MYSTICA HIGH SCHOOL AGULU"
                     >
                       <button className="bg-primary flex items-center gap-4 text-white font-bold px-4 py-3 mt-4 max-sm:text-sm">
@@ -396,7 +363,6 @@ function About() {
           </div>
 
           <div className="flex w-full h-5/6 max-md:flex-col max-sm:pt-10">
-            
             <div className="flex items-center w-full max-md:pb-8">
               <div className="flex flex-col  gap-6 px-10 mr-10">
                 <div className="relative">
@@ -438,7 +404,11 @@ function About() {
               <img src="/2-Banner.png" alt="" className="w-20 max-sm:w-16" />
               <img src="/3-Banner.png" alt="" className="max-sm:w-10" />
               <img src="/4-Banner.png" alt="" className="w-44 max-sm:w-32" />
-              <img src="/5-Banner1.png" alt="" className="w-20 max-sm:w-20 bg-white" />
+              <img
+                src="/5-Banner1.png"
+                alt=""
+                className="w-20 max-sm:w-20 bg-white"
+              />
               {/* <img src="/5-Banner.png" alt="" className="w-[100px] max-sm:w-24" /> */}
             </div>
           </div>

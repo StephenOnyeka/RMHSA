@@ -100,9 +100,11 @@ function Home1() {
                     Agulu.
                   </p>
                   {/* <p>{"{ R.M.H.S. }"}</p> */}
-                  <button className="bg-primary hover:bg-transparent hover:border hover:border-white text-white font-bold mt-2 px-8 py-4 max-sm:mt-6">
-                    Take a Tour
-                  </button>
+                  <Link href="/school-life">
+                    <button className="bg-primary hover:bg-transparent hover:border hover:border-white text-white font-bold mt-2 px-8 py-4 max-sm:mt-6">
+                      Take a Tour
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -285,9 +287,11 @@ function Home1() {
                   their career- to discover a field they're passionate about and
                   dare to lead it.
                 </p>
-                <button className="border border-white max-sm:border-white max-sm:text-white font-bold mt-8 px-8 py-4">
-                  Apply Now
-                </button>
+                <Link href="/admission">
+                  <button className="border border-white max-sm:border-white max-sm:text-white font-bold mt-8 px-8 py-4">
+                    Apply Now
+                  </button>
+                </Link>
               </div>
             </div>
             {/* </span> */}
@@ -448,10 +452,10 @@ function Home1() {
                       <li className="mt-4"> Alumni & Donors</li>
                       <br />
                       <hr />
-                      <li className="mt-4"> Athletic Calendar</li>
-                      <br /> <hr />
-                      <li className="mt-4"> All Rosa Mystica's Events </li>
-                      <br /> <hr />
+                      {/* <li className="mt-4"> Academic Calendar</li>
+                      <br /> <hr /> */}
+                      {/* <li className="mt-4"> All Rosa Mystica's Events </li>
+                      <br /> <hr /> */}
                       <li className="mt-4"> Partnership & Out Reach </li>
                       <br /> <hr />
                       <li className="mt-4"> Academic Programs</li>
@@ -484,8 +488,8 @@ function Home1() {
                       </p>
                       {/* <p className="text-gray-500 leading-6 text-sm px-12"> */}
                       <p className="text-gray-500 leading-6 text-sm">
-                        The Campaign for Rosa Mystica High School is the largest
-                        fundraising campaign in history. With a historic
+                        {/* The Campaign for Rosa Mystica High School is the largest
+                        fundraising campaign in history. With a historic */}
                       </p>
                       <div className="">
                         <input
@@ -529,14 +533,12 @@ function Home1() {
                       </h1>
                       {/* <p className="text-gray-500 leading-6 text-sm px-12"> */}
                       <p className="text-gray-500 leading-6 text-sm">
-                        The Campaign for Rosa Mystica High School is the{" "}
-                        <span className="font-bold">
-                          largest fundraising campaign in history.
-                        </span>
-                        With a historic $1 billion goal, the campaign is
-                        expanding U of T's global leadership capacity.
+                        Join us in shaping the future of Rosa Mystica High
+                        School. Your donation, no matter the size, will make a
+                        significant impact on our students, faculty, and
+                        programs.
                       </p>
-                      <div className="">
+                      <Link href="/give-to-RMHS">
                         <button className="bg-primary p-4 mt-4 text-white font-semibold">
                           <span className="flex items-center gap-4">
                             <svg
@@ -555,7 +557,7 @@ function Home1() {
                             <p className="text-sm">Become a donor</p>
                           </span>
                         </button>
-                      </div>
+                      </Link>
                     </div>
                   </div>
                 </div>
