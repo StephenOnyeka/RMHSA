@@ -11,6 +11,10 @@ const blogRoutes = require("./routes/blogs");
 const subscriptionRoutes = require("./routes/subscriptions");
 // const { sendTransacEmail } = require("@sendinblue/client");
 
+app.use('/', (req, res) => {
+  res.send("Server is running successfully")
+})
+
 // Middleware
 app.use(cors());
 app.use(bodyParser.json({ limit: "100mb" }));
