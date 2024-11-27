@@ -52,6 +52,20 @@ function ContactUs() {
     }, 10000); // 10000 milliseconds = 10 seconds
   };
 
+const handleEmailClick = () => {
+  const toEmail = "rosamysticahsa@gmail.com"; // Replace with the desired recipient email
+  // const subject = "Your Subject"; // Replace with the desired subject
+  // const body = "Your message body"; // Replace with the desired message body
+
+  const mailtoLink = `mailto:${toEmail}`;
+  window.location.href = mailtoLink;
+
+  // const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent(
+  //   subject
+  // )}&body=${encodeURIComponent(body)}`;
+  // window.location.href = mailtoLink;
+};
+
   return (
     <div>
       <Topfile />
@@ -104,11 +118,11 @@ function ContactUs() {
                 <p className="font-bold text-3xl pt-8 max-sm:text-xl">Phone</p>
                 <br />
                 <p className="max-sm:text-sm">
-                  A wonderful serenity has taken possession of my entire soul,
-                  like these.
+                  Get in contact with us through the school's Administration
+                  Officer
                 </p>
                 <br />
-                <p className="text-primary max-sm:text-sm"> +1-2345-2345</p>
+                <p className="text-primary max-sm:text-sm"> +234-8076367903</p>
               </div>
               <div className="">
                 <svg
@@ -127,13 +141,12 @@ function ContactUs() {
                 </p>
                 <br />
                 <p className="max-sm:text-sm">
-                  A wonderful serenity has taken possession of my entire soul,
-                  like these.
+                  Get in contact with us through the school's email address
                 </p>
                 <br />
                 <p className="text-primary max-sm:text-sm">
                   {" "}
-                  info@rmhsagulu.com.ng
+                  rosamysticahsa@gmail.com
                 </p>
               </div>
               <div className="">
@@ -275,7 +288,13 @@ function ContactUs() {
             </div>
             <br />
             {response && (
-              <p className={`${ isSuccess ? "text-green-600 font-semibold" : "text-red-500" }`}>{response}</p> // Set color based on success
+              <p
+                className={`${
+                  isSuccess ? "text-green-600 font-semibold" : "text-red-500"
+                }`}
+              >
+                {response}
+              </p> // Set color based on success
             )}
             {/* {response && (
               <p>{response}</p>
@@ -299,8 +318,14 @@ function ContactUs() {
         {/* </div> */}
         <div className="social-contact">
           <div className="flex items-center justify-center py-16 gap-9">
-            <FaEnvelope className="h-8 w-5" />
-            <GrFacebookOption className="h-8 w-5" />
+            <div onClick={handleEmailClick}>
+              <FaEnvelope className="h-8 w-5 hover:text-primary cursor-pointer" />
+            </div>
+            <Link
+              href={"https://facebook.com/Rmhsagulu?mibextid=fToiWhWJ2YtxSTUw"}
+            >
+              <GrFacebookOption className="h-8 w-5 hover:text-primary cursor-pointer" />
+            </Link>
             <FaSkype className="h-8 w-5" />
             <FaTwitter className="h-8 w-5" />
           </div>

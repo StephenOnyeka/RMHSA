@@ -29,20 +29,28 @@ function Footer() {
                 {/* <p>1810 Campus Way NE</p>
               <p>Bothell, WA 98011-8246</p> */}
               </div>
-              <p className="text-white max-sm:text-xs">+1-2345-6789-101</p>
+              <p className="text-white max-sm:text-xs">+234-8076367903</p>
               <ul>
                 <li>
                   <a href="" className="max-sm:text-xs">
-                    info@rmhsagulu.com.ng
+                    rosamysticahsa@gmail.com
                   </a>
                 </li>
               </ul>
               <hr className="border border-primary mt-4" />
             </div>
             <div className="box w-full">
-              <p className="text-white font-semibold">Our School</p>
+              <p className="text-white font-semibold">For Tuition Fees</p>
               <hr className="border border-primary mt-3 mb-5" />
-              <ul className="font-light leading-9 max-sm:leading-7 max-sm:text-xs">
+              <div className="text-white leading-8 max-sm:leading-7 max-sm:text-xs">
+                <span className="font-semibold">Account Name:</span> Rosa
+                Mystica High School Agulu
+                <br />
+                <span className="font-semibold">Bank:</span> UBA Plc
+                <br />
+                <span className="font-semibold">Account Number:</span> 1100409154
+              </div>
+              {/* <ul className="font-light leading-9 max-sm:leading-7 max-sm:text-xs">
                 <li className="hover:text-white transition-all duration-200 ease-in">
                   <a href="">Academic</a>
                 </li>
@@ -55,13 +63,7 @@ function Footer() {
                 <li className="hover:text-white transition-all duration-200 ease-in">
                   <a href="">Office of the Manager</a>
                 </li>
-                {/* <li className="hover:text-white transition-all duration-200 ease-in">
-                <a href="">Facility Services</a>
-              </li> */}
-                {/* <li className="hover:text-white transition-all duration-200 ease-in">
-                <a href="">Human Resources</a>
-              </li> */}
-              </ul>
+              </ul> */}
             </div>
             <div className="box w-full">
               <p className="text-white font-semibold">School Life</p>
@@ -117,7 +119,7 @@ function Footer() {
         <div className="bg-black/85">
           <div className="flex justify-between items-center p-10 max-sm:flex-wrap max-sm:justify-center max-sm:text-center max-sm:gap-8">
             <p className="text-white/50 text-sm font-light max-sm:text-xs">
-              Copyright All Right Reserved 2024, GoodLayers
+              Copyright All Right Reserved 2024, Rosa Mystica
             </p>
             <span>
               {/* <div className="social-contact"> */}
@@ -143,9 +145,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <span className="">
-      {/* <Topfile/> */}
-      </span>
+      <span className="">{/* <Topfile/> */}</span>
     </>
   );
 }

@@ -14,206 +14,231 @@ function Donate() {
     // setOpenAccordionId(openAccordionId && id)
   };
   return (
-    <div>
-      <Topfile />
-      <ScrollDiv />
-      <div className=" h-full font-Poppins overflow-hidden">
-        <div className="bg-[url('/RMHS/IMG_20241015_115530~2.jpg')] bg-cover bg-center">
-          <div
-            id="Donor_container-1"
-            className="bg-black/70 h-screen max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
-          >
-            <div className="">
-              <Navbar />
-            </div>
-
-            <div className="absolute z-1 bottom-64 lg:bottom-8 max-sm:bottom-80 text-white">
-              <p className="text-xl pb-3 max-sm:text-lg max-sm:pb-1">
-                Become a donor
-              </p>
-              <p className="text-5xl font-bold max-sm:text-3xl">
-                Give To Rosa Mystica
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* <div className="min-w-full"> */}
-        <div id="Donor_container-2" className="px-8 py-6 w-full max-sm:px-4">
-          <span className="flex gap-3 text-gray-500 items-center">
-            <Link href="/" className="font-medium">
-              Home
-            </Link>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className=""
-              width="10"
-              height="10"
-              fill="currentColor"
-              class="bi bi-chevron-right"
-              viewBox="0 0 16 16"
+    <>
+      <div>
+        <Topfile />
+        <ScrollDiv />
+        <div className=" h-full font-Poppins overflow-hidden">
+          <div className="bg-[url('/RMHS/IMG_20241015_115530~2.jpg')] bg-cover bg-center">
+            <div
+              id="Donor_container-1"
+              className="bg-black/70 h-screen max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
             >
-              <path
-                fill-rule="evenodd"
-                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-              />
-            </svg>
-            <Link href="/about" className="text-primary">
-              Give To Rosa Mystica
-            </Link>
-          </span>
-          <div className="py-10">
-            <div className="flex gap-12 w-full max-md:flex-wrap">
-              <div className="w-5/6 max-sm:w-full">
-                <div>
-                  <p className=" font-semibold font-Poppins text-3xl text-black max-md:text-2xl max-sm:text-xl">
-                    About Rosa Mystica Fund
-                  </p>
-                  <br />
-                  <p className=" text-gray-500 leading-7 max-sm:text-sm max-sm:leading-6">
-                    We continue to adapt to new ways of teaching, new
-                    disciplines of study and new ways of learning. Your gift
-                    enriches the experience of all students by supporting
-                    efforts to recruit top faculty, expand academic programs and
-                    respond to the emerging needs of our school and our world.
-                  </p>
-                  <br />
-                  <p className=" text-gray-500 leading-7 max-sm:text-sm max-sm:leading-6">
-                    Not only does Rosa Mystica High School provide you the
-                    practical skills that is necessary to transition seamlessly
-                    into the workforce upon your graduation, but we also make
-                    sure that you will have a good sense of social justice so
-                    that you make the transition responsibly.
-                  </p>
-                  <br />
-                  <img
-                    src="/RMHS/IMG_20241015_115530~2.jpg"
-                    className="pt-8"
-                    alt=""
-                  />
-                </div>
-
-                <div id="" className="py-16 ">
-                  <div className="flex justify-between w-full items-center py-8 ">
-                    <p className="text-2xl font-semibold max-sm:text-xl">
-                      Various Donation Options{" "}
-                    </p>
-                    <hr className="border-2 border-gray-200 w-3/5" />
-                  </div>
-                  <div className="h-screen/2 text-center max-sm:h-fit">
-                    <div className=" grid grid-cols-3 gap-6 max-md:gap-3">
-                      <div
-                        onClick={() => handleAccordionToggle(1)}
-                        className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
-                      >
-                        <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
-                          <p className="text-base font-semibold max-md:text-sm">
-                            {" "}
-                            Student Scholarships
-                          </p>
-                        </div>
-                      </div>
-                      <div
-                        onClick={() => handleAccordionToggle(2)}
-                        className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
-                      >
-                        <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
-                          <p className="text-base font-semibold max-md:text-sm">
-                            {" "}
-                            {/* Schools & Colleges */}
-                            Academic Ecosystem
-                          </p>
-                        </div>
-                      </div>
-                      <div
-                        onClick={() => handleAccordionToggle(3)}
-                        className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
-                      >
-                        <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
-                          <p className="text-base font-semibold max-md:text-sm">
-                            {" "}
-                            Library & Cultural
-                            {/* Student Experience */}
-                          </p>
-                        </div>
-                      </div>
-                      <div
-                        onClick={() => handleAccordionToggle(4)}
-                        className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
-                      >
-                        <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
-                          <p className="text-base font-semibold max-md:text-sm">
-                            {" "}
-                            {/* Support Sport Team */}
-                            Campus Infrastructure
-                          </p>
-                        </div>
-                      </div>
-                      <div
-                        onClick={() => handleAccordionToggle(3)}
-                        className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
-                      >
-                        <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
-                          <p className="text-base font-semibold max-md:text-sm">
-                            {" "}
-                            Student Life
-                          </p>
-                        </div>
-                      </div>
-                      <div
-                        onClick={() => handleAccordionToggle(5)}
-                        className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
-                      >
-                        <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
-                          <p className="text-base font-semibold max-md:text-sm">
-                            {" "}
-                            Emergency Fund
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="">
-                  <div className="flex justify-between w-full items-center pb-8">
-                    <p className="text-2xl font-semibold max-sm:text-xl">
-                      Why give to Rosa Mystica?
-                    </p>
-                    <hr className="border-2 border-gray-200 w-3/5" />
-                  </div>
-
-                  <div className="py-4">
-                    <Accordion
-                      openAccordionId={openAccordionId}
-                      toggleAccordion={handleAccordionToggle}
-                    />
-                  </div>
-                </div>
+              <div className="">
+                <Navbar />
               </div>
 
-              <div className="flex flex-col gap-8 text-white w-2/5 max-md:w-full">
-                <>
-                  <button className="bg-primary p-6 font-bold">
-                    Become A Donor
-                  </button>
-                  <div className="bg-contingentColor py-12 pl-10 leading-8 max-lg:px-4 max-sm:px-8">
-                    <div className="pb-6">
-                      <p className="text-xl font-bold pb-2">
-                        Department Contact Info
+              <div className="absolute z-1 bottom-64 lg:bottom-8 max-sm:bottom-80 text-white">
+                <p className="text-xl pb-3 max-sm:text-lg max-sm:pb-1">
+                  Become a donor
+                </p>
+                <p className="text-5xl font-bold max-sm:text-3xl">
+                  Give To Rosa Mystica
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="min-w-full"> */}
+          <div id="Donor_container-2" className="px-8 py-6 w-full max-sm:px-4">
+            <span className="flex gap-3 text-gray-500 items-center">
+              <Link href="/" className="font-medium">
+                Home
+              </Link>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className=""
+                width="10"
+                height="10"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <Link href="/about" className="text-primary">
+                Give To Rosa Mystica
+              </Link>
+            </span>
+            <div className="py-10">
+              <div className="flex gap-12 w-full max-md:flex-wrap">
+                <div className="w-5/6 max-sm:w-full">
+                  <div>
+                    <p className=" font-semibold font-Poppins text-3xl text-black max-md:text-2xl max-sm:text-xl">
+                      About Rosa Mystica Fund
+                    </p>
+                    <br />
+                    <p className=" text-gray-500 leading-7 max-sm:text-sm max-sm:leading-6">
+                      We continue to adapt to new ways of teaching, new
+                      disciplines of study and new ways of learning. Your gift
+                      enriches the experience of all students by supporting
+                      efforts to recruit top faculty, expand academic programs
+                      and respond to the emerging needs of our school and our
+                      world.
+                    </p>
+                    <br />
+                    <p className=" text-gray-500 leading-7 max-sm:text-sm max-sm:leading-6">
+                      Not only does Rosa Mystica High School provide you the
+                      practical skills that is necessary to transition
+                      seamlessly into the workforce upon your graduation, but we
+                      also make sure that you will have a good sense of social
+                      justice so that you make the transition responsibly.
+                    </p>
+                    <br />
+                    <img
+                      src="/RMHS/IMG_20241015_115530~2.jpg"
+                      className="pt-8"
+                      alt=""
+                    />
+                  </div>
+
+                  <div id="" className="py-16 ">
+                    <div className="flex justify-between w-full items-center py-8 ">
+                      <p className="text-2xl font-semibold max-sm:text-xl">
+                        Various Donation Options{" "}
                       </p>
-                      <p className="font-semibold ">Office of Science</p>
+                      <hr className="border-2 border-gray-200 w-3/5" />
                     </div>
-                    <div className="pb-6">
-                      <p>Inside School Roadway - NW (North-West)</p>
-                      {/* <p>Bothell, WA 98011-8246</p> */}
+                    <div className="h-screen/2 text-center max-sm:h-fit">
+                      <div className=" grid grid-cols-3 gap-6 max-md:gap-3">
+                        <div
+                          onClick={() => handleAccordionToggle(1)}
+                          className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
+                        >
+                          <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
+                            <p className="text-base font-semibold max-md:text-sm">
+                              {" "}
+                              Student Scholarships
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          onClick={() => handleAccordionToggle(2)}
+                          className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
+                        >
+                          <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
+                            <p className="text-base font-semibold max-md:text-sm">
+                              {" "}
+                              {/* Schools & Colleges */}
+                              Academic Ecosystem
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          onClick={() => handleAccordionToggle(3)}
+                          className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
+                        >
+                          <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
+                            <p className="text-base font-semibold max-md:text-sm">
+                              {" "}
+                              Library & Cultural
+                              {/* Student Experience */}
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          onClick={() => handleAccordionToggle(4)}
+                          className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
+                        >
+                          <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
+                            <p className="text-base font-semibold max-md:text-sm">
+                              {" "}
+                              {/* Support Sport Team */}
+                              Campus Infrastructure
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          onClick={() => handleAccordionToggle(3)}
+                          className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
+                        >
+                          <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
+                            <p className="text-base font-semibold max-md:text-sm">
+                              {" "}
+                              Student Life
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          onClick={() => handleAccordionToggle(5)}
+                          className=" bg-[url('/an-open-book.jpg')] bg-cover bg-center bg-opacity-50 cursor-pointer "
+                        >
+                          <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
+                            <p className="text-base font-semibold max-md:text-sm">
+                              {" "}
+                              Emergency Fund
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div className="pb-6">
-                      <p>+1-2345-6789-10</p>
-                      <p>sample@hiskool.edu</p>
+                  </div>
+
+                  <div className="">
+                    <div className="flex justify-between w-full items-center pb-8">
+                      <p className="text-2xl font-semibold max-sm:text-xl">
+                        Why give to Rosa Mystica?
+                      </p>
+                      <hr className="border-2 border-gray-200 w-3/5" />
                     </div>
-                    <p className="pb-6">Mon-Fri 9:00A.M.-5:00P.M.</p>
-                    <p className="font-bold text-xl py-4">Social Info</p>
+
+                    <div className="py-4">
+                      <Accordion
+                        openAccordionId={openAccordionId}
+                        toggleAccordion={handleAccordionToggle}
+                      />
+                    </div>
+                  </div>
+                  <div className="py-8">
+                    <div className="flex justify-between w-full items-center pb-4">
+                      <p className="text-2xl font-semibold max-sm:text-xl text-contingentColor">
+                        Bank Details
+                      </p>
+                      {/* <hr className="border-2 border-gray-200 w-3/5" /> */}
+                      <hr className="border-2 border-primary/30 w-3/5" />
+                    </div>
+
+                    <div className="py-4 leading-8">
+                      <span className="font-semibold">Account Name:</span> Rosa
+                      Mystica High School Agulu
+                      <br />
+                      {/* <br /> */}
+                      <span className="font-semibold">Bank:</span> Zenith Plc
+                      <br />
+                      {/* <br /> */}
+                      <span className="font-semibold">
+                        Account Number:
+                      </span>{" "}
+                      1013330418
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-8 text-white w-2/5 max-md:w-full">
+                  <>
+                    <button className="bg-primary p-6 font-bold">
+                      Become A Donor
+                    </button>
+                    <div className="bg-contingentColor py-12 pl-10 leading-8 max-lg:px-4 max-sm:px-8">
+                      <div className="pb-6">
+                        <p className="text-xl font-bold pb-2">
+                          Department Contact Info
+                        </p>
+                        <p className="font-semibold ">Office of Science</p>
+                      </div>
+                      <div className="pb-6">
+                        <p>Inside School Roadway - NW (North-West)</p>
+                        {/* <p>Bothell, WA 98011-8246</p> */}
+                      </div>
+                      <div className="pb-6">
+                        <p>+1-2345-6789-10</p>
+                        <p>sample@hiskool.edu</p>
+                      </div>
+                      <p className="pb-6">Mon-Fri 9:00A.M.-5:00P.M.</p>
+                      {/* <p className="font-bold text-xl py-4">Social Info</p>
                     <div className="flex gap-4">
                       <svg
                         stroke="currentColor"
@@ -265,12 +290,12 @@ function Donate() {
                       >
                         <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
                       </svg>
+                    </div> */}
                     </div>
-                  </div>
-                </>
+                  </>
 
-                <>
-                  {/* <div className="py-8">
+                  <>
+                    {/* <div className="py-8">
                     <div className="bg-gray-200 p-4 text-black font-semibold border-b-4 mb-8 border-primary">
                       Video Presentation
                     </div>
@@ -289,27 +314,27 @@ function Donate() {
                     </div>
                   </div> */}
 
-                  <div className="bg-contingentColor2 py-12 pl-10 leading-8 max-lg:px-4 max-sm:px-8 max-sm:mb-8 max-sm:py-6">
-                    <div className="pb-6">
-                      <p className="text-xl font-bold pb-4">
-                        Department Contact Info
+                    <div className="bg-contingentColor2 py-12 pl-10 leading-8 max-lg:px-4 max-sm:px-8 max-sm:mb-8 max-sm:py-6">
+                      <div className="pb-6">
+                        <p className="text-xl font-bold pb-4">
+                          Department Contact Info
+                        </p>
+                        <p className="font-semibold text-secondary">
+                          Office of Arts
+                        </p>
+                      </div>
+                      <div className="pb-6">
+                        <p>Inside School Roadway - NW (North-West)</p>
+                        {/* <p>Bothell, WA 98011-8246</p> */}
+                      </div>
+                      <div className="pb-6">
+                        <p>+1-2345-6789-10</p>
+                        <p>sample@hiskool.edu</p>
+                      </div>
+                      <p className="pb-6 text-secondary">
+                        Mon-Fri 9:00A.M.-5:00P.M.
                       </p>
-                      <p className="font-semibold text-secondary">
-                        Office of Arts
-                      </p>
-                    </div>
-                    <div className="pb-6">
-                      <p>Inside School Roadway - NW (North-West)</p>
-                      {/* <p>Bothell, WA 98011-8246</p> */}
-                    </div>
-                    <div className="pb-6">
-                      <p>+1-2345-6789-10</p>
-                      <p>sample@hiskool.edu</p>
-                    </div>
-                    <p className="pb-6 text-secondary">
-                      Mon-Fri 9:00A.M.-5:00P.M.
-                    </p>
-                    <p className="font-bold text-xl py-4">Social Info</p>
+                      {/* <p className="font-bold text-xl py-4">Social Info</p>
                     <div className="flex gap-4 text-secondary pb-12">
                       <svg
                         stroke="currentColor"
@@ -361,62 +386,65 @@ function Donate() {
                       >
                         <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
                       </svg>
-                    </div>
-                    <button className="bg-primary p-4 px-6 font-bold">
+                    </div> */}
+                      {/* <button className="bg-primary p-4 px-6 font-bold">
                       Student Resources
-                    </button>
-                  </div>
-                </>
+                    </button> */}
+                    </div>
+                  </>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* </div> */}
-        <div className="text-white h-screen/2 max-sm:absolute z-1 mb-32">
-          <div className="bg-contingentColor flex gap-10 items-center justify-center px-6 pt-24 w-full py-28 max-sm:flex-wrap max-sm:py-16">
-            <div className="w-2/4 px-8 max-sm:w-full max-sm:px-4">
-              <img
-                src="/RMHS/IMG_20241015_114703.jpg"
-                alt=""
-                className="w-full -mt-40 max-sm:-mt-32"
-              />
-            </div>
-            <div className="w-2/4 flex flex-col gap-12 max-sm:w-full max-sm:gap-6">
-              <p className="text-2xl leading-10 max-sm:text-xl max-sm:leading-8">
-                Thanks to you, our students are gaining the knowledge, skills
-                and values to create a more humane, just, and sustainable world.
-              </p>
-              <p>- School Principal</p>
-              <div className="">
-                <button className="bg-primary flex gap-2 text-sm font-semibold p-4 px-6 max-sm:text-xs">
-                  Become A Donor
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    className=""
-                    fill="currentColor"
-                    class="bi bi-box-arrow-up-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
-                    />
-                  </svg>
-                </button>
+          {/* </div> */}
+          <div className="text-white h-screen/2 max-sm:absolute z-1 mb-32">
+            <div className="bg-contingentColor flex gap-10 items-center justify-center px-6 pt-24 w-full py-28 max-sm:flex-wrap max-sm:py-16">
+              <div className="w-2/4 px-8 max-sm:w-full max-sm:px-4">
+                <img
+                  src="/RMHS/IMG_20241015_114703.jpg"
+                  alt=""
+                  className="w-full -mt-40 max-sm:-mt-32"
+                />
+              </div>
+              <div className="w-2/4 flex flex-col gap-12 max-sm:w-full max-sm:gap-6">
+                <p className="text-2xl leading-10 max-sm:text-xl max-sm:leading-8">
+                  Thanks to you, our students are gaining the knowledge, skills
+                  and values to create a more humane, just, and sustainable
+                  world.
+                </p>
+                <p>- School Principal</p>
+                <div className="">
+                  <button className="bg-primary flex gap-2 text-sm font-semibold p-4 px-6 max-sm:text-xs">
+                    Become A Donor
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      className=""
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
+            {/* <Footer /> */}
           </div>
-          {/* <Footer /> */}
         </div>
+        {/* <Footer /> */}
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
 export default Donate;

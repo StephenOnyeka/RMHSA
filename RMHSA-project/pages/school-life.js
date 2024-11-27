@@ -130,44 +130,45 @@ function SchoolLife() {
                       strong, and opportunities are endless. A place where you
                       can excel in academics, dominate the sports field, or
                       unleash your creativity.
-                      <img src="/RMHS/IMG_20241015_140910.jpg" alt="" className="" />
-                      
-                      At Rosa Mystica, we believe in
-                      nurturing well-rounded individuals. Our dedicated teachers
-                      inspire you to reach your full potential, while our
-                      state-of-the-art facilities provide the perfect
-                      environment for learning and growth.
-                      <img src="/RMHS/IMG_20241015_141332.jpg" alt="" />From exciting clubs
-                      and societies to thrilling sports competitions, there’s
-                      always something to get involved in. Join us and
-                      experience a school life that’s both challenging and
-                      rewarding
+                      <img
+                        src="/RMHS/IMG_20241015_140910.jpg"
+                        alt=""
+                        className=""
+                      />
+                      At Rosa Mystica, we believe in nurturing well-rounded
+                      individuals. Our dedicated teachers inspire you to reach
+                      your full potential, while our state-of-the-art facilities
+                      provide the perfect environment for learning and growth.
+                      <img src="/RMHS/IMG_20241015_141332.jpg" alt="" />
+                      From exciting clubs and societies to thrilling sports
+                      competitions, there’s always something to get involved in.
+                      Join us and experience a school life that’s both
+                      challenging and rewarding
                     </p>
-                    
                   </div>
                 )}
               </div>
               <br />
               <a href="/PDF/DAILY TIME TABLE.pdf" download="DAILY TIME TABLE">
-              <button className="bg-primary flex items-center gap-4 text-white font-bold p-4 mt-4 max-sm:text-sm">
-                Daily Guide Routine
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 24 24"
-                  height="1em"
-                  width="1em"
-                  className="text-white font-black"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="none"
-                    // stroke="#000"
-                    stroke-width="2"
-                    d="M4.99787498,8.99999999 L4.99787498,0.999999992 L19.4999998,0.999999992 L22.9999998,4.50000005 L23,23 L4,23 M18,1 L18,6 L23,6 M3,12 L3.24999995,12 L4.49999995,12 C6.5,12 6.75,13.25 6.75,14 C6.75,14.75 6.5,16 4.49999995,16 L3.24999995,16 L3.24999995,18 L3,17.9999999 L3,12 Z M9.5,18 L9.5,12 C9.5,12 10.4473684,12 11.2052633,12 C12.3421053,12 13.5,12.5 13.5,15 C13.5,17.5 12.3421053,18 11.2052633,18 C10.4473684,18 9.5,18 9.5,18 Z M16.5,19 L16.5,12 L20.5,12 M16.5,15.5 L19.5,15.5"
-                  ></path>
-                </svg>
+                <button className="bg-primary flex items-center gap-4 text-white font-bold p-4 mt-4 max-sm:text-sm">
+                  Daily Guide Routine
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    height="1em"
+                    width="1em"
+                    className="text-white font-black"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="none"
+                      // stroke="#000"
+                      stroke-width="2"
+                      d="M4.99787498,8.99999999 L4.99787498,0.999999992 L19.4999998,0.999999992 L22.9999998,4.50000005 L23,23 L4,23 M18,1 L18,6 L23,6 M3,12 L3.24999995,12 L4.49999995,12 C6.5,12 6.75,13.25 6.75,14 C6.75,14.75 6.5,16 4.49999995,16 L3.24999995,16 L3.24999995,18 L3,17.9999999 L3,12 Z M9.5,18 L9.5,12 C9.5,12 10.4473684,12 11.2052633,12 C12.3421053,12 13.5,12.5 13.5,15 C13.5,17.5 12.3421053,18 11.2052633,18 C10.4473684,18 9.5,18 9.5,18 Z M16.5,19 L16.5,12 L20.5,12 M16.5,15.5 L19.5,15.5"
+                    ></path>
+                  </svg>
                 </button>
               </a>
             </div>
@@ -617,7 +618,9 @@ function SchoolLife() {
                   winning pace across every distance.
                 </p>
                 <p className="text-lg font-semibold max-sm:text-sm">
-                  Name / School Principal
+                  Rev. Fr Paul Chimezie
+                  <br />
+                  <span className="font-normal">School Manager</span>
                 </p>
               </div>
             </div>

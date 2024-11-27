@@ -333,7 +333,7 @@ function admission() {
 
                 <br />
                 <p className="">
-                  Document not submitted through the online method (email: rosamysticahsa@gmail.com) can be mailed
+                  Document not submitted through the online method can be mailed
                   to: // The school's Post Office Box
                 </p>
                 <br />
@@ -347,7 +347,7 @@ function admission() {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
