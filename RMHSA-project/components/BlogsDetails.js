@@ -1,7 +1,7 @@
 import React from "react";
 import { useBlogsContext } from "../hooks/useBlogsContext";
 // date fns
-import DOMPurify from "dompurify";
+// import DOMPurify from "dompurify";
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import Link from "next/link";
 
