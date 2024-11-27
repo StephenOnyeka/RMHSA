@@ -314,10 +314,12 @@ function About() {
             <div className="flex items-center w-full max-md:pb-8">
               <div className="flex flex-col gap-6 px-10 mr-10 max-md:mr-0 ">
                 <div className="relative">
-                  <img
+                  <Image
                     src="/svgs/about-icon-1.png"
                     alt=""
                     fill="#000"
+                    width="64px"
+                    height={'100%'}
                     className="relative w-16"
                   />
                 </div>
@@ -341,10 +343,12 @@ function About() {
             <div className="flex items-center w-full max-md:pb-8">
               <div className="flex flex-col gap-6 px-10 ml-10 max-md:ml-0">
                 <div className="relative">
-                  <img
+                  <Image
                     src="/svgs/about-icon-2.png"
                     alt=""
                     fill="#000000"
+                    width={'64px'}
+                    height={'100%'}
                     className="relative w-16"
                   />
                 </div>
@@ -366,10 +370,12 @@ function About() {
             <div className="flex items-center w-full max-md:pb-8">
               <div className="flex flex-col  gap-6 px-10 mr-10">
                 <div className="relative">
-                  <img
+                  <Image
                     src="/svgs/about-icon-3.png"
                     alt=""
                     fill="#000000"
+                    width="64px"
+                    height="100%"
                     className="relative w-16"
                   />
                 </div>
@@ -400,13 +406,14 @@ function About() {
           </div> */}
           <div className="bg-contingentColor py-16 w-full">
             <div className="grid grid-flow-col gap-28 justify-center content-center items-center max-md:flex max-md:flex-wrap max-md:justify-evenly max-md:gap-12 max-md:items-center">
-              <img src="/1-Banner.png" alt="" className="w-20 max-sm:w-16" />
-              <img src="/2-Banner.png" alt="" className="w-20 max-sm:w-16" />
-              <img src="/3-Banner.png" alt="" className="max-sm:w-10" />
-              <img src="/4-Banner.png" alt="" className="w-44 max-sm:w-32" />
-              <img
+              <Image src="/1-Banner.png" alt="" width="80px" height="100%" className="w-20 max-sm:w-16" />
+              <Image src="/2-Banner.png" alt="" width="80px" className="w-20 max-sm:w-16" />
+              <Image src="/3-Banner.png" alt="" width="80px" className="max-sm:w-10" />
+              <Image src="/4-Banner.png" alt="" width={"176px"} className="w-44 max-sm:w-32" />
+              <Image
                 src="/5-Banner1.png"
                 alt=""
+                width={'80px'}
                 className="w-20 max-sm:w-20 bg-white"
               />
               {/* <img src="/5-Banner.png" alt="" className="w-[100px] max-sm:w-24" /> */}

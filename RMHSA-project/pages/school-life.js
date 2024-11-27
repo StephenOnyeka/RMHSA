@@ -130,16 +130,19 @@ function SchoolLife() {
                       strong, and opportunities are endless. A place where you
                       can excel in academics, dominate the sports field, or
                       unleash your creativity.
-                      <img
+                      <Image
                         src="/RMHS/IMG_20241015_140910.jpg"
                         alt=""
+                        width={"100%"}
+                        height={"100%"}
+                        layout="responsive"
                         className=""
                       />
                       At Rosa Mystica, we believe in nurturing well-rounded
                       individuals. Our dedicated teachers inspire you to reach
                       your full potential, while our state-of-the-art facilities
                       provide the perfect environment for learning and growth.
-                      <img src="/RMHS/IMG_20241015_141332.jpg" alt="" />
+                      <Image width={"100%"} height={"100%"} layout="responsive" src="/RMHS/IMG_20241015_141332.jpg" alt="" />
                       From exciting clubs and societies to thrilling sports
                       competitions, there’s always something to get involved in.
                       Join us and experience a school life that’s both
@@ -176,13 +179,12 @@ function SchoolLife() {
 
           <div className=" bg-gray-200 pt-24 pb-20 px-10 pl-20 w-full text-gray-500 max-sm:px-8">
             {/* <img src="/life-bus.jpg" alt="" /> */}
-            <img src="/RMHS/signboard.png" alt="" />
+            <Image src="/RMHS/signboard.png" width={"100%"} height={"100%"} layout="responsive" alt="" />
 
             <div className="flex  flex-col">
               <div className="flex gap-6 items-center my-6 max-sm:gap-3">
-                <img src="/icon-transportation.png" alt="" />
+                <Image src="/icon-transportation.png" width={"100%"} height={"100%"} layout="responsive" alt="" />
                 <p className="text-lg text-black font-semibold mt-4">
-                  {" "}
                   Transportations
                 </p>
               </div>
@@ -202,7 +204,7 @@ function SchoolLife() {
             </div>
             <div className="flex  flex-col">
               <div className="flex gap-6 items-center my-8">
-                <img src="/icon-parking.png" alt="" />
+                <Image width={"100%"} height={"100%"} layout="responsive" src="/icon-parking.png" alt="" />
                 <p className="text-lg text-black font-semibold mt-4">Parking</p>
               </div>
               <p className="max-sm:text-sm max-sm:leading-6">
@@ -248,9 +250,13 @@ function SchoolLife() {
                       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-sm:gap-2 ">
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
                               src="/images/R-main(entrance).jpg"
                               className="h-full w-full object-cover"
+                              height={"256px"}
+                              width={"100%"}
+                              layout="responsive"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -264,9 +270,13 @@ function SchoolLife() {
 
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
                               src="/images/R- main.jpg"
                               className="h-full w-full object-cover"
+                              height={"256px"}
+                              width={"100%"}
+                              layout="responsive"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -279,9 +289,13 @@ function SchoolLife() {
 
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
                               src="/images/R-chapel.jpg"
                               className="h-full w-full object-cover"
+                              height={"256px"}
+                              width={"100%"}
+                              layout="responsive"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -293,9 +307,12 @@ function SchoolLife() {
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
                               src="/images/R-chapel(inward).jpg"
                               className="h-full w-full object-cover"
+                              height={"256px"}
+                              width={"100%"}
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -307,9 +324,13 @@ function SchoolLife() {
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/images/chapel.jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -321,9 +342,13 @@ function SchoolLife() {
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/images/R-hailmary.jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -335,9 +360,13 @@ function SchoolLife() {
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/images/R-admin.jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -349,9 +378,13 @@ function SchoolLife() {
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/images/R-library.jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -363,9 +396,13 @@ function SchoolLife() {
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/images/R-science2.jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -377,9 +414,13 @@ function SchoolLife() {
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/images/R-class.jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -391,9 +432,13 @@ function SchoolLife() {
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/images/R-conference.jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -405,9 +450,13 @@ function SchoolLife() {
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/images/R-ICT.jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -429,9 +478,13 @@ function SchoolLife() {
                       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-sm:gap-2 ">
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/Events/1726065374828.jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -445,9 +498,13 @@ function SchoolLife() {
 
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/Events/1726065382316.jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
@@ -459,9 +516,13 @@ function SchoolLife() {
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/Events/IMG-20241026-WA0007~4.jpg"
                               className="h-full w-full object-cover object-top"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -475,9 +536,13 @@ function SchoolLife() {
 
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/Events/IMG-20241026-WA0008 (1).jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
@@ -496,9 +561,13 @@ function SchoolLife() {
                       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-sm:gap-2 ">
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/Events/1726065589415.jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
@@ -513,9 +582,13 @@ function SchoolLife() {
 
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/Events/1726065592701.jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
@@ -529,9 +602,13 @@ function SchoolLife() {
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/Events/IMG-20241026-WA0006.jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -543,9 +620,13 @@ function SchoolLife() {
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
                           <div className="h-64 w-full">
-                            <img
+                            <Image
+                            width={"100%"}
+                            height={"256px"}
+                            layout="responsive"
                               src="/Events/IMG-20241026-WA0005 (1).jpg"
                               className="h-full w-full object-cover"
+                              alt=""
                             />
                           </div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -598,7 +679,7 @@ function SchoolLife() {
             <div className="bg-gray-200 flex items-center w-full py-36 max-sm:py-12">
               <div className="flex flex-col gap-6 px-16 ml-10 max-sm:ml-0">
                 <div>
-                  {/* <img src="/svgs/about-icon-3.png" alt="" color="black" /> */}
+                  
                   <svg
                     stroke="currentColor"
                     fill="currentColor"

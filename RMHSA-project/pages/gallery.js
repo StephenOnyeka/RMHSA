@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 function Gallery() {
   // const [isHovered, setIsHovered] = useState(false);
@@ -17,10 +18,14 @@ function Gallery() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-sm:gap-2 ">
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/images/R-main(entrance).jpg"
               // src="/Edited/1732230029113.jpg"
               className="h-full w-full object-cover"
+              width={"256px"}
+              height={'100%'}
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -34,10 +39,14 @@ function Gallery() {
 
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               // src="/images/R- main.jpg"
               src="/Edited/1732230029126.jpg"
               className="h-full w-full object-cover"
+              height={'256px'}
+              width={"100%"}
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -50,10 +59,14 @@ function Gallery() {
 
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               // src="/images/R-chapel.jpg"
               src="/Edited/1732230029099.jpg"
               className="h-full w-full object-cover"
+              width={"100%"}
+              height={"256px"}
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -65,10 +78,14 @@ function Gallery() {
         </div>
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               // src="/images/R-chapel(inward).jpg"
               src="/Edited/1732230029081.jpg"
               className="h-full w-full object-cover"
+              width={"100%"}
+              height={"256px"}
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -80,10 +97,14 @@ function Gallery() {
         </div>
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               // src="/images/chapel.jpg"
-              src="/Edited/1732230029066.jpg"
+              src="/Edited/1732230029066.jpg"s
               className="h-full w-full object-cover"
+              height="256px"
+              width="100%"
+              layout= "responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -95,9 +116,13 @@ function Gallery() {
         </div>
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/images/R-hailmary.jpg"
               className="h-full w-full object-cover"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -109,9 +134,13 @@ function Gallery() {
         </div>
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/images/R-admin.jpg"
               className="h-full w-full object-cover"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -123,9 +152,13 @@ function Gallery() {
         </div>
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/images/R-library.jpg"
               className="h-full w-full object-cover"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -137,9 +170,13 @@ function Gallery() {
         </div>
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/images/R-science2.jpg"
               className="h-full w-full object-cover"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -151,9 +188,13 @@ function Gallery() {
         </div>
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/images/R-class.jpg"
               className="h-full w-full object-cover"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -165,9 +206,13 @@ function Gallery() {
         </div>
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/images/R-conference.jpg"
               className="h-full w-full object-cover"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -179,9 +224,13 @@ function Gallery() {
         </div>
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/images/R-ICT.jpg"
               className="h-full w-full object-cover"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -203,9 +252,13 @@ function Gallery() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-sm:gap-2 ">
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/Events/1726065374828.jpg"
               className="h-full w-full object-cover"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -219,9 +272,13 @@ function Gallery() {
 
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/Events/1726065382316.jpg"
               className="h-full w-full object-cover"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -233,9 +290,13 @@ function Gallery() {
         </div>
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/Events/IMG-20241026-WA0007~4.jpg"
               className="h-full w-full object-cover object-top"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -249,9 +310,13 @@ function Gallery() {
 
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/Events/IMG-20241026-WA0008 (1).jpg"
               className="h-full w-full object-cover"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -270,9 +335,13 @@ function Gallery() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-sm:gap-2 ">
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/Events/1726065589415.jpg"
               className="h-full w-full object-cover"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
@@ -286,9 +355,13 @@ function Gallery() {
 
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/Events/1726065592701.jpg"
               className="h-full w-full object-cover"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
@@ -301,9 +374,13 @@ function Gallery() {
         </div>
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/Events/IMG-20241026-WA0006.jpg"
               className="h-full w-full object-cover"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
@@ -315,9 +392,13 @@ function Gallery() {
         </div>
         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
           <div className="h-64 w-full">
-            <img
+            <Image
+            alt=""
               src="/Events/IMG-20241026-WA0005 (1).jpg"
               className="h-full w-full object-cover"
+              width="100%"
+              height="256px"
+              layout="responsive"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
