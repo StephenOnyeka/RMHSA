@@ -22,7 +22,10 @@ function Blogs() {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch("http://localhost:5000/api/blogs");
+      const response = await fetch(
+        "https://rmhsa-servered.vercel.app/api/blogs"
+      );
+      // const response = await fetch("http://localhost:5000/api/blogs");
       const json = await response.json();
       if (response.ok) {
         dispatch({ type: "SET_BLOGS", payload: json });
