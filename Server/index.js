@@ -16,9 +16,7 @@ const subscriptionRoutes = require("./routes/subscriptions");
 app.use(cors());
 app.use(bodyParser.json({ limit: "100mb" }));
 app.use(bodyParser.urlencoded({ limit: "100mb", extended: true }));
-app.use("/", (req, res) => {
-  res.send("Server is running successfully");
-});
+
 
 //middleware for blogs
 app.use(express.json()); //What this does is any request that comes in, it looks if it has some body to the request, so some data that we're sending to the server and if it does, then it passes it and attaches it to the request object so we can access it in the request handler
@@ -28,9 +26,7 @@ app.use((req, res, next) => {
 });
 
 //routes fot the blogs
-app.use("/api/blogs", (req, res) => {
-  res.send(blogRoutes)
-});
+app.use("/api/blogs", blogRoutes);
 // app.use("/api/blogs/:id", blogRoutes);
 app.use("/api/subscriptions", subscriptionRoutes);
 
