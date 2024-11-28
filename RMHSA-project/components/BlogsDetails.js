@@ -8,9 +8,13 @@ import Link from "next/link";
 function BlogsDetails({ blog }) {
   const { dispatch } = useBlogsContext();
   const handleClick = async () => {
-    const response = await fetch("http://localhost:5000/api/blogs/" + blog._id, {
-      method: "DELETE",
-    });
+    // const response = await fetch("http://localhost:5000/api/blogs/" + blog._id, {
+    const response = await fetch(
+      "https://rmhsa-servered.vercel.app/blogs/" + blog._id,
+      {
+        method: "DELETE",
+      }
+    );
     // const response = await fetch(`http://localhost:5000/api/blogs/${id}`, {
     //   method: "DELETE",
     // });

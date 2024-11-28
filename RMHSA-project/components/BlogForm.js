@@ -402,13 +402,17 @@ function BlogForm() {
     e.preventDefault();
     // const blog = { titleImg, title, desc, body };
     const blog = { title, desc, body };
-    const response = await fetch("http://localhost:5000/api/blogs", {
-      method: "POST",
-      body: JSON.stringify(blog),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    // const response = await fetch("http://localhost:5000/api/blogs", {
+    const response = await fetch(
+      "https://rmhsa-servered.vercel.app/api/blogs",
+      {
+        method: "POST",
+        body: JSON.stringify(blog),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     const json = await response.json();
     if (response.ok) {
       // setTitleImg(null);

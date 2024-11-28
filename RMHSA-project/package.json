@@ -1,5 +1,5 @@
 {
-  "proxy": "http://localhost:5000",
+  "proxy": "https://rmhsa-servered.vercel.app/",
   "name": "sec-project",
   "version": "0.1.0",
   "private": true,
