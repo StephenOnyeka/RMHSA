@@ -39,13 +39,16 @@ function Home1() {
         setMssg(null);
         setWarn(null);
 
-        const response = await fetch("http://localhost:5000/api/subscriptions", {
-          method: "POST",
-          body: JSON.stringify(subscription),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        const response = await fetch(
+          "https://rmhsa-servered.vercel.app/api/subscriptions",
+          {
+            method: "POST",
+            body: JSON.stringify(subscription),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
         const json = await response.json();
         if (response.ok) {
           setEmail("");
