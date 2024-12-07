@@ -20,9 +20,8 @@ function admission() {
     <div>
       <Topfile />
       <ScrollDiv />
-      <div className=" h-full font-Poppins overflow-hidden">
-        {/* <div className="bg-[url('/RMHS/IMG_3941.png')] bg-cover bg-top"> */}
-        <div className="bg-[url('/Edited/1732230029220.jpg')] bg-cover bg-top">
+      <div className="h-full font-Poppins overflow-hidden">
+        {/* <div className="bg-[url('/Edited/1732230029220.jpg')] bg-cover bg-top">
           <div
             id="Admission_container-1"
             className="bg-gradient-to-b from-black/50 to-black/80 h-screen  max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
@@ -32,6 +31,26 @@ function admission() {
             </div>
 
             <div className="absolute z-1 bottom-64 lg:bottom-8 max-sm:bottom-80  text-white">
+              <p className="text-xl pb-3 max-sm:text-lg max-sm:pb-1">
+                Admission
+              </p>
+              <p className="text-5xl font-bold max-sm:text-3xl">
+                Apply To Rosa Mystica
+              </p>
+            </div>
+          </div>
+        </div> */}
+
+        <div className="bg-[url('/Edited/1732230029220.jpg')] bg-cover bg-top">
+          <div
+            id="Admission_container-1"
+            className="bg-gradient-to-b from-black/50 to-black/80 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
+          >
+            <div className=" ">
+              <Navbar />
+            </div>
+
+            <div className="pt-[50%] pb-[5%] lg:pt-[30%] z-1 text-white">
               <p className="text-xl pb-3 max-sm:text-lg max-sm:pb-1">
                 Admission
               </p>
@@ -132,9 +151,13 @@ function admission() {
           </div>
         </div>
 
-        <div
+        {/* <div
           id="Admission_container-4"
           className="bg-[url('/RMHS/IMG_20241015_125530.jpg')] bg-no-repeat bg-cover bg-fixed leading-7 bg-center max-sm:bg-contain "
+        > */}
+        <div
+          id="Admission_container-4"
+          className="bg-[url('/Edited/1732230029200.jpg')] bg-no-repeat bg-cover bg-fixed leading-7 bg-center max-sm:bg-contain "
         >
           <div className="h-screen max-sm:h-screen/3"></div>
         </div>
@@ -227,7 +250,11 @@ function admission() {
               </div>
             </div>
           </div>
-          <a href="https://forms.gle/ypvwbo4a3fqAEX7q8"><button className="bg-primary py-2 px-6 text-white mt-4">Take test </button></a>
+          <a href="https://forms.gle/ypvwbo4a3fqAEX7q8">
+            <button className="bg-primary py-2 px-6 text-white mt-4">
+              Take test{" "}
+            </button>
+          </a>
         </div>
         <div className="flex w-full justify-center">
           <hr className="border border-contingentColor w-5/6" />

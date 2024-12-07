@@ -72,7 +72,7 @@ const handleEmailClick = () => {
       <Topfile />
       <ScrollDiv />
       <div className=" h-full font-Poppins overflow-hidden">
-        <div className="bg-[url('/RMHS/IMG_20241015_124000.jpg')] bg-cover bg-center">
+        {/* <div className="bg-[url('/RMHS/IMG_20241015_124000.jpg')] bg-cover bg-center">
           <div
             id="Contact_container-1"
             className="bg-primary/30 h-screen px-8 pt-8 w-full font-Poppins text-white max-lg:h-screen/1.5 max-md:h-screen/2 max-sm:px-4 "
@@ -80,7 +80,6 @@ const handleEmailClick = () => {
             <div className=" pb-64 max-sm:pb-36 ">
               <Navbar />
             </div>
-            {/* <div className="flex justify-center  "> */}
             <div className=" text-center ">
               <p className="text-6xl font-bold pb-3 max-md:text-5xl max-sm:text-3xl">
                 Contact Us
@@ -90,11 +89,25 @@ const handleEmailClick = () => {
               </p>
             </div>
           </div>
+        </div> */}
+        <div className="bg-[url('/RMHS/IMG_20241015_124000.jpg')] bg-cover bg-center">
+          <div
+            id="Contact_container-1"
+            className="bg-primary/40  px-8 pt-8 w-full font-Poppins text-white max-sm:px-4 "
+          >
+            <div className="">
+              <Navbar />
+            </div>
+            <div className="pt-[30%] pb-[5%] lg:pt-[25%] text-center flex-col">
+              <p className="text-6xl font-bold pb-3 max-md:text-5xl max-sm:text-3xl">
+                Contact Us
+              </p>
+              <p className="text-2xl max-md:text-xl max-sm:text-lg">
+                Get In Touch
+              </p>
+            </div>
+          </div>
         </div>
-
-        {/* <div className="min-w-full"> */}
-
-        {/* </div> */}
 
         <div>
           <div

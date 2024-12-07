@@ -19,8 +19,7 @@ function Donate() {
         <Topfile />
         <ScrollDiv />
         <div className=" h-full font-Poppins overflow-hidden">
-          {/* <div className="bg-[url('/RMHS/IMG_20241015_115530~2.jpg')] bg-cover bg-center"> */}
-          <div className="bg-[url('/Edited/1732230029150.jpg')] bg-cover bg-center">
+          {/* <div className="bg-[url('/Edited/1732230029150.jpg')] bg-cover bg-center">
             <div
               id="Donor_container-1"
               className="bg-black/70 h-screen max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
@@ -30,6 +29,25 @@ function Donate() {
               </div>
 
               <div className="absolute z-1 bottom-64 lg:bottom-8 max-sm:bottom-80 text-white">
+                <p className="text-xl pb-3 max-sm:text-lg max-sm:pb-1">
+                  Become a donor
+                </p>
+                <p className="text-5xl font-bold max-sm:text-3xl">
+                  Give To Rosa Mystica
+                </p>
+              </div>
+            </div>
+          </div> */}
+          <div className="bg-[url('/Edited/1732230029150.jpg')] bg-cover bg-center">
+            <div
+              id="Donor_container-1"
+              className="bg-black/70 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
+            >
+              <div className="">
+                <Navbar />
+              </div>
+
+              <div className=" pt-[50%] pb-[5%] lg:pt-[30%] z-1 text-white">
                 <p className="text-xl pb-3 max-sm:text-lg max-sm:pb-1">
                   Become a donor
                 </p>
@@ -421,7 +439,7 @@ function Donate() {
           </div>
           {/* </div> */}
           <div className="text-white h-full max-sm:absolute z-1 ">
-          {/* <div className="text-white h-screen/2 max-sm:absolute z-1 mb-32"> */}
+            {/* <div className="text-white h-screen/2 max-sm:absolute z-1 mb-32"> */}
             <div className="bg-contingentColor flex gap-10 items-center justify-center px-6 pt-24 w-full py-28 max-sm:flex-wrap max-sm:py-16">
               <div className="w-2/4 px-8 max-sm:w-full max-sm:px-4">
                 {/* <Image

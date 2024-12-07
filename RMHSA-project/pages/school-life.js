@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import ScrollDiv from "@/components/Scroll";
 import Navbar from "@/components/Navbar";
+import Topfile from "@/components/Topfile";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
@@ -21,9 +22,10 @@ function SchoolLife() {
   const [show, setShow] = useState(false);
   return (
     <div>
+      <Topfile />
       <ScrollDiv />
-      <div className=" h-full font-Poppins overflow-hidden">
-        <div className="bg-[url('/Edited/1732230029186.jpg')] bg-cover bg-center">
+      <div className="  font-Poppins overflow-hidden">
+        {/* <div className="bg-[url('/Edited/1732230029186.jpg')] bg-cover bg-center">
           <div
             id="SchoolLife_container-1"
             className="bg-gradient-to-b from-black/40 via-black/70 to-black/80 h-screen max-sm:h-screen/1.5 max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
@@ -32,9 +34,7 @@ function SchoolLife() {
               <Navbar />
             </div>
 
-            {/* <div className=" absolute z-1 bottom-64 lg:bottom-8 max-sm:bottom-72 text-white"> */}
             <div className=" pt-80 max-sm:pt-24 text-white">
-              {/**pt-24 */}
               <div className="py-10">
                 <div className="flex gap-16 max-md:flex-wrap max-md:content-center max-md:gap-8">
                   <div className="min-w-80">
@@ -52,6 +52,35 @@ function SchoolLife() {
                     and prepare for a bright future.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
+        <div className="bg-[url('/Edited/1732230029186.jpg')] bg-cover bg-center">
+          <div
+            id="SchoolLife_container-1"
+            className="bg-gradient-to-b from-black/30 via-black/70 to-black/70 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
+          >
+            <div className=" ">
+              <Navbar />
+            </div>
+
+            <div className="pt-[50%] pb-[5%] lg:pt-[30%] text-white">
+              <div className="flex gap-16 max-md:flex-wrap max-md:content-center max-md:gap-8">
+                <div className="min-w-80">
+                  <p className=" font-bold font-Poppins text-4xl max-md:text-2xl">
+                    Elevate Your Potential at Rosa Mystica
+                    <span className="element-divider-seperator flex w-5/6 mt-4 border-2 border-primary "></span>
+                  </p>
+                </div>
+
+                <p className="text-lg leading-8 px-6 max-md:px-3 max-md:leading-6 max-md:text-sm max-sm:px-0 ">
+                  Immerse yourself in a stimulating academic environment
+                  designed to nurture your intellectual curiosity. Experience
+                  rigorous coursework, engaging extracurricular activities, and
+                  a vibrant campus community. Join a legacy of excellence and
+                  prepare for a bright future.
+                </p>
               </div>
             </div>
           </div>
@@ -214,12 +243,7 @@ function SchoolLife() {
             </div>
             <div className="flex  flex-col">
               <div className="flex gap-6 items-center my-8">
-                <Image
-                  width={30}
-                  height={30}
-                  src="/icon-parking.png"
-                  alt=""
-                />
+                <Image width={30} height={30} src="/icon-parking.png" alt="" />
                 <p className="text-lg text-black font-semibold mt-4">Parking</p>
               </div>
               <p className="max-sm:text-sm max-sm:leading-6">
