@@ -17,10 +17,11 @@ function About() {
       <Topfile />
       <ScrollDiv />
       <div className=" font-Poppins overflow-hidden">
-        <div className="bg-[url('/RMHS/IMG_20241015_123620.jpg')] bg-cover bg-no-repeat bg-center">
+        {/* <div className="bg-[url('/RMHS/IMG_20241015_123620.jpg')] bg-cover bg-no-repeat bg-center"> */}
+        <div className="bg-[url('/Edited/1732230029230.jpg')] bg-cover bg-no-repeat bg-center">
           <div
             id="About_container-1"
-            className="bg-gradient-to-b from-black/40 to-black/80 h-screen max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
+            className="bg-gradient-to-b from-black/40 to-black/70 h-screen max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
           >
             {/* <div className="flex justify-between justify-items-center mt-44 pb-64"> */}
             <div className=" ">
@@ -317,9 +318,10 @@ function About() {
                   <Image
                     src="/svgs/about-icon-1.png"
                     alt=""
-                    fill="#000"
-                    width="64px"
-                    height={'100%'}
+                    // fill="#000"
+
+                    width={64}
+                    height={50}
                     className="relative w-16"
                   />
                 </div>
@@ -346,9 +348,11 @@ function About() {
                   <Image
                     src="/svgs/about-icon-2.png"
                     alt=""
-                    fill="#000000"
-                    width={'64px'}
-                    height={'100%'}
+                    // fill="#000000"
+                    // width={64}
+                    // height={'100%'}
+                    width={64}
+                    height={50}
                     className="relative w-16"
                   />
                 </div>
@@ -373,9 +377,9 @@ function About() {
                   <Image
                     src="/svgs/about-icon-3.png"
                     alt=""
-                    fill="#000000"
-                    width="64px"
-                    height="100%"
+                    // fill="#000000"
+                    width={64}
+                    height={50}
                     className="relative w-16"
                   />
                 </div>
@@ -406,14 +410,40 @@ function About() {
           </div> */}
           <div className="bg-contingentColor py-16 w-full">
             <div className="grid grid-flow-col gap-28 justify-center content-center items-center max-md:flex max-md:flex-wrap max-md:justify-evenly max-md:gap-12 max-md:items-center">
-              <Image src="/1-Banner.png" alt="" width="80px" height="100%" className="w-20 max-sm:w-16" />
-              <Image src="/2-Banner.png" alt="" width="80px" className="w-20 max-sm:w-16" />
-              <Image src="/3-Banner.png" alt="" width="80px" className="max-sm:w-10" />
-              <Image src="/4-Banner.png" alt="" width={"176px"} className="w-44 max-sm:w-32" />
+              <Image
+                src="/1-Banner.png"
+                alt=""
+                width={80}
+                height={60}
+                className="w-20 max-sm:w-16"
+              />
+              <Image
+                src="/2-Banner.png"
+                alt=""
+                width={80}
+                height={60}
+                className="w-20 max-sm:w-16"
+              />
+              <Image
+                src="/3-Banner.png"
+                alt=""
+                // width="80px"
+                width={80}
+                height={60}
+                className="max-sm:w-10"
+              />
+              <Image
+                src="/4-Banner.png"
+                alt=""
+                width={176}
+                height={156}
+                className="w-44 max-sm:w-32"
+              />
               <Image
                 src="/5-Banner1.png"
                 alt=""
-                width={'80px'}
+                width={80}
+                height={60}
                 className="w-20 max-sm:w-20 bg-white"
               />
               {/* <img src="/5-Banner.png" alt="" className="w-[100px] max-sm:w-24" /> */}

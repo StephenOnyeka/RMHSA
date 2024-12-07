@@ -323,42 +323,42 @@ function Home1() {
                   className="mySwiper border-green-800"
                 >
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width="100%" height="100px" layout="responsive" src="/swiper-RMHS/NECO.png" alt="" />
+                    <Image width={100} height={100} layout="responsive" src="/swiper-RMHS/NECO.png" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="mt-6 max-sm:mt-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width="100%" height="100px" layout="responsive" src="/swiper-images/ministry.png" alt="" />
+                    <Image width={100} height={100} layout="responsive" src="/swiper-images/ministry.png" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width="100%" height="100px" layout="responsive" src="/swiper-RMHS/JAMB.png" alt="" />
+                    <Image width={100} height={100} layout="responsive" src="/swiper-RMHS/JAMB.png" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width="100%" height="100px" layout="responsive"
+                    <Image width={100} height={100} layout="responsive"
                       src="/swiper-RMHS/Awka3.png"
                       className="mt-6 max-sm:mt-3 w-[500px]"
                       alt=""
                     />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width="100%" height="100px" layout="responsive" src="/swiper-RMHS/WACE.png" alt="" />
+                    <Image width={100} height={100} layout="responsive" src="/swiper-RMHS/WACE.png" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width="100%" height="100px" layout="responsive" src="/swiper-RMHS/NECO.png" alt="" />
+                    <Image width={100} height={100} layout="responsive" src="/swiper-RMHS/NECO.png" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="mt-6 max-sm:mt-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width="100%" height="100px" layout="responsive" src="/swiper-images/ministry.png" alt="" />
+                    <Image width={100} height={100} layout="responsive" src="/swiper-images/ministry.png" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width="100%" height="100px" layout="responsive" src="/swiper-RMHS/JAMB.png" alt="" />
+                    <Image width={100} height={100} layout="responsive" src="/swiper-RMHS/JAMB.png" alt="" />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width="100%" height="100px" layout="responsive"
+                    <Image width={100} height={100} layout="responsive"
                       src="/swiper-RMHS/Awka3.png"
                       className="mt-6 max-sm:mt-3 w-[400px]"
                       alt=""
                     />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width="100%" height="100px" layout="responsive" src="/swiper-RMHS/WACE.png" alt="" />
+                    <Image width={100} height={100} layout="responsive" src="/swiper-RMHS/WACE.png" alt="" />
                   </SwiperSlide>
                   {/* <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
                     <img src="/swiper-images/18.webp" alt="" />
@@ -528,7 +528,7 @@ function Home1() {
                   <div className="w-full flex flex-col items-center justify-center gap-8 h-fit max-md:w-5/6 ">
                     {/* <div className="flex flex-col items-center justify-center gap-8 w-80 h-64"> */}
                     <div className="">
-                      <Image width={"100%"} height={"100%"} layout="responsive" src="/New-Grads.jpg" alt="" />
+                      <Image width={250} height={150} layout="responsive" src="/New-Grads.jpg" alt="" />
                     </div>
                     <div className="px-0">
                       <h1 className="text-contingentColor text-xl font-bold pb-2">

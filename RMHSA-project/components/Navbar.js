@@ -267,30 +267,6 @@ function Navbar() {
                         <span class="relative inline-flex rounded-full h-4 w-4 bg-sky-500"></span>
                       </span>
                     </span>
-                    {/* {dropOpen && (
-                      <div className="dropdown-content absolute bg-[#f9f9f9] min-w-[100px] z-1">
-                        <Link
-                          href="/blogs"
-                          className={`text-black py-3 px-4 mr-8 block ${
-                            pathname === "/blogs"
-                              ? "font-semibold border-primary border-b-8 pb-2.5"
-                              : "border-primary border-2 border-opacity-0 hover:border-opacity-100 pb-2.5 hover:font-medium focus:font-semibold hover:bg-slate-200"
-                          }`}
-                        >
-                          Blogs
-                        </Link>
-                        <Link
-                          href="/notifications"
-                          className={`text-black py-3 px-4 mr-8 block ${
-                            pathname === "/notifications"
-                              ? "font-semibold border-primary border-b-8 pb-2.5"
-                              : "border-primary border-2 border-opacity-0 hover:border-opacity-100 pb-2.5 hover:font-medium focus:font-semibold hover:bg-slate-200"
-                          }`}
-                        >
-                          Notifications
-                        </Link>
-                      </div>
-                    )} */}
                   </div>
                 </Link>
               </span>
@@ -299,19 +275,16 @@ function Navbar() {
                 onClick={toggleMenu}
                 style={{ display: isOpen ? "none" : "flex" }}
               >
-                <Link href="#">
+                <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    //   height="52"
                     viewBox="0 96 960 960"
-                    // width="40"
                     fill="#ffffff"
-                    // style={{width: }}
                     className="max-lg:w-10"
                   >
                     <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
                   </svg>
-                </Link>
+                </span>
               </span>
             </div>
           </div>

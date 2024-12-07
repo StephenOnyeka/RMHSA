@@ -1,11 +1,10 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import ScrollDiv from "@/components/Scroll";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-
 
 import {
   Drawer,
@@ -16,19 +15,18 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer"
+} from "@/components/ui/drawer";
 
 function SchoolLife() {
-  const [show, setShow]= useState(false)
+  const [show, setShow] = useState(false);
   return (
     <div>
       <ScrollDiv />
       <div className=" h-full font-Poppins overflow-hidden">
-        <div className="bg-[url('/RMHS/IMG_20241015_124820.jpg')] bg-cover bg-center">
+        <div className="bg-[url('/Edited/1732230029186.jpg')] bg-cover bg-center">
           <div
             id="SchoolLife_container-1"
-            className="bg-gradient-to-b from-black/40 via-black/60 to-black/80 h-screen max-sm:h-screen/1.5 max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
-            // className="bg-black/60 h-screen max-sm:h-screen/1.5 max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
+            className="bg-gradient-to-b from-black/40 via-black/70 to-black/80 h-screen max-sm:h-screen/1.5 max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
           >
             <div className=" ">
               <Navbar />
@@ -142,7 +140,13 @@ function SchoolLife() {
                       individuals. Our dedicated teachers inspire you to reach
                       your full potential, while our state-of-the-art facilities
                       provide the perfect environment for learning and growth.
-                      <Image width={"100%"} height={"100%"} layout="responsive" src="/RMHS/IMG_20241015_141332.jpg" alt="" />
+                      <Image
+                        width={"100%"}
+                        height={"100%"}
+                        layout="responsive"
+                        src="/RMHS/IMG_20241015_141332.jpg"
+                        alt=""
+                      />
                       From exciting clubs and societies to thrilling sports
                       competitions, there’s always something to get involved in.
                       Join us and experience a school life that’s both
@@ -179,11 +183,23 @@ function SchoolLife() {
 
           <div className=" bg-gray-200 pt-24 pb-20 px-10 pl-20 w-full text-gray-500 max-sm:px-8">
             {/* <img src="/life-bus.jpg" alt="" /> */}
-            <Image src="/RMHS/signboard.png" width={"100%"} height={"100%"} layout="responsive" alt="" />
-
+            {/* <div className="w-full h-full"> */}
+            <Image
+              src="/RMHS/signboard.png"
+              width={200}
+              height={500}
+              layout="responsive"
+              alt=""
+              className="w-full h-full"
+            />
             <div className="flex  flex-col">
               <div className="flex gap-6 items-center my-6 max-sm:gap-3">
-                <Image src="/icon-transportation.png" width={"100%"} height={"100%"} layout="responsive" alt="" />
+                <Image
+                  src="/icon-transportation.png"
+                  width={30}
+                  height={30}
+                  alt=""
+                />
                 <p className="text-lg text-black font-semibold mt-4">
                   Transportations
                 </p>
@@ -192,19 +208,18 @@ function SchoolLife() {
                 There are many options to travel in the school.
               </p>
               <p className="max-sm:text-sm max-sm:leading-6">
-                {/* There live the blind texts. Separated they live in Bookmarks
-                grove right at the coast of the Semantics, a large language
-                ocean. A small river named Duden flows by their place and
-                supplies it with the necessary regelialia. It is a
-                paradisematic. It is a paradise matic country, in which roasted
-                parts of sentences fly into. */}
                 Land transportation is the most commute way of getting to us.
                 Don't forget to observe traffic lights.
               </p>
             </div>
             <div className="flex  flex-col">
               <div className="flex gap-6 items-center my-8">
-                <Image width={"100%"} height={"100%"} layout="responsive" src="/icon-parking.png" alt="" />
+                <Image
+                  width={30}
+                  height={30}
+                  src="/icon-parking.png"
+                  alt=""
+                />
                 <p className="text-lg text-black font-semibold mt-4">Parking</p>
               </div>
               <p className="max-sm:text-sm max-sm:leading-6">
@@ -237,233 +252,118 @@ function SchoolLife() {
                 </button>
               </DrawerTrigger>
               <DrawerContent className="">
-                <div className="mx-auto w-full px-4">
+                <div className="mx-auto w-full 2xl:max-w-7xl px-4">
                   <DrawerHeader>
                     <DrawerTitle>School Structure</DrawerTitle>
                     <DrawerDescription>Gallery Photos</DrawerDescription>
                   </DrawerHeader>
                   <div className=" ">
-                    <div className="overflow-hidden overflow-y-scroll p-4 h-[70vh]">
-                      {/* <p className="py-4 mb-2 font-bold text-lg text-center">
-                        Gallery
-                      </p> */}
+                    <div className="overflow-hidden overflow-y-scroll p-4 h-[70vh] ">
                       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-sm:gap-2 ">
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                              src="/images/R-main(entrance).jpg"
-                              className="h-full w-full object-cover"
-                              height={"256px"}
-                              width={"100%"}
-                              layout="responsive"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/images/R-main(entrance).jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
-                            {/* <div className="p-4"> */}
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Main Building (Entrance-View)
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
 
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                              src="/images/R- main.jpg"
-                              className="h-full w-full object-cover"
-                              height={"256px"}
-                              width={"100%"}
-                              layout="responsive"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/Edited/1732230029126.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Main building
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
 
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                              src="/images/R-chapel.jpg"
-                              className="h-full w-full object-cover"
-                              height={"256px"}
-                              width={"100%"}
-                              layout="responsive"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/Edited/1732230029099.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Chapel
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                              src="/images/R-chapel(inward).jpg"
-                              className="h-full w-full object-cover"
-                              height={"256px"}
-                              width={"100%"}
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/Edited/1732230029081.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Chapel (inner-view)
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/images/chapel.jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/Edited/1732230029066.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Hail Mary Grotto
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/images/R-hailmary.jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/images/R-hailmary.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Hail Mary Grotto (closer-view)
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/images/R-admin.jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/Edited/1732230029053.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Administrative Block
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/images/R-library.jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/images/R-library.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Library
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/images/R-science2.jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg bg-[url('/images/R-science2.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Science Lab
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/images/R-class.jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/images/R-class.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Classroom
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/images/R-conference.jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/Edited/1733039444212.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Conference Hall
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/images/R-ICT.jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
+                          <div className="h-64 w-full bg-[url('/Edited/1733039444189.jpg')] bg-cover bg-no-repeat bg-center"></div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
+                            <p className="text-white italic font-semibold max-sm:text-sm">
+                              Infirmary
+                            </p>
                           </div>
+                        </div>
+                        <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
+                          <div className="h-64 w-full bg-[url('/images/R-ICT.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               ICT Lab
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                       </div>
@@ -477,79 +377,37 @@ function SchoolLife() {
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-sm:gap-2 ">
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/Events/1726065374828.jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
-                          </div>
-                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
-                            {/* <div className="p-4"> */}
+                          <div className="h-64 w-full bg-[url('/Events/1726065374828.jpg')] bg-cover bg-no-repeat bg-center"></div>
+                          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Representing at national competitions
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
 
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/Events/1726065382316.jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/Events/1726065382316.jpg')] bg-cover bg-no-repeat bg-center "></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Educational competition at National level.
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/Events/IMG-20241026-WA0007~4.jpg"
-                              className="h-full w-full object-cover object-top"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/Events/IMG-20241026-WA0007~4.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
-                            {/* <div className="p-4"> */}
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Conference with Students
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
 
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/Events/IMG-20241026-WA0008 (1).jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/Events/IMG-20241026-WA0008.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Ongoing conference with students - 2nd image
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                       </div>
@@ -560,80 +418,38 @@ function SchoolLife() {
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-sm:gap-2 ">
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/Events/1726065589415.jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/Events/1726065589415.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
-                            {/* <div className="p-4"> */}
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Meeting with his Lordship, Bishop of Ekwulobia
                               Diocese
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
 
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/Events/1726065592701.jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/Events/1726065592701.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[70%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               A brief chat with the Bishop on Christianity and
                               Spiritual growth
-                              {/* Meeting with his Lordship, Bishop of Ekwulobia Diocese - 2nd image */}
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/Events/IMG-20241026-WA0006.jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/Events/IMG-20241026-WA0006.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Celebration of Mass with Students
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                         <div className="group relative text-white overflow-hidden cursor-pointer h-auto">
-                          <div className="h-64 w-full">
-                            <Image
-                            width={"100%"}
-                            height={"256px"}
-                            layout="responsive"
-                              src="/Events/IMG-20241026-WA0005 (1).jpg"
-                              className="h-full w-full object-cover"
-                              alt=""
-                            />
-                          </div>
+                          <div className="h-64 w-full bg-[url('/Events/IMG-20241026-WA0005.jpg')] bg-cover bg-no-repeat bg-center"></div>
                           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80 text-center translate-y-[100%] group-hover:translate-y-[80%] transition-all pt-4">
                             <p className="text-white italic font-semibold max-sm:text-sm">
                               Ongoing church service
                             </p>
-                            {/* </div> */}
                           </div>
                         </div>
                       </div>
@@ -679,7 +495,6 @@ function SchoolLife() {
             <div className="bg-gray-200 flex items-center w-full py-36 max-sm:py-12">
               <div className="flex flex-col gap-6 px-16 ml-10 max-sm:ml-0">
                 <div>
-                  
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
