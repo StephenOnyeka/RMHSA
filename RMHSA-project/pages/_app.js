@@ -8,7 +8,6 @@ import { SubscriptionsContextProvider } from "@/context/SubscriptionContext";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Loading from "@/components/loading"; 
-
 // import Loading from "@/components/Loading"; // Adjust the path as necessary
 
 export default function App({ Component, pageProps }) {
@@ -36,11 +35,12 @@ export default function App({ Component, pageProps }) {
   }
 
   return (
+    // <Layout>
     <BlogsContextProvider>
       <SubscriptionsContextProvider>
         <Component {...pageProps} />
       </SubscriptionsContextProvider>
-    </BlogsContextProvider>
+      </BlogsContextProvider>
   );
 }
 

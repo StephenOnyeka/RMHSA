@@ -135,7 +135,9 @@ const Accordion = ({ openAccordionId, toggleAccordion }) => {
             ) : (
               <span> +</span>
             )}
-            {accordion.buttonText}
+            <span>
+              {accordion.buttonText}
+            </span>
           </button>
           <div
             style={{

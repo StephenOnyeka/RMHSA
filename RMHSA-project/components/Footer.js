@@ -46,7 +46,7 @@ function Footer() {
                 <span className="font-semibold">Account Name:</span> Rosa
                 Mystica High School Agulu
                 <br />
-                <span className="font-semibold">Bank:</span> UBA Plc
+                <span className="font-semibold">Bank:</span> United Bank for Africa - UBA Plc
                 <br />
                 <span className="font-semibold">Account Number:</span> 1100409154
               </div>

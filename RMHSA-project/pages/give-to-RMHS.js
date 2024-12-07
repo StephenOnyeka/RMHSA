@@ -19,7 +19,8 @@ function Donate() {
         <Topfile />
         <ScrollDiv />
         <div className=" h-full font-Poppins overflow-hidden">
-          <div className="bg-[url('/RMHS/IMG_20241015_115530~2.jpg')] bg-cover bg-center">
+          {/* <div className="bg-[url('/RMHS/IMG_20241015_115530~2.jpg')] bg-cover bg-center"> */}
+          <div className="bg-[url('/Edited/1732230029150.jpg')] bg-cover bg-center">
             <div
               id="Donor_container-1"
               className="bg-black/70 h-screen max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
@@ -88,14 +89,33 @@ function Donate() {
                       justice so that you make the transition responsibly.
                     </p>
                     <br />
-                    <Image
-                      src="/RMHS/IMG_20241015_115530~2.jpg"
-                      className="pt-8"
-                      width={"100%"}
-                      height={"100%"}
+                    {/* <div className="h-64 w-full bg-[url('/RMHS/IMG_20241015_115530~2.jpg')] bg-cover bg-no-repeat bg-center"></div> */}
+                    <img
+                      src="/Edited/WhatsApp Image 2024-12-07 at 16.00.26_6fee0c7a.jpg"
+                      className="pt-8 w-full h-full"
+                      width={500}
+                      height={250}
                       layout="responsive"
                       alt=""
                     />
+                    {/* <Image
+                      src="/RMHS/IMG_20241015_115530~2.jpg"
+                      className="pt-8"
+                      width={500}
+                      height={250}
+                      layout="responsive"
+                      alt=""
+                    /> */}
+                    {/* <Image
+                      src="/RMHS/IMG_20241015_115530~2.jpg"
+                      className="pt-8"
+                      // width={"100%"}
+                      // height={"100%"}
+                      width={500}
+                      height={250}
+                      layout="responsive"
+                      alt=""
+                    /> */}
                   </div>
 
                   <div id="" className="py-16 ">
@@ -400,17 +420,34 @@ function Donate() {
             </div>
           </div>
           {/* </div> */}
-          <div className="text-white h-screen/2 max-sm:absolute z-1 mb-32">
+          <div className="text-white h-full max-sm:absolute z-1 ">
+          {/* <div className="text-white h-screen/2 max-sm:absolute z-1 mb-32"> */}
             <div className="bg-contingentColor flex gap-10 items-center justify-center px-6 pt-24 w-full py-28 max-sm:flex-wrap max-sm:py-16">
               <div className="w-2/4 px-8 max-sm:w-full max-sm:px-4">
-                <Image
+                {/* <Image
                   src="/RMHS/IMG_20241015_114703.jpg"
                   alt=""
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
                   className="w-full -mt-40 max-sm:-mt-32"
+                /> */}
+                <Image
+                  src="/Edited/1732230029137.jpg"
+                  alt=""
+                  width={500}
+                  height={200}
+                  layout="responsive"
+                  className="w-full -mt-40 max-sm:-mt-32"
                 />
+                {/* <Image
+                  src="/RMHS/IMG_20241015_114703.jpg"
+                  alt=""
+                  width={500}
+                  height={200}
+                  layout="responsive"
+                  className="w-full -mt-40 max-sm:-mt-32"
+                /> */}
               </div>
               <div className="w-2/4 flex flex-col gap-12 max-sm:w-full max-sm:gap-6">
                 <p className="text-2xl leading-10 max-sm:text-xl max-sm:leading-8">
@@ -443,13 +480,14 @@ function Donate() {
                   </button>
                 </div>
               </div>
+              {/* <Footer /> */}
             </div>
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </div>
         {/* <Footer /> */}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

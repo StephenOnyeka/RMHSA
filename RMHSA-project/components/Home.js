@@ -83,7 +83,8 @@ function Home1() {
         <div id="Home" className="max-sm:overflow-hidden">
           <Topfile />
 
-          <div className="bg-[url('/images/R-bmain.jpg')] bg-fixed bg-cover bg-no-repeat bg-center ">
+
+            <div className="bg-[url('/images/R-bmain.jpg')] bg-fixed bg-cover bg-no-repeat bg-center ">
             <div
               id="Home_container-1"
               className="bg-gradient-to-b from-black/80 to-black/15 h-screen px-8 pt-8 max-sm:px-4 w-full text-white grid grid-cols-1"
@@ -138,7 +139,8 @@ function Home1() {
                 </div>
                 <div className="max-w-full ">
                   <Image
-                    src="/images/R- main.jpg"
+                    // src="/images/R- main.jpg"
+                    src="/Edited/1732230029126.jpg"
                     alt=""
                     width={500}
                     height={288}
@@ -323,42 +325,96 @@ function Home1() {
                   className="mySwiper border-green-800"
                 >
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width={100} height={100} layout="responsive" src="/swiper-RMHS/NECO.png" alt="" />
+                    <Image
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                      src="/swiper-RMHS/NECO.png"
+                      alt=""
+                    />
                   </SwiperSlide>
                   <SwiperSlide className="mt-6 max-sm:mt-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width={100} height={100} layout="responsive" src="/swiper-images/ministry.png" alt="" />
+                    <Image
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                      src="/swiper-images/ministry.png"
+                      alt=""
+                    />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width={100} height={100} layout="responsive" src="/swiper-RMHS/JAMB.png" alt="" />
+                    <Image
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                      src="/swiper-RMHS/JAMB.png"
+                      alt=""
+                    />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width={100} height={100} layout="responsive"
+                    <Image
+                      width={100}
+                      height={100}
+                      layout="responsive"
                       src="/swiper-RMHS/Awka3.png"
                       className="mt-6 max-sm:mt-3 w-[500px]"
                       alt=""
                     />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width={100} height={100} layout="responsive" src="/swiper-RMHS/WACE.png" alt="" />
+                    <Image
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                      src="/swiper-RMHS/WACE.png"
+                      alt=""
+                    />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width={100} height={100} layout="responsive" src="/swiper-RMHS/NECO.png" alt="" />
+                    <Image
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                      src="/swiper-RMHS/NECO.png"
+                      alt=""
+                    />
                   </SwiperSlide>
                   <SwiperSlide className="mt-6 max-sm:mt-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width={100} height={100} layout="responsive" src="/swiper-images/ministry.png" alt="" />
+                    <Image
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                      src="/swiper-images/ministry.png"
+                      alt=""
+                    />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width={100} height={100} layout="responsive" src="/swiper-RMHS/JAMB.png" alt="" />
+                    <Image
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                      src="/swiper-RMHS/JAMB.png"
+                      alt=""
+                    />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width={100} height={100} layout="responsive"
+                    <Image
+                      width={100}
+                      height={100}
+                      layout="responsive"
                       src="/swiper-RMHS/Awka3.png"
                       className="mt-6 max-sm:mt-3 w-[400px]"
                       alt=""
                     />
                   </SwiperSlide>
                   <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
-                    <Image width={100} height={100} layout="responsive" src="/swiper-RMHS/WACE.png" alt="" />
+                    <Image
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                      src="/swiper-RMHS/WACE.png"
+                      alt=""
+                    />
                   </SwiperSlide>
                   {/* <SwiperSlide className="-mx-3 p-6 max-sm:p-0 max-sm:-mx-0">
                     <img src="/swiper-images/18.webp" alt="" />
@@ -528,7 +584,13 @@ function Home1() {
                   <div className="w-full flex flex-col items-center justify-center gap-8 h-fit max-md:w-5/6 ">
                     {/* <div className="flex flex-col items-center justify-center gap-8 w-80 h-64"> */}
                     <div className="">
-                      <Image width={250} height={150} layout="responsive" src="/New-Grads.jpg" alt="" />
+                      <Image
+                        width={250}
+                        height={150}
+                        layout="responsive"
+                        src="/New-Grads.jpg"
+                        alt=""
+                      />
                     </div>
                     <div className="px-0">
                       <h1 className="text-contingentColor text-xl font-bold pb-2">

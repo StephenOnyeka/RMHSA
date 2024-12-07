@@ -21,10 +21,11 @@ function admission() {
       <Topfile />
       <ScrollDiv />
       <div className=" h-full font-Poppins overflow-hidden">
-        <div className="bg-[url('/RMHS/IMG_3941.png')] bg-cover bg-top">
+        {/* <div className="bg-[url('/RMHS/IMG_3941.png')] bg-cover bg-top"> */}
+        <div className="bg-[url('/Edited/1732230029220.jpg')] bg-cover bg-top">
           <div
             id="Admission_container-1"
-            className="bg-gradient-to-b from-black/40 to-black/80 h-screen  max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
+            className="bg-gradient-to-b from-black/50 to-black/80 h-screen  max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
           >
             <div className=" ">
               <Navbar />
