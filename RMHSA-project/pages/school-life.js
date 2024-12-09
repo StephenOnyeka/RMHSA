@@ -24,7 +24,7 @@ function SchoolLife() {
     <div>
       <Topfile />
       <ScrollDiv />
-      <div className="  font-Poppins overflow-hidden">
+      <div className="font-Poppins overflow-hidden">
         {/* <div className="bg-[url('/Edited/1732230029186.jpg')] bg-cover bg-center">
           <div
             id="SchoolLife_container-1"

@@ -126,11 +126,40 @@ const Blog = require("../models/blogModel");
 const mongoose = require("mongoose");
 // const multer = require('multer');
 
-//Get all blogs
-const getBlogs = async (req, res) => {
-  const blogs = await Blog.find({}).sort({ createdAt: -1 });
 
-  res.status(200).json(blogs);
+//Get all blogs
+// const getBlogs = async (req, res) => {
+//   const blogs = await Blog.find({}).sort({ createdAt: -1 });
+
+//   res.status(200).json(blogs);
+// };
+const getBlogs = async (req, res) => {
+  const page = parseInt(req.query.page) || 1; // Current page number
+  const limit = parseInt(req.query.limit) || 5; // Number of blogs per page
+  const skip = (page - 1) * limit; // Calculate how many documents to skip
+
+  try {
+    // Fetch blogs with pagination
+    const blogs = await Blog.find({})
+      .sort({ createdAt: -1 }) // Sort by creation date
+      .skip(skip) // Skip the previous pages
+      .limit(limit); // Limit the number of blogs returned
+
+    // Get the total count of blogs
+    const totalPosts = await Blog.countDocuments();
+
+    // Calculate total pages
+    const totalPages = Math.ceil(totalPosts / limit);
+
+    // Send response
+    res.status(200).json({
+      blogs, // The current page of blogs
+      totalPosts, // Total number of blogs
+      totalPages, // Total number of pages
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 };
 
 // Get a single blog
