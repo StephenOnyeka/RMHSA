@@ -8,14 +8,17 @@ const app = express();
 const PORT = process.env.PORT;
 const mongoose = require("mongoose");
 const blogRoutes = require("./routes/blogs");
+// const notificationRoutes = require("./routes/notifications");
+const notificationRoutes = require("./routes/notifications");
+
 const subscriptionRoutes = require("./routes/subscriptions");
 // const { sendTransacEmail } = require("@sendinblue/client");
 
 
 // Middleware
 app.use(cors());
-app.use(bodyParser.json({ limit: "100mb" }));
-app.use(bodyParser.urlencoded({ limit: "100mb", extended: true }));
+app.use(bodyParser.json({ limit: "200mb" }));
+app.use(bodyParser.urlencoded({ limit: "200mb", extended: true }));
 
 
 //middleware for blogs
@@ -28,6 +31,7 @@ app.use((req, res, next) => {
 //routes for the blogs
 app.use("/api/blogs", blogRoutes);
 // app.use("/api/blogs/:id", blogRoutes);
+app.use("/api/notifications", notificationRoutes);
 app.use("/api/subscriptions", subscriptionRoutes);
 
 mongoose

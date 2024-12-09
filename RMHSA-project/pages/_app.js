@@ -5,6 +5,7 @@ import "@/styles/index.css";
 import "@/styles/nav.css";
 import { BlogsContextProvider } from "@/context/BlogsContext";
 import { SubscriptionsContextProvider } from "@/context/SubscriptionContext";
+import { NotificationsContextProvider } from "@/context/NotificationsContext";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Loading from "@/components/loading"; 
@@ -36,11 +37,13 @@ export default function App({ Component, pageProps }) {
 
   return (
     // <Layout>
+    <NotificationsContextProvider>
     <BlogsContextProvider>
       <SubscriptionsContextProvider>
         <Component {...pageProps} />
       </SubscriptionsContextProvider>
       </BlogsContextProvider>
+      </NotificationsContextProvider>
   );
 }
 

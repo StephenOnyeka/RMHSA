@@ -8,70 +8,49 @@ import Loading from "@/components/loading";
 import { useRouter } from "next/router";
 
 // import { useBlogsContext } from "@/useBlogsContext";
-import { useBlogsContext } from "@/hooks/useBlogsContext";
-import BlogsDetails from "@/components/BlogsDetails";
+import { useNotificationsContext } from "@/hooks/useNotificationsContext";
+import NotificationsDetails from "@/components/NotificationsDetails";
 import dynamic from "next/dynamic";
 
 // Dynamically import BlogForm with no SSR
-const BlogForm = dynamic(() => import("@/components/BlogForm"), {
+const NotificationForm = dynamic(() => import("@/components/NotificationForm"), {
   ssr: false,
 });
 
-function Blogs() {
-  // const { blogs, dispatch } = useBlogsContext();
-  // const [loading, setLoading] = useState(true);
+function Notifications() {
 
-  //  useEffect(() => {
-  //   const fetchWorkouts = async () => {
-  //     // const response = await fetch(
-  //     //   "https://rmhsa-servered.vercel.app/api/blogs"
-  //     // );
-  //     const response = await fetch("http://localhost:5000/api/blogs");
-  //     const json = await response.json();
-  //     if (response.ok) {
-  //       dispatch({ type: "SET_BLOGS", payload: json });
-  //       setLoading(false);
-  //     }
-  //   };
-  //   fetchWorkouts();
-  // }, [dispatch]);
+  const { notifications, dispatch } = useNotificationsContext();
+  const [loading, setLoading] = useState(true);
+  const router = useRouter();
+  const { page = 1 } = router.query;
+  const currentPage = Number(page) || 1; // Ensure page is a number
+  const [totalPosts, setTotalPosts] = useState(0);
+  const [totalPages, setTotalPages] = useState(0);
+  const postsPerPage = 5;
 
+  useEffect(() => {
+    const fetchWorkouts = async () => {
+      const response = await fetch(
+        `http://localhost:5000/api/notifications?page=${currentPage}&limit=${postsPerPage}`
+      );
+      const data = await response.json();
 
+      if (response.ok) {
+        setTotalPosts(data.totalPosts);
+        setTotalPages(data.totalPages);
+        dispatch({ type: "SET_NOTIFICATIONS", payload: data.notifications }); // Make sure you're dispatching the notifications
+        setLoading(false);
+      } else {
+        console.error("Failed to fetch notifications:", data);
+        setLoading(false);
+      }
+    };
+    console.log("Total Posts:", totalPosts);
+    console.log("Total Pages:", totalPages);
+    fetchWorkouts();
+  }, [dispatch, currentPage]); // Use currentPage here
 
-  
-const { blogs, dispatch } = useBlogsContext();
-const [loading, setLoading] = useState(true);
-const router = useRouter();
-const { page = 1 } = router.query;
-const currentPage = Number(page) || 1; // Ensure page is a number
-const [totalPosts, setTotalPosts] = useState(0);
-const [totalPages, setTotalPages] = useState(0);
-const postsPerPage = 5;
-
-useEffect(() => {
-  const fetchWorkouts = async () => {
-    const response = await fetch(
-      `http://localhost:5000/api/blogs?page=${currentPage}&limit=${postsPerPage}`
-    );
-    const data = await response.json();
-
-    if (response.ok) {
-      setTotalPosts(data.totalPosts);
-      setTotalPages(data.totalPages);
-      dispatch({ type: "SET_BLOGS", payload: data.blogs }); // Make sure you're dispatching the blogs
-      setLoading(false);
-    } else {
-      console.error("Failed to fetch blogs:", data);
-      setLoading(false);
-    }
-  };
-console.log("Total Posts:", totalPosts);
-console.log("Total Pages:", totalPages);
-// console.log("Blogs:", blogs);
-  fetchWorkouts();
-}, [dispatch, currentPage]); // Use currentPage here
-
-if (loading) return <Loading />;
+  if (loading) return <Loading />;
 
   return (
     <div>
@@ -85,9 +64,9 @@ if (loading) return <Loading />;
         {/* displaying in block form */}
         <div className="flex w-full gap-x-8 max-lg:flex-wrap">
           <div className="font-semibold w-full">
-            {blogs &&
-              blogs.map((blog) => <BlogsDetails key={blog._id} blog={blog} />)}
-            
+            {notifications &&
+              notifications.map((notification) => <NotificationsDetails key={notification._id} notification={notification} />)}
+
             {/* Pagination Controls */}
             <br />
             <br />
@@ -111,11 +90,9 @@ if (loading) return <Loading />;
               </button>
             </div>
           </div>
-          {/* <br />
-          <br /> */}
 
           <div className="w-full">
-            <BlogForm />
+            <NotificationForm />
           </div>
         </div>
       </div>
@@ -123,36 +100,7 @@ if (loading) return <Loading />;
   );
 }
 
-export default Blogs;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default Notifications;
 
 // import React, { useEffect, useState } from "react";
 // import Link from "next/link";
@@ -200,7 +148,7 @@ export default Blogs;
 //    const [totalPosts, setTotalPosts] = useState(0);
 //    const [totalPages, setTotalPages] = useState(0);
 //   const postsPerPage = 5;
-  
+
 //   useEffect(() => {
 //     const fetchWorkouts = async () => {
 //       const response = await fetch(
@@ -274,49 +222,6 @@ export default Blogs;
 // }
 
 // export default Blogs;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import React, {useEffect, useState} from 'react'
 // import { useBlogsContext } from "../hooks/useBlogsContext";
