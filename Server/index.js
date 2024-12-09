@@ -25,7 +25,7 @@ app.use((req, res, next) => {
   next();
 });
 
-//routes fot the blogs
+//routes for the blogs
 app.use("/api/blogs", blogRoutes);
 // app.use("/api/blogs/:id", blogRoutes);
 app.use("/api/subscriptions", subscriptionRoutes);
@@ -86,6 +86,8 @@ app.post("/submitContact", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+
 
 // require("dotenv").config();
 

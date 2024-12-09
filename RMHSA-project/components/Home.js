@@ -40,7 +40,7 @@ function Home1() {
         setWarn(null);
 
         const response = await fetch(
-          "https://rmhsa-servered.vercel.app/api/subscriptions",
+          "http://localhost:5000/api/subscriptions",
           {
             method: "POST",
             body: JSON.stringify(subscription),
