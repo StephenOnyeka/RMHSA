@@ -6,6 +6,7 @@ import "@/styles/nav.css";
 import { BlogsContextProvider } from "@/context/BlogsContext";
 import { SubscriptionsContextProvider } from "@/context/SubscriptionContext";
 import { NotificationsContextProvider } from "@/context/NotificationsContext";
+import { AdminProvider } from "@/hooks/useAdminContext";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Loading from "@/components/loading"; 
@@ -37,6 +38,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     // <Layout>
+    <AdminProvider>
     <NotificationsContextProvider>
     <BlogsContextProvider>
       <SubscriptionsContextProvider>
@@ -44,6 +46,7 @@ export default function App({ Component, pageProps }) {
       </SubscriptionsContextProvider>
       </BlogsContextProvider>
       </NotificationsContextProvider>
+    </AdminProvider>
   );
 }
 

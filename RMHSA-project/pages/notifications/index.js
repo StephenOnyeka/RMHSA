@@ -6,6 +6,7 @@ import Topfile from "@/components/Topfile";
 import Footer from "@/components/Footer";
 import Loading from "@/components/loading";
 import { useRouter } from "next/router";
+import { useAdminContext } from "@/hooks/useAdminContext";
 
 // import { useBlogsContext } from "@/useBlogsContext";
 import { useNotificationsContext } from "@/hooks/useNotificationsContext";
@@ -13,13 +14,16 @@ import NotificationsDetails from "@/components/NotificationsDetails";
 import dynamic from "next/dynamic";
 
 // Dynamically import BlogForm with no SSR
-const NotificationForm = dynamic(() => import("@/components/NotificationForm"), {
-  ssr: false,
-});
+const NotificationForm = dynamic(
+  () => import("@/components/NotificationForm"),
+  {
+    ssr: false,
+  }
+);
 
 function Notifications() {
-
   const { notifications, dispatch } = useNotificationsContext();
+  const { isAdmin, verifyAdmin } = useAdminContext();
   const [loading, setLoading] = useState(true);
   const router = useRouter();
   const { page = 1 } = router.query;
@@ -50,6 +54,12 @@ function Notifications() {
     fetchWorkouts();
   }, [dispatch, currentPage]); // Use currentPage here
 
+  useEffect(() => {
+    const storedToken = localStorage.getItem("token");
+    if (storedToken) {
+      verifyAdmin(storedToken);
+    }
+  }, [verifyAdmin]);
   if (loading) return <Loading />;
 
   return (
@@ -65,7 +75,12 @@ function Notifications() {
         <div className="flex w-full gap-x-8 max-lg:flex-wrap">
           <div className="font-semibold w-full">
             {notifications &&
-              notifications.map((notification) => <NotificationsDetails key={notification._id} notification={notification} />)}
+              notifications.map((notification) => (
+                <NotificationsDetails
+                  key={notification._id}
+                  notification={notification}
+                />
+              ))}
 
             {/* Pagination Controls */}
             <br />
@@ -90,10 +105,11 @@ function Notifications() {
               </button>
             </div>
           </div>
-
-          <div className="w-full">
-            <NotificationForm />
-          </div>
+          {isAdmin && (
+            <div className="w-full">
+              <NotificationForm />
+            </div>
+          )}
         </div>
       </div>
     </div>

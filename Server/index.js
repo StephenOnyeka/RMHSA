@@ -8,10 +8,10 @@ const app = express();
 const PORT = process.env.PORT;
 const mongoose = require("mongoose");
 const blogRoutes = require("./routes/blogs");
-// const notificationRoutes = require("./routes/notifications");
 const notificationRoutes = require("./routes/notifications");
-
 const subscriptionRoutes = require("./routes/subscriptions");
+const adminRoutes = require("./routes/admin");
+
 // const { sendTransacEmail } = require("@sendinblue/client");
 
 
@@ -30,9 +30,10 @@ app.use((req, res, next) => {
 
 //routes for the blogs
 app.use("/api/blogs", blogRoutes);
-// app.use("/api/blogs/:id", blogRoutes);
 app.use("/api/notifications", notificationRoutes);
 app.use("/api/subscriptions", subscriptionRoutes);
+app.use("/api/admin", adminRoutes);
+
 
 mongoose
   .connect(process.env.MONGO_URI)
@@ -90,6 +91,10 @@ app.post("/submitContact", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+
+
+
 
 
 

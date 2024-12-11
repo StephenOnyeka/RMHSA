@@ -1,14 +1,24 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 import { FaXTwitter } from "react-icons/fa6";
 import { FaSkype } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";  
 import { FaInstagram } from "react-icons/fa";
+import { useAdminContext } from "@/hooks/useAdminContext";
 
 import Topfile from "@/components/Topfile";
 
 function Footer() {
+  const { isAdmin, verifyAdmin } = useAdminContext();
+
+
+    useEffect(() => {
+      const storedToken = localStorage.getItem("token");
+      if (storedToken) {
+        verifyAdmin(storedToken);
+      }
+    }, [verifyAdmin]);
   return (
     <>
       <div className="font-Poppins">
@@ -20,6 +30,7 @@ function Footer() {
                 <p className="text-2xl font-bold font-Playfair max-sm:text-xl">
                   Rosa Mystica <span className="font-normal"> High School</span>
                 </p>
+                {isAdmin && <p className="text-primary">Admin is logged In</p>}                
               </span>
               <div className="text-white/60 py-4 mt-6 leading-7 max-sm:text-xs max-sm:leading-6">
                 {/* <p>Box 35300</p> */}
@@ -30,7 +41,7 @@ function Footer() {
               <p>Bothell, WA 98011-8246</p> */}
               </div>
               <p className="text-white text-xs">
-                +234-8065133300 +234-8037647331, +234-8076367903hm
+                +234-8065133300 +234-8037647331, +234-8076367903
               </p>
               {/* <p className="text-white max-sm:text-xs">+234-8076367903</p>
               <p className="text-white max-sm:text-xs">+234-8076367903</p> */}

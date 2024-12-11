@@ -9,4 +9,4 @@ export const useBlogsContext = () => {
     }
 
     return context
-}
+} 
