@@ -513,13 +513,15 @@ function Home1() {
                       <hr />
                       {/* <li className="mt-4"> Academic Calendar</li>
                       <br /> <hr /> */}
-                      {/* <li className="mt-4"> All Rosa Mystica's Events </li>
-                      <br /> <hr /> */}
+                      <li className="mt-4"> School Portal </li>
+                      <br /> <hr />
                       <li className="mt-4"> Partnership & Out Reach </li>
                       <br /> <hr />
                       <li className="mt-4"> Academic Programs</li>
                       <br /> <hr />
                       <li className="mt-4"> Tuition And Fees </li>
+                      <br /> <hr />
+                      <li className="mt-4"> Support Rosa Mystica </li>
                       <br /> <hr />
                     </ul>
                   </div>

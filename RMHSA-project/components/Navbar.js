@@ -248,7 +248,7 @@ function Navbar() {
               </span>
               <span className="hideOnMobile pl-10">
                 <Link
-                  href="/"
+                  href="/notifications"
                   className={` ${
                     pathname === "/"
                     // ? "font-semibold border-primary border-b-8 pb-2.5"

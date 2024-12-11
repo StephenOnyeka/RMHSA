@@ -29,7 +29,11 @@ function Footer() {
                 {/* <p>1810 Campus Way NE</p>
               <p>Bothell, WA 98011-8246</p> */}
               </div>
-              <p className="text-white max-sm:text-xs">+234-8076367903</p>
+              <p className="text-white text-xs">
+                +234-8065133300 +234-8037647331, +234-8076367903hm
+              </p>
+              {/* <p className="text-white max-sm:text-xs">+234-8076367903</p>
+              <p className="text-white max-sm:text-xs">+234-8076367903</p> */}
               <ul>
                 <li>
                   <a href="" className="max-sm:text-xs">
@@ -46,9 +50,11 @@ function Footer() {
                 <span className="font-semibold">Account Name:</span> Rosa
                 Mystica High School Agulu
                 <br />
-                <span className="font-semibold">Bank:</span> United Bank for Africa - UBA Plc
+                <span className="font-semibold">Bank:</span> United Bank for
+                Africa - UBA Plc
                 <br />
-                <span className="font-semibold">Account Number:</span> 1100409154
+                <span className="font-semibold">Account Number:</span>{" "}
+                1100409154
               </div>
               {/* <ul className="font-light leading-9 max-sm:leading-7 max-sm:text-xs">
                 <li className="hover:text-white transition-all duration-200 ease-in">
