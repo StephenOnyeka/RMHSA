@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT;
+const MONGO_URI = process.env.MONGO_URI;
 const mongoose = require("mongoose");
 const blogRoutes = require("./routes/blogs");
 const notificationRoutes = require("./routes/notifications");
@@ -36,7 +37,8 @@ app.use("/api/admin", adminRoutes);
 
 
 mongoose
-  .connect(process.env.MONGO_URI)
+  // .connect(process.env.MONGO_URI)
+  .connect(MONGO_URI)
   .then(() => {
     console.log("db has connected successfully");
   })
