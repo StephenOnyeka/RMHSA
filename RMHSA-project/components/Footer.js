@@ -1,4 +1,5 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
+import Link from "next/link"
 
 import { FaXTwitter } from "react-icons/fa6";
 import { FaSkype } from "react-icons/fa";
@@ -26,7 +27,7 @@ function Footer() {
           <div className="flex justify-center text-white/50 gap-10 max-sm:flex-wrap max-sm:gap-10 ">
             <div className="box w-full text-white leading-9">
               <span className="flex flex-wrap gap-4 items-center">
-                <div className="bg-[url('/images/RMHS.png')] w-10 h-10 rounded-full bg-cover bg-center"></div>
+                <Link href={"/admin"}><div className="bg-[url('/images/RMHS.png')] w-10 h-10 rounded-full bg-cover bg-center"></div></Link>
                 <p className="text-2xl font-bold font-Playfair max-sm:text-xl">
                   Rosa Mystica <span className="font-normal"> High School</span>
                 </p>

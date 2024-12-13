@@ -3,8 +3,10 @@ const bcrypt = require("bcryptjs");
 
 const adminEmail = "demo@gmail.com";
 const adminPasswords = [
-  "$2a$10$3NNqpV4O/6rWFi9F5C/GkuBfaS3vprBvnhxEjewKchQ1w4T9ybhWq", // Replace with the actual hashed password
-  "$$2a$10$wYOD94Pntwx939IUfosPD.kCi60K.uBaZ3MktaQjWbaF6ZQPeL66O", // Replace with the actual hashed password
+  "$2a$10$OoPVVTBl6z0lHMIJTsT9fOBIA1YCTQPdlAvyednULmU7Ein2ChGRu", // Replace with the actual hashed password
+  "$2a$10$wYOD94Pntwx939IUfosPD.kCi60K.uBaZ3MktaQjWbaF6ZQPeL66O", // Replace with the actual hashed password
+  // "$2a$10$3NNqpV4O/6rWFi9F5C/GkuBfaS3vprBvnhxEjewKchQ1w4T9ybhWq", // Replace with the actual hashed password
+  // "$$2a$10$wYOD94Pntwx939IUfosPD.kCi60K.uBaZ3MktaQjWbaF6ZQPeL66O", // Replace with the actual hashed password
 ];
 
 const checkPassword = async (password) => {

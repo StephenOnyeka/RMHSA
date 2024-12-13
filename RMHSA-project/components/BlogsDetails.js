@@ -58,15 +58,19 @@
 
 // export default BlogsDetails;
 
-import React from "react";
+import React, {useEffect} from "react";
 import { useBlogsContext } from "../hooks/useBlogsContext";
 // date fns
 // import DOMPurify from "dompurify";
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import Link from "next/link";
+import { useAdminContext } from "@/hooks/useAdminContext";
+
 
 function BlogsDetails({ blog }) {
   const { dispatch } = useBlogsContext();
+    const { isAdmin, verifyAdmin } = useAdminContext();
+  
   const handleClick = async () => {
     const response = await fetch("http://localhost:5000/api/blogs/" + blog._id, {
     // const response = await fetch(
@@ -83,6 +87,12 @@ function BlogsDetails({ blog }) {
       dispatch({ type: "DELETE_BLOG", payload: json });
     }
   };
+  useEffect(() => {
+          const storedToken = localStorage.getItem("token");
+          if (storedToken) {
+            verifyAdmin(storedToken);
+          }
+        }, [verifyAdmin]);
 
   return (
     <div>
@@ -102,9 +112,14 @@ function BlogsDetails({ blog }) {
         <br />
         <p className="font-semibold">{blog.desc.substring(0, 100)} ...</p>
         <br />
-        <button className="bg-red-400 px-4 py-2 rounded font-medium text-xs hover:bg-green-400" onClick={handleClick}>
-          Delete
-        </button>
+        {isAdmin && (
+          <button
+            className="bg-red-400 px-4 py-2 rounded font-medium text-xs hover:bg-green-400"
+            onClick={handleClick}
+          >
+            Delete
+          </button>
+        )}
       </div>
       <hr />
     </div>

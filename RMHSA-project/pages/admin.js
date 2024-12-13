@@ -84,9 +84,14 @@ function Admin() {
         {isAdmin ? (
           <div className="max-w-md mx-auto p-4 bg-white rounded shadow-md">
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Admin Dashboard</h3>
-                          {/* <BlogForm /> */}
-                          <p className="font-medium italic mb-4">The admin is loggedin you want to leave?</p>
+              <div className="flex content-center items-center gap-x-4 p-0 mb-6">
+                <div className="bg-[url('/images/RMHS.png')] w-10 h-10 rounded-full bg-cover bg-center"></div>
+                <h3 className="text-2xl font-semibold">Admin Dashboard</h3>
+              </div>
+              {/* <BlogForm /> */}
+              <p className="font-medium italic mb-4">
+                The admin is loggedin; You want to leave?
+              </p>
               <LogoutButton onLogout={handleLogout} />
             </div>
           </div>
