@@ -22,7 +22,9 @@ const BlogPost = () => {
         // const response = await fetch(
         //   `https://rmhsa-servered.vercel.app/api/blogs/${id}`
         // );
-        const response = await fetch(`http://localhost:5000/api/blogs/${id}`);
+        const response = await fetch(
+          `https://rmhsa-servered.vercel.app/api/blogs/${id}`
+        );
         if (!response.ok) {
           throw new Error("blog not found");
         }

@@ -18,13 +18,17 @@ function SubscriptionForm() {
     setWarn(null);
 
 
-        const response = await fetch("/api/subscriptions", {
-          method: "POST",
-          body: JSON.stringify(subscription),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        // const response = await fetch("/api/subscriptions", {
+        const response = await fetch(
+          "https://rmhsa-servered.vercel.app/api/subscriptions",
+          {
+            method: "POST",
+            body: JSON.stringify(subscription),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
         const json = await response.json();
         if (response.ok) {
             setEmail("");

@@ -31,7 +31,7 @@ function Blogs() {
   useEffect(() => {
     const fetchBlogs = async () => {
       const response = await fetch(
-        `http://localhost:5000/api/blogs?page=${currentPage}&limit=${postsPerPage}`
+        `https://rmhsa-servered.vercel.app/api/blogs?page=${currentPage}&limit=${postsPerPage}`
       );
       const data = await response.json();
 

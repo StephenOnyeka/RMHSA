@@ -7,7 +7,7 @@ const LogoutButton = ({ onLogout }) => {
   const handleLogout = async () => {
     try {
       // Optionally, you can make a request to the logout endpoint
-      await fetch("http://localhost:5000/api/admin/logout", {
+      await fetch("https://rmhsa-servered.vercel.app/api/admin/logout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

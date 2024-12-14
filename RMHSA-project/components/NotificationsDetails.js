@@ -13,7 +13,7 @@ function NotificationsDetails({ notification }) {
 
   const handleClick = async () => {
     const response = await fetch(
-      "http://localhost:5000/api/notifications/" + notification._id,
+      "https://rmhsa-servered.vercel.app/api/notifications/" + notification._id,
       {
         method: "DELETE",
       }

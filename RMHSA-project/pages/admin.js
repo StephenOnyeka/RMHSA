@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { FaArrowLeft } from "react-icons/fa";
+import Link from "next/link";
+
 // import BlogForm from "../components/BlogForm";
 
 import LogoutButton from "../components/LogoutButton";
@@ -22,12 +25,15 @@ function Admin() {
 
   const verifyAdmin = async (token) => {
     try {
-      const response = await fetch("http://localhost:5000/api/admin/verify", {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await fetch(
+        "https://rmhsa-servered.vercel.app/api/admin/verify",
+        {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
 
       if (response.ok) {
         setIsAdmin(true);
@@ -43,11 +49,14 @@ function Admin() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/admin/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
+    const response = await fetch(
+      "https://rmhsa-servered.vercel.app/api/admin/login",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      }
+    );
 
     if (response.ok) {
       const data = await response.json();
@@ -63,12 +72,15 @@ function Admin() {
   const handleLogout = async () => {
     try {
       // Optionally, you can make a request to the logout endpoint
-      await fetch("http://localhost:5000/api/admin/logout", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      await fetch(
+        "https://rmhsa-servered.vercel.app/api/admin/logout",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       // Clear the token from localStorage
       localStorage.removeItem("token");
@@ -131,7 +143,13 @@ function Admin() {
               className="bg-blue-500 text-white px-4 py-2 rounded w-full"
             >
               Login
-            </button>
+            </button>{" "}
+              <div className="text-center mt-2 text-sm">
+                <Link href={"/"} className="flex items-center gap-x-2 hover:text-primary">
+              <FaArrowLeft />
+                  Go back
+                </Link>
+            </div>
             {error && (
               <div className="text-red-500 border border-red-500 bg-red-100 p-2 mt-4">
                 {error}

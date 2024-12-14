@@ -200,14 +200,17 @@ function BlogForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const blog = { title, desc, body };
-    const response = await fetch("http://localhost:5000/api/blogs", {
-      method: "POST",
-      body: JSON.stringify(blog),
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-    });
+    const response = await fetch(
+      "https://rmhsa-servered.vercel.app/api/blogs",
+      {
+        method: "POST",
+        body: JSON.stringify(blog),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
     const json = await response.json();
     if (response.ok) {
       setTitle("");

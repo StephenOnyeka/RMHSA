@@ -28,8 +28,8 @@ function ContactUs() {
     e.preventDefault(); // Prevent the default form submission
 
     // Send the form data to the Node.js backend
-    const res = await fetch("http://localhost:5000/submitContact", {
-    // const res = await fetch("https://rmhsa-servered.vercel.app/submitContact", {
+    const res = await fetch("https://rmhsa-servered.vercel.app/submitContact", {
+      // const res = await fetch("https://rmhsa-servered.vercel.app/submitContact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

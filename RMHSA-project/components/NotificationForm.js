@@ -20,16 +20,19 @@ function NotificationForm() {
     e.preventDefault();
     // const Notification = { titleImg, title, desc, body };
     const notification = { title, desc, body };
-    const response = await fetch("http://localhost:5000/api/notifications", {
-      // const response = await fetch(
-      //   "https://rmhsa-servered.vercel.app/api/notifications",
-      //   {
-      method: "POST",
-      body: JSON.stringify(notification),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await fetch(
+      "https://rmhsa-servered.vercel.app/api/notifications",
+      {
+        // const response = await fetch(
+        //   "https://rmhsa-servered.vercel.app/api/notifications",
+        //   {
+        method: "POST",
+        body: JSON.stringify(notification),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     const json = await response.json();
     if (response.ok) {
       // setTitleImg(null);

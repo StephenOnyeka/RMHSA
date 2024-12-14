@@ -16,7 +16,9 @@ const NotificationPost = () => {
   useEffect(() => {
     const fetchNotification = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/notifications/${id}`);
+        const response = await fetch(
+          `https://rmhsa-servered.vercel.app/api/notifications/${id}`
+        );
         if (!response.ok) {
           throw new Error("notification not found");
         }

@@ -35,7 +35,7 @@ function Notifications() {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch(
-        `http://localhost:5000/api/notifications?page=${currentPage}&limit=${postsPerPage}`
+        `https://rmhsa-servered.vercel.app/api/notifications?page=${currentPage}&limit=${postsPerPage}`
       );
       const data = await response.json();
 
