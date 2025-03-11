@@ -8,7 +8,8 @@ export const AdminProvider = ({ children }) => {
 
   const verifyAdmin = async (token) => {
     try {
-      const response = await fetch("http://localhost:5000/api/admin/verify", {
+      // const response = await fetch("http://localhost:5000/api/admin/verify", {
+      const response = await fetch("https://rmhsa-servered.vercel.app/api/admin/verify", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
