@@ -508,7 +508,7 @@ function Home1() {
                     <br />
                     {/* <br /> */}
                     <ul className="text-base font-semibold text-white">
-                      <li className="mt-4"> Alumni & Donors</li>
+                      <li className="mt-4"> Alumnae & Donors</li>
                       <br />
                       <hr />
                       {/* <li className="mt-4"> Academic Calendar</li>

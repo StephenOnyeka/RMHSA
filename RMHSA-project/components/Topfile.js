@@ -39,7 +39,7 @@ function Topfile() {
         </div>
         <div className="flex gap-6 items-center">
           <Link href="">
-            <span>Alumni</span>
+            <span>Alumnae</span>
           </Link>
           <Link href="">Calendar</Link>
           <Link href="https://portal.rmhsagulu.com.ng/resultchecker.aspx">
