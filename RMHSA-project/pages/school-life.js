@@ -6,6 +6,8 @@ import Topfile from "@/components/Topfile";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import { MdKeyboardDoubleArrowUp } from "react-icons/md";
+
 
 import {
   Drawer,
@@ -74,12 +76,51 @@ function SchoolLife() {
                   </p>
                 </div>
 
-                <p className="text-lg leading-8 px-6 max-md:px-3 max-md:leading-6 max-md:text-sm max-sm:px-0 ">
+                {/* <p className="text-lg leading-8 px-6 max-md:px-3 max-md:leading-6 max-md:text-sm max-sm:px-0 ">
                   Immerse yourself in a stimulating academic environment
                   designed to nurture your intellectual curiosity. Experience
                   rigorous coursework, engaging extracurricular activities, and
                   a vibrant campus community. Join a legacy of excellence and
                   prepare for a bright future.
+                </p> */}
+                <p className="text-lg leading-8 px-6 max-md:px-3 max-md:leading-6 max-md:text-sm max-sm:px-0 flex">
+                  Immerse yourself in a stimulating academic environment
+                  designed to
+                  <span
+                    onClick={() => {
+                      setShow((show) => !show);
+                    }}
+                    className=" flex items-center justify-center bg-transparent border-none cursor-pointer"
+                  >
+                    {show ? (
+                      <MdKeyboardDoubleArrowUp
+                        size={20}
+                        fill="#0099FF"
+                        className="animate-pulse"
+                      />
+                    ) : (
+                      <MdKeyboardDoubleArrowDown
+                        size={20}
+                        fill="#0099FF"
+                        className="animate-bounce "
+                      />
+                    )}
+                  </span>{" "}
+                  <div
+                    className={`overflow-hidden transition-max-height ${
+                      show ? "max-h-[10000px]" : "max-h-0"
+                    }`}
+                  >
+                    {" "}
+                    {show && (
+                      <span>
+                        nurture your intellectual curiosity. Experience rigorous
+                        coursework, engaging extracurricular activities, and a
+                        vibrant campus community. Join a legacy of excellence
+                        and prepare for a bright future.
+                      </span>
+                    )}
+                  </div>
                 </p>
               </div>
             </div>
