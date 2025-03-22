@@ -99,7 +99,7 @@ function Footer() {
                 <a href="">Accessibility</a>
               </li> */}
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Alumnae</a>
+                  <a href="">Blogs</a>
                 </li>
                 <li className="hover:text-white transition-all duration-200 ease-in">
                   <a href="">Notifications</a>
@@ -108,10 +108,11 @@ function Footer() {
                 <a href="">Housing</a>
               </li> */}
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Blogs</a>
+                  <a href="">Alumnae Group</a>
                 </li>
                 {/* <li className="hover:text-white transition-all duration-200 ease-in"> */}
-                <li className="hover:text-white transition-all duration-200 ease-in border border-white/50 hover:border-white p-1 px-2 md:p-2 md:px-4 rounded-full max-w-full">
+                <br />
+                <li className="hover:text-white transition-all duration-200 ease-in border border-white/50 hover:border-white px-4 md:px-8 rounded-full max-w-fit">
                   <a href="" className=" ">
                     Become a Donor
                   </a>
@@ -130,16 +131,16 @@ function Footer() {
                 <a href="">Catalyst</a>
               </li> */}
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Library</a>
+                  <a href="">School Portal</a>
                 </li>
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Time Schedule</a>
-                </li>
-                <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Apply For Admissions</a>
+                  <a href="">Academic Calendar</a>
                 </li>
                 <li className="hover:text-white transition-all duration-200 ease-in">
                   <a href="">Pay My Tuition</a>
+                </li>
+                <li className="hover:text-white transition-all duration-200 ease-in">
+                  <a href="">Apply For Admission</a>
                 </li>
               </ul>
             </div>
