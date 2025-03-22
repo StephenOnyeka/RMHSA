@@ -559,7 +559,7 @@ function Home1() {
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                         />
-                        <button className="bg-primary p-4 w-full mt-4 text-white font-semibold">
+                        <button className="bg-primary hover:opacity-70 p-4 w-full mt-4 text-white font-semibold">
                           Subscribe
                         </button>
                         {error && (
@@ -606,7 +606,7 @@ function Home1() {
                         programs.
                       </p>
                       <Link href="/give-to-RMHS">
-                        <button className="bg-primary p-4 mt-4 text-white font-semibold">
+                        <button className="bg-primary hover:opacity-70 p-4 mt-4 text-white font-semibold">
                           <span className="flex items-center gap-4">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"

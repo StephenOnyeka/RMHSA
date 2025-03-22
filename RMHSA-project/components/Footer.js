@@ -92,7 +92,7 @@ function Footer() {
               </ul> */}
             </div>
             <div className="box w-full">
-              <p className="text-white font-semibold">School Life</p>
+              <p className="text-white font-semibold">Community & Engagement</p>
               <hr className="border border-primary mt-3 mb-5" />
               <ul className="font-light leading-9 max-sm:leading-7 max-sm:text-xs">
                 {/* <li className="hover:text-white transition-all duration-200 ease-in">
