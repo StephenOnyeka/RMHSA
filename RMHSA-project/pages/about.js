@@ -404,7 +404,7 @@ function About() {
                 <p className="text-gray-500 text leading-7 max-md:leading-6 max-md:text-sm">
                   Our alumnae network is a testament to the power of a strong
                   education. Our graduates are leaders in their fields, making a
-                  difference in communities around the globe. <b>For an Alumna</b>-
+                  difference in communities around the globe. <b>For Alumna</b>-
                   Join our vibrant alumnae community and connect with like-minded
                   individuals who share your passion for learning and service.
                 </p>

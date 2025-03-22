@@ -23,15 +23,17 @@ function Footer() {
   return (
     <>
       <div className="font-Poppins">
-        <div className="py-20 px-12 bg-black/90 max-sm:px-6">
-          <div className="flex justify-center text-white/50 gap-10 max-sm:flex-wrap max-sm:gap-10 ">
+        <div className="py-20 px-8 bg-black/90 max-sm:px-6">
+          <div className="flex justify-center text-white/50 gap-8 max-sm:flex-wrap max-sm:gap-10 ">
             <div className="box w-full text-white leading-9">
               <span className="flex flex-wrap gap-4 items-center">
-                <Link href={"/admin"}><div className="bg-[url('/images/RMHS.png')] w-10 h-10 rounded-full bg-cover bg-center"></div></Link>
+                <Link href={"/admin"}>
+                  <div className="bg-[url('/images/RMHS.png')] w-10 h-10 rounded-full bg-cover bg-center"></div>
+                </Link>
                 <p className="text-2xl font-bold font-Playfair max-sm:text-xl">
                   Rosa Mystica <span className="font-normal"> High School</span>
                 </p>
-                {isAdmin && <p className="text-primary">Admin is logged In</p>}                
+                {isAdmin && <p className="text-primary">Admin is logged In</p>}
               </span>
               <div className="text-white/60 py-4 mt-6 leading-7 max-sm:text-xs max-sm:leading-6">
                 {/* <p>Box 35300</p> */}
@@ -62,11 +64,17 @@ function Footer() {
                 <span className="font-semibold">Account Name:</span> Rosa
                 Mystica High School Agulu
                 <br />
+                <br />
                 <span className="font-semibold">Bank:</span> United Bank for
                 Africa - UBA Plc
                 <br />
-                <span className="font-semibold">Account Number:</span>{" "}
-                1100409154
+                <span className="font-semibold">Account No:</span> 1000540835
+                <br />
+                <br />
+                <span className="font-semibold">Bank:</span> Uzondu Microfinance
+                Bank ltd
+                <br />
+                <span className="font-semibold">Account No:</span> 1100409154
               </div>
               {/* <ul className="font-light leading-9 max-sm:leading-7 max-sm:text-xs">
                 <li className="hover:text-white transition-all duration-200 ease-in">
@@ -91,19 +99,23 @@ function Footer() {
                 <a href="">Accessibility</a>
               </li> */}
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Financial Aid</a>
+                  <a href="">Alumnae</a>
                 </li>
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Food Services</a>
+                  <a href="">Notifications</a>
                 </li>
                 {/* <li className="hover:text-white transition-all duration-200 ease-in">
                 <a href="">Housing</a>
               </li> */}
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Information Technologies</a>
+                  <a href="">Blogs</a>
                 </li>
-                <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Student Life</a>
+                {/* <li className="hover:text-white transition-all duration-200 ease-in"> */}
+                <li className="hover:text-white transition-all duration-200 ease-in border border-white/50 hover:border-white p-1 px-2 md:p-2 md:px-4 rounded-full max-w-full">
+                  <a href="" className=" ">
+                    Become a Donor
+                  </a>
+                  {/* <a href="" className="border border-white/50 hover:border-white p-2 px-4 rounded-full ">Become a Donor</a> */}
                 </li>
               </ul>
             </div>
@@ -137,7 +149,7 @@ function Footer() {
         <div className="bg-black/85">
           <div className="flex justify-between items-center p-10 max-sm:flex-wrap max-sm:justify-center max-sm:text-center max-sm:gap-8">
             <p className="text-white/50 text-sm font-light max-sm:text-xs">
-              Copyright All Right Reserved 2024, Rosa Mystica
+              Copyright All Rights Reserved 2025, Rosa Mystica
             </p>
             <span>
               {/* <div className="social-contact"> */}

@@ -160,8 +160,10 @@ function SchoolLife() {
                       <Image
                         src="/RMHS/IMG_20241015_140910.jpg"
                         alt=""
-                        width={"100%"}
-                        height={"100%"}
+                        // width={"100%"}
+                        // height={"100%"}
+                        width={300}
+                        height={150}
                         layout="responsive"
                         className=""
                       />
@@ -170,7 +172,7 @@ function SchoolLife() {
                       your full potential, while our state-of-the-art facilities
                       provide the perfect environment for learning and growth.
                       <Image
-                        width={"100%"}
+                        width={300}
                         height={"100%"}
                         layout="responsive"
                         src="/RMHS/IMG_20241015_141332.jpg"
