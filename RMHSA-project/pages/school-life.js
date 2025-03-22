@@ -36,7 +36,7 @@ function SchoolLife() {
               <Navbar />
             </div>
 
-            <div className="pt-[28%] pb-[5%] lg:pt-[30%] text-white border border-red-500">
+            <div className="pt-[28%] pb-[5%] lg:pt-[30%] text-white">
               <div className="flex gap-16 max-md:flex-wrap max-md:content-center max-md:gap-0">
                 <div className="min-w-80">
                   <p className="font-bold font-Poppins text-4xl max-md:text-2xl">
@@ -72,7 +72,7 @@ function SchoolLife() {
                   a vibrant campus community. Join a legacy of excellence and
                   prepare for a bright future.
                 </p>
-                <div className="text-lg leading-8 px-6 max-md:px-3 max-md:leading-6 max-md:text-sm max-sm:px-0 md:hidden border border-green-500">
+                <div className="text-lg leading-8 px-6 max-md:px-3 max-md:leading-6 max-md:text-sm max-sm:px-0 md:hidden">
                   <div
                     className={`overflow-hidden transition-max-height ${
                       show ? "max-h-[10000px]" : "max-h-0"
