@@ -26,39 +26,8 @@ function SchoolLife() {
     <div>
       <Topfile />
       <ScrollDiv />
-      <div className="font-Poppins overflow-hidden">
-        {/* <div className="bg-[url('/Edited/1732230029186.jpg')] bg-cover bg-center">
-          <div
-            id="SchoolLife_container-1"
-            className="bg-gradient-to-b from-black/40 via-black/70 to-black/80 h-screen max-sm:h-screen/1.5 max-md:h-screen/1.5 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
-          >
-            <div className=" ">
-              <Navbar />
-            </div>
-
-            <div className=" pt-80 max-sm:pt-24 text-white">
-              <div className="py-10">
-                <div className="flex gap-16 max-md:flex-wrap max-md:content-center max-md:gap-8">
-                  <div className="min-w-80">
-                    <p className=" font-bold font-Poppins text-4xl max-md:text-2xl">
-                      Elevate Your Potential at Rosa Mystica
-                      <span className="element-divider-seperator flex w-5/6 mt-4 border-2 border-primary "></span>
-                    </p>
-                  </div>
-
-                  <p className="text-lg leading-8 px-6 max-md:px-3 max-md:leading-6 max-md:text-sm max-sm:px-0 ">
-                    Immerse yourself in a stimulating academic environment
-                    designed to nurture your intellectual curiosity. Experience
-                    rigorous coursework, engaging extracurricular activities,
-                    and a vibrant campus community. Join a legacy of excellence
-                    and prepare for a bright future.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-        <div className="bg-[url('/Edited/1732230029186.jpg')] bg-cover bg-center">
+      <div className=" font-Poppins overflow-hidden">
+        <div className="bg-[url('/Edited/1732230029186.jpg')] bg-cover bg-no-repeat bg-center max-sm:bg-cover">
           <div
             id="SchoolLife_container-1"
             className="bg-gradient-to-b from-black/30 via-black/70 to-black/70 px-8 pt-8 max-sm:px-4 w-full font-Poppins text-white"
@@ -67,45 +36,43 @@ function SchoolLife() {
               <Navbar />
             </div>
 
-            <div className="pt-[50%] pb-[5%] lg:pt-[30%] text-white">
-              <div className="flex gap-16 max-md:flex-wrap max-md:content-center max-md:gap-8">
+            <div className="pt-[28%] pb-[5%] lg:pt-[30%] text-white border border-red-500">
+              <div className="flex gap-16 max-md:flex-wrap max-md:content-center max-md:gap-0">
                 <div className="min-w-80">
-                  <p className=" font-bold font-Poppins text-4xl max-md:text-2xl">
+                  <p className="font-bold font-Poppins text-4xl max-md:text-2xl">
                     Elevate Your Potential at Rosa Mystica
-                    <span className="element-divider-seperator flex w-5/6 mt-4 border-2 border-primary "></span>
+                    <div className="flex content-center items-center justify-between pt-4">
+                      <span className="element-divider-seperator flex w-5/6 border-2 border-primary"></span>
+                      <span
+                        onClick={() => {
+                          setShow((show) => !show);
+                        }}
+                      >
+                        {show ? (
+                          <MdKeyboardDoubleArrowUp
+                            size={20}
+                            fill="#0099FF"
+                            className="animate-pulse"
+                          />
+                        ) : (
+                          <MdKeyboardDoubleArrowDown
+                            size={20}
+                            fill="#0099FF"
+                            className="animate-bounce"
+                          />
+                        )}
+                      </span>
+                    </div>
                   </p>
                 </div>
-
-                {/* <p className="text-lg leading-8 px-6 max-md:px-3 max-md:leading-6 max-md:text-sm max-sm:px-0 ">
+                <p className="text-lg leading-8 px-6 max-md:px-3 max-md:leading-6 max-md:text-sm max-sm:px-0 max-md:hidden">
                   Immerse yourself in a stimulating academic environment
                   designed to nurture your intellectual curiosity. Experience
                   rigorous coursework, engaging extracurricular activities, and
                   a vibrant campus community. Join a legacy of excellence and
                   prepare for a bright future.
-                </p> */}
-                <p className="text-lg leading-8 px-6 max-md:px-3 max-md:leading-6 max-md:text-sm max-sm:px-0 flex">
-                  Immerse yourself in a stimulating academic environment
-                  designed to
-                  <span
-                    onClick={() => {
-                      setShow((show) => !show);
-                    }}
-                    className=" flex items-center justify-center bg-transparent border-none cursor-pointer"
-                  >
-                    {show ? (
-                      <MdKeyboardDoubleArrowUp
-                        size={20}
-                        fill="#0099FF"
-                        className="animate-pulse"
-                      />
-                    ) : (
-                      <MdKeyboardDoubleArrowDown
-                        size={20}
-                        fill="#0099FF"
-                        className="animate-bounce "
-                      />
-                    )}
-                  </span>{" "}
+                </p>
+                <div className="text-lg leading-8 px-6 max-md:px-3 max-md:leading-6 max-md:text-sm max-sm:px-0 md:hidden border border-green-500">
                   <div
                     className={`overflow-hidden transition-max-height ${
                       show ? "max-h-[10000px]" : "max-h-0"
@@ -114,14 +81,15 @@ function SchoolLife() {
                     {" "}
                     {show && (
                       <span>
-                        nurture your intellectual curiosity. Experience rigorous
+                        Immerse yourself in a stimulating academic environment
+                        designed to intellectual curiosity. Experience rigorous
                         coursework, engaging extracurricular activities, and a
                         vibrant campus community. Join a legacy of excellence
                         and prepare for a bright future.
                       </span>
                     )}
                   </div>
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -214,7 +182,7 @@ function SchoolLife() {
                       provide the perfect environment for learning and growth.
                       <Image
                         width={300}
-                        height={"100%"}
+                        height={150}
                         layout="responsive"
                         src="/RMHS/IMG_20241015_141332.jpg"
                         alt=""
