@@ -134,7 +134,7 @@ function Footer() {
                   <a href="">School Portal</a>
                 </li>
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Academic Calendar</a>
+                  <a href="https://eu.docworkspace.com/d/sIBjQh_iwAd36-74G">Academic Calendar</a>
                 </li>
                 <li className="hover:text-white transition-all duration-200 ease-in">
                   <a href="">Pay My Tuition</a>

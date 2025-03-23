@@ -83,8 +83,7 @@ function Home1() {
         <div id="Home" className="max-sm:overflow-hidden">
           <Topfile />
 
-
-            <div className="bg-[url('/images/R-bmain.jpg')] bg-fixed bg-cover bg-no-repeat bg-center ">
+          <div className="bg-[url('/images/R-bmain.jpg')] bg-fixed bg-cover bg-no-repeat bg-center ">
             <div
               id="Home_container-1"
               className="bg-gradient-to-b from-black/80 to-black/15 h-screen px-8 pt-8 max-sm:px-4 w-full text-white grid grid-cols-1"
@@ -508,20 +507,37 @@ function Home1() {
                     <br />
                     {/* <br /> */}
                     <ul className="text-base font-semibold text-white">
-                      <li className="mt-4"> Alumnae & Donors</li>
+                      <li className="mt-4">
+                        <a href="https://wa.me/+1(347)440-9767">
+                          {" "}
+                          Alumnae & Donors
+                        </a>
+                      </li>
                       <br />
                       <hr />
-                      {/* <li className="mt-4"> Academic Calendar</li>
+                      <li className="mt-4">
+                        <a href="https://eu.docworkspace.com/d/sIBjQh_iwAd36-74G">
+                          Academic Calendar
+                        </a>
+                      </li>
+                      <br /> <hr />
+                      <li className="mt-4">
+                        {" "}
+                        <a href="https://portal.rmhsagulu.com.ng/resultchecker.aspx">
+                          School Portal
+                        </a>{" "}
+                      </li>
+                      {/* <br /> <hr />
+                      <li className="mt-4"> Partnership & Out Reach </li> */}
+                      <br /> <hr />
+                      {/* <li className="mt-4"> Academic Programs</li>
                       <br /> <hr /> */}
-                      <li className="mt-4"> School Portal </li>
-                      <br /> <hr />
-                      <li className="mt-4"> Partnership & Out Reach </li>
-                      <br /> <hr />
-                      <li className="mt-4"> Academic Programs</li>
-                      <br /> <hr />
                       <li className="mt-4"> Tuition And Fees </li>
                       <br /> <hr />
-                      <li className="mt-4"> Support Rosa Mystica </li>
+                      <li className="mt-4">
+                        {" "}
+                        <a href="/give-to-RMHS"></a>Support Rosa Mystica{" "}
+                      </li>
                       <br /> <hr />
                     </ul>
                   </div>

@@ -38,10 +38,12 @@ function Topfile() {
           </span>
         </div>
         <div className="flex gap-6 items-center">
-          <Link href="">
+          <Link href="https://wa.me/+1(347)440-9767">
             <span>Alumnae</span>
           </Link>
-          <Link href="">Calendar</Link>
+          <Link href="https://eu.docworkspace.com/d/sIBjQh_iwAd36-74G">
+            Calendar
+          </Link>
           <Link href="https://portal.rmhsagulu.com.ng/resultchecker.aspx">
             Portal
           </Link>
