@@ -25,57 +25,57 @@ import { Autoplay, Pagination, FreeMode, Navigation } from "swiper/modules";
 function Home1() {
   const [counterOn, setCounterOn] = useState(false);
 
-      const { dispatch } = useSubscriptionsContext();
+  const { dispatch } = useSubscriptionsContext();
 
-      const [email, setEmail] = useState("");
-      const [error, setError] = useState(); //initialize with null
-      const [mssg, setMssg] = useState();
-      const [warn, setWarn] = useState();
-      const handleSubmit = async (e) => {
-        e.preventDefault();
-        const subscription = { email };
-        // Clear previous messages
-        setError(null);
-        setMssg(null);
-        setWarn(null);
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState(); //initialize with null
+  const [mssg, setMssg] = useState();
+  const [warn, setWarn] = useState();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const subscription = { email };
+    // Clear previous messages
+    setError(null);
+    setMssg(null);
+    setWarn(null);
 
-        const response = await fetch(
-          "https://rmhsa-servered.vercel.app/api/subscriptions",
-          {
-            method: "POST",
-            body: JSON.stringify(subscription),
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        );
-        const json = await response.json();
-        if (response.ok) {
-          setEmail("");
-          // setError() // Reset error on success
-          console.log("new subscription added", json);
-          setMssg(json.mssg);
+    const response = await fetch(
+      "https://rmhsa-servered.vercel.app/api/subscriptions",
+      {
+        method: "POST",
+        body: JSON.stringify(subscription),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    const json = await response.json();
+    if (response.ok) {
+      setEmail("");
+      // setError() // Reset error on success
+      console.log("new subscription added", json);
+      setMssg(json.mssg);
 
-          //dispatch action to add the new subscription to the context
-          dispatch({ type: "CREATE_SUBSCRIPTION", payload: json });
-        } else {
-          // setError(json.error); //Set error message
-          if (json.error) {
-            setError(json.error);
-          } else if (json.warn) {
-            setWarn(json.warn); //set warning message
-          }
-        }
-      };
+      //dispatch action to add the new subscription to the context
+      dispatch({ type: "CREATE_SUBSCRIPTION", payload: json });
+    } else {
+      // setError(json.error); //Set error message
+      if (json.error) {
+        setError(json.error);
+      } else if (json.warn) {
+        setWarn(json.warn); //set warning message
+      }
+    }
+  };
 
-      useEffect(() => {
-        const timer = setTimeout(() => {
-          setMssg(null);
-          setWarn(null);
-          setError(null);
-        }, 5000);
-        return () => clearTimeout(timer);
-      });
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setMssg(null);
+      setWarn(null);
+      setError(null);
+    }, 5000);
+    return () => clearTimeout(timer);
+  });
   return (
     <div className=" ">
       <ScrollDiv />
@@ -532,7 +532,7 @@ function Home1() {
                       <br /> <hr />
                       {/* <li className="mt-4"> Academic Programs</li>
                       <br /> <hr /> */}
-                      <li className="mt-4"> Tuition And Fees </li>
+                      <li className="mt-4"> Tuition And Feesk </li>
                       <br /> <hr />
                       <li className="mt-4">
                         {" "}
