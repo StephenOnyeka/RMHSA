@@ -3,12 +3,14 @@
 import "@/styles/globals.css";
 import "@/styles/index.css";
 import "@/styles/nav.css";
+import Head from "next/head";
 import { BlogsContextProvider } from "@/context/BlogsContext";
 import { SubscriptionsContextProvider } from "@/context/SubscriptionContext";
 import { NotificationsContextProvider } from "@/context/NotificationsContext";
 import { AdminProvider } from "@/hooks/useAdminContext";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Layout from "@/components/Layout";
 import Loading from "@/components/loading"; 
 // import Loading from "@/components/Loading"; // Adjust the path as necessary
 
@@ -36,17 +38,27 @@ export default function App({ Component, pageProps }) {
     return <Loading />;
   }
 
+const pageTitle = router.pathname.replace("/", ""); // Removes leading slash
+const title = `RMHS | ${
+  pageTitle.charAt(0).toUpperCase() + pageTitle.slice(1)
+}`;
+
   return (
-    // <Layout>
-    <AdminProvider>
-    <NotificationsContextProvider>
-    <BlogsContextProvider>
-      <SubscriptionsContextProvider>
-        <Component {...pageProps} />
-      </SubscriptionsContextProvider>
-      </BlogsContextProvider>
-      </NotificationsContextProvider>
-    </AdminProvider>
+    <Layout>
+      <Head>
+        <link rel="icon" href="/images/RMHS.png" />
+        <title>{pageTitle === "" ? "RMHS" : title}</title>
+      </Head>
+      <AdminProvider>
+        <NotificationsContextProvider>
+          <BlogsContextProvider>
+            <SubscriptionsContextProvider>
+              <Component {...pageProps} />
+            </SubscriptionsContextProvider>
+          </BlogsContextProvider>
+        </NotificationsContextProvider>
+      </AdminProvider>
+    </Layout>
   );
 }
 
