@@ -532,7 +532,7 @@ function Home1() {
                       <br /> <hr />
                       {/* <li className="mt-4"> Academic Programs</li>
                       <br /> <hr /> */}
-                      <li className="mt-4"> Tuition And Feesk </li>
+                      <li className="mt-4"> Tuition And Fees </li>
                       <br /> <hr />
                       <li className="mt-4">
                         {" "}
