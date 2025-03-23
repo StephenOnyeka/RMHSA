@@ -108,7 +108,7 @@ function Donate() {
                     </p>
                     <br />
                     {/* <div className="h-64 w-full bg-[url('/RMHS/IMG_20241015_115530~2.jpg')] bg-cover bg-no-repeat bg-center"></div> */}
-                    <img
+                    <Image
                       src="/Edited/WhatsApp Image 2024-12-07 at 16.00.26_6fee0c7a.jpg"
                       className="pt-8 w-full h-full"
                       width={500}
@@ -600,7 +600,7 @@ export default Donate;
 //                     that you make the transition responsibly.
 //                   </p>
 //                   <br />
-//                   <img
+//                 Image
 //                     src="/RMHS/IMG_20241015_115530~2.jpg"
 //                     className="pt-8"
 //                     alt=""
@@ -889,7 +889,7 @@ export default Donate;
 //         <div className="text-white h-screen/2 max-sm:absolute z-1 mb-32">
 //           <div className="bg-contingentColor flex gap-10 items-center justify-center px-6 pt-24 w-full py-28 max-sm:flex-wrap max-sm:py-16">
 //             <div className="w-2/4 px-8 max-sm:w-full max-sm:px-4">
-//               <img
+//             Image
 //                 src="/RMHS/IMG_20241015_114703.jpg"
 //                 alt=""
 //                 className="w-full -mt-40 max-sm:-mt-32"

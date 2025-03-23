@@ -52,7 +52,7 @@ function Notifications() {
     console.log("Total Posts:", totalPosts);
     console.log("Total Pages:", totalPages);
     fetchWorkouts();
-  }, [dispatch, currentPage]); // Use currentPage here
+  }, [dispatch, currentPage, totalPosts, totalPages]); // Use currentPage here
 
   useEffect(() => {
     const storedToken = localStorage.getItem("token");

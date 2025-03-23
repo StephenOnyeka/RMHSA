@@ -508,24 +508,24 @@ function Home1() {
                     {/* <br /> */}
                     <ul className="text-base font-semibold text-white">
                       <li className="mt-4">
-                        <a href="https://wa.me/+1(347)440-9767">
+                        <Link href="https://wa.me/+1(347)440-9767">
                           {" "}
                           Alumnae & Donors
-                        </a>
+                        </Link>
                       </li>
                       <br />
                       <hr />
                       <li className="mt-4">
-                        <a href="https://eu.docworkspace.com/d/sIBjQh_iwAd36-74G">
+                        <Link href="https://eu.docworkspace.com/d/sIBjQh_iwAd36-74G">
                           Academic Calendar
-                        </a>
+                        </Link>
                       </li>
                       <br /> <hr />
                       <li className="mt-4">
                         {" "}
-                        <a href="https://portal.rmhsagulu.com.ng/resultchecker.aspx">
+                        <Link href="https://portal.rmhsagulu.com.ng/resultchecker.aspx">
                           School Portal
-                        </a>{" "}
+                        </Link>{" "}
                       </li>
                       {/* <br /> <hr />
                       <li className="mt-4"> Partnership & Out Reach </li> */}
@@ -536,7 +536,7 @@ function Home1() {
                       <br /> <hr />
                       <li className="mt-4">
                         {" "}
-                        <a href="/give-to-RMHS"></a>Support Rosa Mystica{" "}
+                        <Link href="/give-to-RMHS"></Link>Support Rosa Mystica{" "}
                       </li>
                       <br /> <hr />
                     </ul>
