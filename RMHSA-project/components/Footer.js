@@ -50,9 +50,9 @@ function Footer() {
               <p className="text-white max-sm:text-xs">+234-8076367903</p> */}
               <ul>
                 <li>
-                  <a href="" className="max-sm:text-xs">
+                  <Link href="" className="max-sm:text-xs">
                     rosamysticahsa@gmail.com
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <hr className="border border-primary mt-4" />
@@ -76,47 +76,33 @@ function Footer() {
                 <br />
                 <span className="font-semibold">Account No:</span> 1100409154
               </div>
-              {/* <ul className="font-light leading-9 max-sm:leading-7 max-sm:text-xs">
-                <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Academic</a>
-                </li>
-                <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Planning & Administration</a>
-                </li>
-                <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">School Safety</a>
-                </li>
-                <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Office of the Manager</a>
-                </li>
-              </ul> */}
             </div>
             <div className="box w-full">
               <p className="text-white font-semibold">Community & Engagement</p>
               <hr className="border border-primary mt-3 mb-5" />
               <ul className="font-light leading-9 max-sm:leading-7 max-sm:text-xs">
-                {/* <li className="hover:text-white transition-all duration-200 ease-in">
-                <a href="">Accessibility</a>
-              </li> */}
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Blogs</a>
+                  <Link href="blogs">Blogs</Link>
                 </li>
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Notifications</a>
+                  <Link href="notifications">Notifications</Link>
                 </li>
-                {/* <li className="hover:text-white transition-all duration-200 ease-in">
-                <a href="">Housing</a>
-              </li> */}
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Alumnae Group</a>
+                  <Link href="https://wa.me/+1(347)440-9767">
+                    Alumnae Group
+                  </Link>
                 </li>
-                {/* <li className="hover:text-white transition-all duration-200 ease-in"> */}
+                <li className="hover:text-white transition-all duration-200 ease-in">
+                  <Link href="contactUs">
+                    Contact Us
+                  </Link>
+                </li>
                 <br />
                 <li className="hover:text-white transition-all duration-200 ease-in border border-white/50 hover:border-white px-4 md:px-8 rounded-full max-w-fit">
-                  <a href="" className=" ">
+                  <Link href="/benefacio" className=" ">
                     Become a Donor
-                  </a>
-                  {/* <a href="" className="border border-white/50 hover:border-white p-2 px-4 rounded-full ">Become a Donor</a> */}
+                  </Link>
+                  {/* <Link href="" className="border border-white/50 hover:border-white p-2 px-4 rounded-full ">Become a Donor</Link> */}
                 </li>
               </ul>
             </div>
@@ -124,23 +110,21 @@ function Footer() {
               <p className="text-white font-semibold">Academics</p>
               <hr className="border border-primary mt-3 mb-5" />
               <ul className="font-light leading-9 max-sm:leading-7 max-sm:text-xs">
-                {/* <li className="hover:text-white transition-all duration-200 ease-in">
-                <a href="">Canvas</a>
-              </li> */}
-                {/* <li className="hover:text-white transition-all duration-200 ease-in">
-                <a href="">Catalyst</a>
-              </li> */}
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">School Portal</a>
+                  <Link href="https://portal.rmhsagulu.com.ng/resultchecker.aspx">
+                    School Portal
+                  </Link>
                 </li>
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="https://eu.docworkspace.com/d/sIBjQh_iwAd36-74G">Academic Calendar</a>
+                  <Link href="https://eu.docworkspace.com/d/sIBjQh_iwAd36-74G">
+                    Academic Calendar
+                  </Link>
                 </li>
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Pay My Tuition</a>
+                  <Link href="">Pay My Tuition</Link>
                 </li>
                 <li className="hover:text-white transition-all duration-200 ease-in">
-                  <a href="">Apply For Admission</a>
+                  <Link href="/admission">Apply For Admission</Link>
                 </li>
               </ul>
             </div>
@@ -155,21 +139,21 @@ function Footer() {
             <span>
               {/* <div className="social-contact"> */}
               <div className="flex items-center justify-center text-primary gap-5">
-                <a href="">
+                <Link href="">
                   <FaFacebook className="h-5 w-5 hover:text-white transition-all duration-100 ease-in" />
-                </a>
-                <a href="">
+                </Link>
+                <Link href="">
                   <FaLinkedin className="h-5 w-5 hover:text-white transition-all duration-100 ease-in" />
-                </a>
-                <a href="">
+                </Link>
+                <Link href="">
                   <FaSkype className="h-5 w-5 hover:text-white transition-all duration-100 ease-in" />
-                </a>
-                <a href="">
+                </Link>
+                <Link href="">
                   <FaXTwitter className="h-5 w-5 hover:text-white transition-all duration-100 ease-in" />
-                </a>
-                <a href="">
+                </Link>
+                <Link href="">
                   <FaInstagram className="h-5 w-5 hover:text-white transition-all duration-100 ease-in" />
-                </a>
+                </Link>
               </div>
               {/* </div> */}
             </span>

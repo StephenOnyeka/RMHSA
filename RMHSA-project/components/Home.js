@@ -536,7 +536,7 @@ function Home1() {
                       <br /> <hr />
                       <li className="mt-4">
                         {" "}
-                        <Link href="/give-to-RMHS"></Link>Support Rosa Mystica{" "}
+                        <Link href="/give-to-RMHS">Support Rosa Mystica</Link>
                       </li>
                       <br /> <hr />
                     </ul>
