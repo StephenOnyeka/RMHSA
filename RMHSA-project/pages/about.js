@@ -16,7 +16,7 @@ function About() {
     <div>
       <Topfile />
       <ScrollDiv />
-      <div className=" font-Poppins overflow-hidden">        
+      <div className=" font-Poppins overflow-hidden">
         {/* <div className="bg-[url('/Edited/1732230029230.jpg')] bg-cover bg-no-repeat bg-center">
           <div
             id="About_container-1"
@@ -76,37 +76,70 @@ function About() {
             </Link>
           </span>
           <div id="RosaMystica" className="flex flex-col items-center py-10">
-            <div className="flex gap-16 max-xl:flex-wrap max-sm:gap-8">
+            {/* <div className="flex gap-16 max-xl:flex-wrap max-sm:gap-8 ">
               <div className="min-w-80">
                 <p className=" font-bold font-Poppins text-3xl text-contingentColor max-sm:text-2xl">
                   Rosa Mystica's History
                   <span className="element-divider-seperator flex w-5/6 mt-4 border-2 border-primary max-sm:w-4/6 "></span>
                 </p>
               </div>
-              <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-0 max-sm:leading-6 max-sm:text-sm max-sm:text-justify">
+              <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-0 max-sm:leading-6 max-sm:text-sm text-justify">
                 <span className="font-bold mb-8">THE PRELIMNARIES</span>
                 <br />
-                {/* <br /> */}
-                The birth of Girls’ High School Agulu (now renamed “Rosa Mystica
-                High School, Agulu) was forerun in the missionary enterprise of
-                the early missionaries whose interest was fundamentally the
-                establishment of church as well as schools. In other word, the
-                missions of the early missionaries were inseparably about God
-                and learning and so we talk about Mission Schools. Thus, schools
-                were veritable means of learning more about God, self, the world
-                and fellow human beings.
+                The birth of Girls’ High School, Agulu (now renamed ‘Rosa
+                Mystica High School, Agulu’) was forerun in the missionary
+                enterprise of the early missionaries whose interest was
+                fundamentally the establishment of church as well as schools. In
+                other words, the missions of the early missionaries were
+                inseparably about God and learning; hence, Mission Schools.
+                Thus, schools were veritable means of learning more about God,
+                self, the world and fellow human beings.
               </p>
-              <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-0 max-sm:leading-6 max-sm:text-sm max-sm:text-justify">
+              <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-0 max-sm:leading-6 max-sm:text-sm text-justify">
                 In his second Missionary journey to Agulu in 1914, Rev. Fr.
                 Albert Bubendorff opened an evening school that was to be an
                 opportunity for more learning and exercise of faith. The choice
-                of Nwagu, Agulu as a central place in the town for the school
-                was welcomed as Chiefs Agupugo Ejelue and Anyoke Ogbudaa donated
-                a land at Onike/Ogbuduli Agulu. The evening school serving also
-                as the Church was very functional till 1924 when some members
-                from Agulu-Enu asked that an equivalent should be established
-                nearer to them lest they began attending Masses elsewhere
+                of Nwagu-Agulu as a central place in the town for the school was
+                welcomed as Chiefs Agupugo Ejelue and Anyoke Ogbudaa donated a
+                land at Onike/Ogbuduli Agulu. The evening school serving also as
+                the Church was very functional till 1924 when some members from
+                Agulu-Enu asked that an equivalent should be established nearer
+                to them lest they began attending Masses elsewhere.
               </p>
+            </div> */}
+            <div className="flex gap-16 max-xl:flex-wrap max-sm:gap-8 ">
+              <div className="min-w-80">
+                <p className=" font-bold font-Poppins text-3xl text-contingentColor max-sm:text-2xl">
+                  Rosa Mystica's History
+                  <span className="element-divider-seperator flex w-5/6 mt-4 border-2 border-primary max-sm:w-4/6 "></span>
+                </p>
+              </div>
+              <div className="grid grid-cols-2 max-xl:grid-cols-1 max-xl:grid-rows-2 max-xl:grid-flow-row ">
+                <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-0 max-sm:leading-6 max-sm:text-sm text-justify">
+                  <span className="font-bold mb-8">THE PRELIMNARIES</span>
+                  <br />
+                  The birth of Girls’ High School, Agulu (now renamed ‘Rosa
+                  Mystica High School, Agulu’) was forerun in the missionary
+                  enterprise of the early missionaries whose interest was
+                  fundamentally the establishment of church as well as schools.
+                  In other words, the missions of the early missionaries were
+                  inseparably about God and learning; hence, Mission Schools.
+                  Thus, schools were veritable means of learning more about God,
+                  self, the world and fellow human beings.
+                </p>
+                <p className=" text-gray-500 leading-7 min-w-60 px-6 max-sm:px-0 max-sm:leading-6 max-sm:text-sm text-justify">
+                  In his second Missionary journey to Agulu in 1914, Rev. Fr.
+                  Albert Bubendorff opened an evening school that was to be an
+                  opportunity for more learning and exercise of faith. The
+                  choice of Nwagu-Agulu as a central place in the town for the
+                  school was welcomed as Chiefs Agupugo Ejelue and Anyoke
+                  Ogbudaa donated a land at Onike/Ogbuduli Agulu. The evening
+                  school serving also as the Church was very functional till
+                  1924 when some members from Agulu-Enu asked that an equivalent
+                  should be established nearer to them lest they began attending
+                  Masses elsewhere.
+                </p>
+              </div>
             </div>
 
             <br />
@@ -138,38 +171,42 @@ function About() {
             >
               {show && (
                 // <div className="transition duration-1500 ease-in-out grid grid-cols-1 leading-7 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 max-sm:text-sm max-sm:text-justify text-gray-500 max-sm:leading-6">
-                <div className=" grid grid-cols-1 leading-7 mt-4 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 max-sm:text-sm max-sm:text-justify text-gray-500 max-sm:leading-6">
+                // <div className=" grid grid-cols-1 leading-7 mt-4 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 max-sm:text-sm max-sm:text-justify text-gray-500 max-sm:leading-6">
+                <div className=" grid grid-cols-1 leading-7 mt-4 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 max-sm:text-sm text-justify text-gray-500 max-sm:leading-6">
                   In 1927, the Agulu people from Umuowele, Umunnowu, Umuifite,
                   Ifiteana and Nneogidi villages first decamped from the Mission
-                  school at Nwagu and had their own Church, “St. Mathias Mission
-                  School at Ikpo. In 1934, considering a more central position,
-                  the Church and Mission at Ikpo were relocated to the site of
-                  the present ‘St. John Catholic Mission, Agulu’. Consequently,
-                  the same year, ‘Eze-Anyanwu Primary Mission School’ was opened
-                  through the generous donation of land by Chief Muojama
-                  Ezeobikili of Nneoha village, Agulu. This school was regarded
-                  as “Agulu B Station” which later metamorphosed into ‘St.
-                  Patrick Catholic Mission, Agulu’. Consequent upon the internal
-                  crisis at ‘Eze-Anyanwu Primary Mission School’, a new mission
-                  school that gave birth to the present ‘St. Theresa’s Catholic 
-                  Mission’ was opened at Isiamaigbo village Agulu through the
-                  generous donation of land by Mr. Ofo Mgbachi. With the
-                  transfer of Rev. Fr. Liddane to Adazli in 1930, a decree was
-                  made that closed of all the stations (except for evening
-                  classes) nearer to Adazi where Holy Masses were being
-                  celebrated every Sunday. In 1936, ‘Agulu Catholic Pioneer
-                  Teachers’ comprising of few members came and made peace among
-                  all the stations in Agulu. Their efforts yielded fruits as a
-                  central catechumen class involving all the stations was
-                  established and the town became united once more having a
-                  central committee and central finance. In 1938, through the
-                  influence and sponsorship of the union, a big football field
-                  was carved out on the same land at Nwagu that accommodated the
-                  Central Catechumen class attached to ‘St. Mary’s Agulu’ and a
-                  football match was held on 27th December, 1938.
+                  school at Nwagu and had their own Church, ‘St. Matthias
+                  Mission School’ at Ikpo. In 1934, considering a more central
+                  position, the Church and Mission at Ikpo were relocated to the
+                  site of the present ‘St. John’s Catholic Mission, Agulu’.
+                  Consequently, the same year, ‘Eze-Anyanwu Primary Mission
+                  School’ was opened through the generous donation of land by
+                  Chief Muojama Ezeobikili of Nneoha village, Agulu. This school
+                  was regarded as “Agulu B Station” which later metamorphosed
+                  into ‘St. Patrick’s Catholic Mission, Agulu’.
+                  <br />
+                  <br />
+                  Consequent upon the internal crisis at ‘Eze-Anyanwu Primary
+                  Mission School’, a new mission school that gave birth to the
+                  present ‘St. Theresa’s Catholic Mission’ was opened at
+                  Isiamaigbo village Agulu through the generous donation of land
+                  by Mr. Ofo Mgbachi. With the transfer of Rev. Fr. Liddane to
+                  Adazi in 1930, a decree was made that closed all the stations
+                  (except for evening classes) nearer to Adazi where Holy Masses
+                  were being celebrated every Sunday. In 1936, ‘Agulu Catholic
+                  Pioneer Teachers’ comprising of few members came and made
+                  peace among all the stations in Agulu. Their efforts yielded
+                  fruits as a central catechumen class involving all the
+                  stations was established and the town became united once more
+                  having a central committee and central finance. In 1938,
+                  through the influence and sponsorship of the union, a big
+                  football field was carved out on the same land at Nwagu that
+                  accommodated the Central Catechumen class attached to ‘St.
+                  Mary’s Agulu’ and a football match was held on 27th December,
+                  1938.
                   <p>
                     In 1947, another school named ‘St. John Bosco’s Preliminary
-                    Training Centre’ was opened at the same Nwagu, Agulu for one
+                    Training Centre’ was opened at the same Nwagu-Agulu for one
                     year course for teachers. The school was later re-named ‘St.
                     Anthony’s College’ serving as Elementary Training College
                     (ETC). With Fr. Chamberline as her first Principal, it
@@ -182,8 +219,8 @@ function About() {
                     Cockran (1963-1965) who was heading the school until 1965
                     when the government of Eastern Nigerian Region closed down
                     schools of such kind. The ‘St. Anthony’s Elementary Teacher
-                    Training College’ phased out but the practicing school
-                    remained in the land of ‘St. Mary’s, Agulu. The closure of
+                    Training College’ phased out but the Practicing School
+                    remained in the land of St. Mary’s, Agulu. The closure of
                     the college was a very painful one to all but little did
                     anyone know that God had a plan: the foundation of ‘Girls’
                     High School, Agulu’.
@@ -216,32 +253,20 @@ function About() {
                     Edward Hurley. With his administration, the then ‘St.
                     Anthony’s College’ was famous for discipline, high academic
                     standards and excellence in sports. He constructed the
-                    buildings, the sports arena and the present school hall. His
-                    enviable personality and effective presence made much impact
-                    on the former St. Anthony’s students and teachers who, in a
-                    way, were respectively the prefigures of the students and
-                    teachers of Girls’ High School, Agulu. Pleased with God, Fr.
-                    Edward Hurley died in active service in the school in
-                    August, 1962 while about completing the hall which later was
-                    named after him (Hurley Hall) in the school. We pray for the
-                    peaceful rest of his soul in the bosom of the Lord. The
-                    first Principal of ‘Girls High School, Agulu’ was Rev. Sr.
-                    Mary Emmanuel (S.J.O.G) (1966-1970). She worked for two
-                    years (1966-1969) when the Nigerian civil war started in
-                    1967 and disturbed the normal academic program. The beauty
-                    as well as the progress of the school was halted and ruined
-                    with the inhabitation of the Nigeria soldiers in the school
-                    in 1968 and later, the Biafran soldiers who drove them out.
-                    In early 1970, the Nigerian soldiers came in again and
-                    occupied the school. Despite several appeals to quit the
-                    school, the Nigerian soldiers lived in the school till 1975.
-                    What a hell! The school chapel was desecrated and turned
-                    into a court and the school buildings were in ruins.
-                    Meanwhile, the school was relocated to Agulu Town Hall. ...
+                    buildings, the sports arena and the present school
+                    auditorium. His enviable personality and effective presence
+                    made much impact on the former St. Anthony’s students and
+                    teachers who, in a way, were respectively the prefigures of
+                    the students and teachers of Girls’ High School, Agulu.
+                    Pleased with God, Fr. Edward Hurley died in active service
+                    in the school in August, 1962 while about completing the
+                    auditorium which later was named after him (Hurley
+                    Auditorium) in the school. We pray for the peaceful rest of
+                    his soul in the bosom of the Lord. ...
                   </p>
                   <div>
                     <p className="italic font-bold">
-                      To know more Extensively about the School's history,
+                      To know more, extensively about the School's history,
                       download here
                     </p>
                     <a
@@ -405,8 +430,9 @@ function About() {
                   Our alumnae network is a testament to the power of a strong
                   education. Our graduates are leaders in their fields, making a
                   difference in communities around the globe. <b>For Alumna</b>-
-                  Join our vibrant alumnae community and connect with like-minded
-                  individuals who share your passion for learning and service.
+                  Join our vibrant alumnae community and connect with
+                  like-minded individuals who share your passion for learning
+                  and service.
                 </p>
               </div>
             </div>
