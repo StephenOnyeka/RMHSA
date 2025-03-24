@@ -7,11 +7,11 @@ export const meta = {
   description:
     "RMHS is a non-profit organization that provides support to individuals with mental health challenges and their families.",
   keywords:
-    "RMHS, Rosa, Rosa Mystica, Rosa Mystica High School, Girls, Best School for girls, Best School in Nigeria, Best School in Anambra, Best School in Agulu, Best School for Girls in Nigeria, Best School for Girls in Nigeria, Girls School, Best School in Ikorodu Nigeria, Agulu Girls School, Best School in Agulu, Best School in Anambra, Best School in Nigeria, Best",
+    "RMHS, Rosa, Rosa Mystica, Rosa Mystica High School, Girls, Best School for girls, Best School in Nigeria, Best School in Anambra, Best School in Agulu, Best School for Girls in Nigeria, Best School for Girls in Nigeria, Girls School, Best School in Ikorodu Nigeria, Agulu Girls, Best School in Agulu, Best School in Anambra, Best School in Nigeria, Best",
   image: "/images/RMHS.png",
   type: "website",
   url: "https://rmhsa-public.vercel.app/",
-  siteName: "Rosa Mystica High School",
+    siteName: "Rosa Mystica High School",
 };
 
 const Layout = ({ children }) => {
