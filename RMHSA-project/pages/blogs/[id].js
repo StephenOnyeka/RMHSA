@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Head from "next/head";
 import { useRouter } from "next/router"; // If using Next.js
 import Link from "next/link";
 import Loading from "@/components/loading";
