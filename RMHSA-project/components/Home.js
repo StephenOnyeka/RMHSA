@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import Head from "next/head";
+import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import CountUp from "react-countup";
@@ -78,6 +78,33 @@ function Home1() {
   });
   return (
     <div className=" ">
+      <Head>
+        {/* <title>Welcome to Rosa Mystica High School, Agulu</title> */}
+        <meta
+          name="description"
+          content="Welcome to Rosa Mystica High School, Agulu. Explore our academics, athletics, and facilities. Join us in shaping the future of education."
+        />
+        <meta
+          name="keywords"
+          content="Rosa Mystica High School, Agulu, academics, athletics, facilities, education"
+        />
+        <meta name="author" content="Rosa Mystica High School" />
+        <meta
+          property="og:title"
+          content="Welcome to Rosa Mystica High School, Agulu"
+        />
+        <meta
+          property="og:description"
+          content="Explore our academics, athletics, and facilities. Join us in shaping the future of education."
+        />
+        <meta property="og:url" content="https://rmhsa-public.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://rmhsa-public.vercel.app/images/R-bmain.jpg"
+        />
+        <link rel="canonical" href="https://rmhsa-public.vercel.app/" />
+      </Head>
       <ScrollDiv />
       <div className="font-Poppins">
         <div id="Home" className="max-sm:overflow-hidden">
@@ -327,7 +354,7 @@ function Home1() {
                     <Image
                       width={100}
                       height={100}
-                      layout="responsive"
+                      // layout="responsive"
                       src="/swiper-RMHS/NECO.png"
                       alt=""
                     />
@@ -336,7 +363,7 @@ function Home1() {
                     <Image
                       width={100}
                       height={100}
-                      layout="responsive"
+                      // layout="responsive"
                       src="/swiper-images/ministry.png"
                       alt=""
                     />
@@ -345,7 +372,7 @@ function Home1() {
                     <Image
                       width={100}
                       height={100}
-                      layout="responsive"
+                      // layout="responsive"
                       src="/swiper-RMHS/JAMB.png"
                       alt=""
                     />
@@ -354,7 +381,7 @@ function Home1() {
                     <Image
                       width={100}
                       height={100}
-                      layout="responsive"
+                      // layout="responsive"
                       src="/swiper-RMHS/Awka3.png"
                       className="mt-6 max-sm:mt-3 w-[500px]"
                       alt=""
@@ -364,7 +391,7 @@ function Home1() {
                     <Image
                       width={100}
                       height={100}
-                      layout="responsive"
+                      // layout="responsive"
                       src="/swiper-RMHS/WACE.png"
                       alt=""
                     />
@@ -373,7 +400,7 @@ function Home1() {
                     <Image
                       width={100}
                       height={100}
-                      layout="responsive"
+                      // layout="responsive"
                       src="/swiper-RMHS/NECO.png"
                       alt=""
                     />
@@ -382,7 +409,7 @@ function Home1() {
                     <Image
                       width={100}
                       height={100}
-                      layout="responsive"
+                      // layout="responsive"
                       src="/swiper-images/ministry.png"
                       alt=""
                     />
@@ -391,7 +418,7 @@ function Home1() {
                     <Image
                       width={100}
                       height={100}
-                      layout="responsive"
+                      // layout="responsive"
                       src="/swiper-RMHS/JAMB.png"
                       alt=""
                     />
@@ -400,7 +427,7 @@ function Home1() {
                     <Image
                       width={100}
                       height={100}
-                      layout="responsive"
+                      // layout="responsive"
                       src="/swiper-RMHS/Awka3.png"
                       className="mt-6 max-sm:mt-3 w-[400px]"
                       alt=""
@@ -410,7 +437,7 @@ function Home1() {
                     <Image
                       width={100}
                       height={100}
-                      layout="responsive"
+                      // layout="responsive"
                       src="/swiper-RMHS/WACE.png"
                       alt=""
                     />
@@ -446,7 +473,7 @@ function Home1() {
                         </h1>
                         <p className="text-gray-500 leading-7 max-sm:text-sm">
                           We maintain the excellent standard in designing
-                          eco-friendly structures and layout for healthy &
+                          {/* eco-friendly structures and layout for healthy & */}
                           adaptive learning.
                         </p>
                       </div>
@@ -605,7 +632,7 @@ function Home1() {
                       <Image
                         width={250}
                         height={150}
-                        layout="responsive"
+                        // layout="responsive"
                         src="/New-Grads.jpg"
                         alt=""
                       />
