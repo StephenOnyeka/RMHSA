@@ -139,7 +139,7 @@ function Footer() {
             <span>
               {/* <div className="social-contact"> */}
               <div className="flex items-center justify-center text-primary gap-5">
-                <Link href="">
+                <Link href="https://www.facebook.com/Rmhsagulu">
                   <FaFacebook className="h-5 w-5 hover:text-white transition-all duration-100 ease-in" />
                 </Link>
                 <Link href="">
