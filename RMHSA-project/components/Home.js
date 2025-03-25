@@ -86,7 +86,7 @@ function Home1() {
         />
         <meta
           name="keywords"
-          content="Rosa Mystica High School, Agulu, academics, athletics, facilities, education"
+          content="Rosa Mystica High School, Agulu, academics, athletics, facilities, education, RMHS, Rosa, Rosa Mystica, Rosa Mystica High School, Girls, Best School for girls, Best School in Nigeria, Best School in Anambra, Best School in Agulu, Best School for Girls in Nigeria, Best School for Girls in Nigeria, Girls School, Rosa Mystica Nigeria, Agulu Girls, Best School in Agulu, Best School in Anambra, Best School in Nigeria, Best"
         />
         <meta name="author" content="Rosa Mystica High School" />
         <meta
