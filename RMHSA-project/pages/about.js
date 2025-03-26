@@ -439,6 +439,7 @@ function About() {
 
             {/* <div className="bg-[url('/FunPic_20241106_131746088.jpg')] bg-contain bg-no-repeat bg-center w-full max-sm:py-36"></div> */}
             <div className="bg-[url('/FunPic_20250326_173347003.jpg')] bg-contain bg-no-repeat bg-center w-full max-sm:py-36"></div>
+            <div className="bg-[url('/FunPic_20250326_173347003.jpg')] bg-contain bg-no-repeat bg-center w-full max-sm:py-36"></div>
           </div>
 
           {/* <div className="bg-contingentColor py-8 w-full">
