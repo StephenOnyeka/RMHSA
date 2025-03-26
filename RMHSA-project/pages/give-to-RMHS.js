@@ -71,7 +71,7 @@ function Donate() {
                       About Rosa Mystica Fund
                     </p>
                     <br />
-                    {/* <p className=" text-gray-500 leading-7 max-sm:text-sm max-sm:leading-6">
+                    <p className=" text-gray-500 leading-7 max-sm:text-sm max-sm:leading-6">
                       We continue to adapt to new ways of teaching, new
                       disciplines of study and new ways of learning. Your gift
                       enriches the experience of all students by supporting
@@ -86,34 +86,18 @@ function Donate() {
                       seamlessly into the workforce upon your graduation, but we
                       also make sure that you will have a good sense of social
                       justice so that you make the transition responsibly.
-                    </p> */}
-                    <p className=" text-gray-500 leading-7 max-sm:text-sm max-sm:leading-6">
-                      Rosa Mystica High School are committed to developing
-                      academically strong, socially responsible leaders. To
-                      maintain our high standards and expand our reach, we need
-                      your support. Your investment empowers us to attract top
-                      faculty, develop innovative programs, and ensure
-                      accessibility for deserving students.
-                    </p>
-                    <br />
-                    <p className=" text-gray-500 leading-7 max-sm:text-sm max-sm:leading-6">
-                      By contributing to the Rosa Mystica Fund, you're not just
-                      donating; you're shaping the future. Your generosity
-                      directly impacts our students and the communities they'll
-                      serve. Join us in our mission to empower the next
-                      generation.
                     </p>
                     <br />
                     {/* <div className="h-64 w-full bg-[url('/RMHS/IMG_20241015_115530~2.jpg')] bg-cover bg-no-repeat bg-center"></div> */}
-                    {/* <Image
+                    <Image
                       src="/Edited/WhatsApp Image 2024-12-07 at 16.00.26_6fee0c7a.jpg"
                       className="pt-8 w-full h-full"
                       width={500}
                       height={250}
                       layout="responsive"
                       alt=""
-                    /> */}
-                    <Image
+                    />
+                    {/* <Image
                       // src="/Edited/WhatsApp Image 2024-12-07 at 16.00.26_6fee0c7a.jpg"
                       src="/RMHS/IMG_20241015_140402.jpg"
                       className="pt-8 w-full h-full"
@@ -121,7 +105,7 @@ function Donate() {
                       height={250}
                       layout="responsive"
                       alt=""
-                    />
+                    /> */}
                   </div>
 
                   <div id="" className="py-16 ">
