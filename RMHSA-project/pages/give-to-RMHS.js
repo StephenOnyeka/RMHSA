@@ -88,7 +88,6 @@ function Donate() {
                       justice so that you make the transition responsibly.
                     </p>
                     <br />
-                    {/* <div className="h-64 w-full bg-[url('/RMHS/IMG_20241015_115530~2.jpg')] bg-cover bg-no-repeat bg-center"></div> */}
                     <Image
                       src="/Edited/WhatsApp Image 2024-12-07 at 16.00.26_6fee0c7a.jpg"
                       className="pt-8 w-full h-full"
@@ -97,15 +96,6 @@ function Donate() {
                       layout="responsive"
                       alt=""
                     />
-                    {/* <Image
-                      // src="/Edited/WhatsApp Image 2024-12-07 at 16.00.26_6fee0c7a.jpg"
-                      src="/RMHS/IMG_20241015_140402.jpg"
-                      className="pt-8 w-full h-full"
-                      width={500}
-                      height={250}
-                      layout="responsive"
-                      alt=""
-                    /> */}
                   </div>
 
                   <div id="" className="py-16 ">
@@ -181,7 +171,6 @@ function Donate() {
                         >
                           <div className=" flex items-center justify-center bg-primary/70 h-full py-14 max-sm:py-6 max-sm:px-2 text-white">
                             <p className="text-base font-semibold max-md:text-sm">
-                              {" "}
                               Emergency Fund
                             </p>
                           </div>
