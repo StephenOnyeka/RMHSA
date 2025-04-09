@@ -236,10 +236,11 @@ function Donate() {
                         {/* <p>Bothell, WA 98011-8246</p> */}
                       </div>
                       <div className="pb-6">
-                        <p>Mr. Elias Okoli</p>
+                        <p>Mr. Elias Okoli - <span className="font-semibold">H.O.D.
+                          </span> </p>
                         <p>+2348037383460 </p>
                       </div>
-                      <p className="pb-6">Mon-Fri 9:00A.M.-5:00P.M.</p>
+                      <p className="pb-6">Mon-Fri {" "} 9:00A.M.-5:00P.M.</p>
                     </div>
                   </>
 
@@ -278,10 +279,11 @@ function Donate() {
                       </div>
                       <div className="pb-6">
                         <p>+2348068267331 </p>
-                        <p>Mrs. Margaret Maduagwu</p>
+                        <p>Mrs. Margaret Maduagwu - <span className="font-semibold">H.O.D.
+                          </span></p>
                       </div>
                       <p className="pb-6 text-secondary">
-                        Mon-Fri 9:00A.M.-5:00P.M.
+                        Mon-Fri {" "} 9:00A.M.-5:00P.M.
                       </p>
                     </div>
                   </>
