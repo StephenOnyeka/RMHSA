@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 function Donate() {
   const [openAccordionId, setOpenAccordionId] = useState();
   const handleAccordionToggle = (id) => {
-    setOpenAccordionId(openAccordionId === id? null : id)
+    setOpenAccordionId(openAccordionId === id ? null : id);
     // setOpenAccordionId(openAccordionId && id)
   };
   return (
@@ -236,8 +236,8 @@ function Donate() {
                         {/* <p>Bothell, WA 98011-8246</p> */}
                       </div>
                       <div className="pb-6">
-                        <p>+1-2345-6789-10</p>
-                        <p>rosamysticahsa@gmail.com</p>
+                        <p>Mr. Elias Okoli</p>
+                        <p>+2348037383460 </p>
                       </div>
                       <p className="pb-6">Mon-Fri 9:00A.M.-5:00P.M.</p>
                     </div>
@@ -277,8 +277,8 @@ function Donate() {
                         {/* <p>Bothell, WA 98011-8246</p> */}
                       </div>
                       <div className="pb-6">
-                        <p>+1-2345-6789-10</p>
-                        <p>rosamysticahsa@gmail.com</p>
+                        <p>+2348068267331 </p>
+                        <p>Mrs. Margaret Maduagwu</p>
                       </div>
                       <p className="pb-6 text-secondary">
                         Mon-Fri 9:00A.M.-5:00P.M.
@@ -309,7 +309,16 @@ function Donate() {
                   and values to create a more humane, just, and sustainable
                   world.
                 </p>
-                <p>- School Principal</p>
+                <p className="text-lg font-semibold max-sm:text-sm">
+                  Lady Chinwe Maduka
+                  <br />
+                  <span className="font-normal">School Principal</span>
+                </p>
+                {/* <div className="space-y-2">
+                  <p className="text-lg">Lady Chinwe Maduka</p>
+                  <p>School Principal</p>
+                </div> */}
+
                 {/* <div className="">
                   <button className="bg-primary flex gap-2 text-sm font-semibold p-4 px-6 max-sm:text-xs">
                     Become A Donor
@@ -346,7 +355,6 @@ function Donate() {
   );
 }
 export default Donate;
-
 
 // import React, { useState, useRef } from "react";
 // import Link from "next/link";
